@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import Carousel from './Carousel';
 import './App.css';
 
 class App extends React.Component {
@@ -43,6 +44,9 @@ class App extends React.Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+
+        <Carousel />
+
         {this.state.projects.map((herring) =>
           <div>
             <img src={herring.url} />
