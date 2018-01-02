@@ -5,7 +5,6 @@ import './App.css';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -69,6 +68,13 @@ class App extends React.Component {
             <p className="legend">Seam center</p>
           </div>
         </Carousel>
+
+        {['seam_1', 'seam_2', 'seam_3', 'seam_4'].map((doggyLunch) =>
+          <div>
+            <img src={require(`./pf_01_seam/${doggyLunch}.png`)} />
+            This is repeated {doggyLunch}
+          </div>
+        )}
 
         {this.state.projects.map((herring) =>
           <div>
