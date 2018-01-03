@@ -21,15 +21,15 @@ class App extends React.Component {
           date:        'february 2018',
           title:       'Seam center',
           text:        'co-working and co-living space ',
-          color:       'blue',
+          color:       'rgba(250, 189, 52)',
           photoAmount: ['01','02','03','04','05']
         },
         {
           folderName:  'PF_02_POPS',
           date:        '2017',
-          title:       'POPS Private Owned Public Space',
-          text:        'I did branding and stuff for this beautiful restaurant.',
-          color:       'pink',
+          title:       'POPS',
+          text:        'Private Owned Public Space',
+          color:       'rgba(250, 189, 52)',
           photoAmount: ['01','02','03','04']
         },
         {
@@ -37,7 +37,7 @@ class App extends React.Component {
           date:        'august 2017',
           title:       'Grill Bag Restaurant',
           text:        'I did branding and stuff for this beautiful restaurant.',
-          color:       'pink',
+          color:       'rgba(250, 189, 52)',
           photoAmount: ['01','02','03','04']
         }
       ]
@@ -51,10 +51,10 @@ class App extends React.Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Art and Architecture Atelier </h1>
-          <p className="App-intro">
-            #shared_office #shared_house #community
-            #brading #space_identity
-            #urban_issue
+          <p className="App-intro" font-size="0.6rem">
+            #human #future #lifestyle #brading #space_identity <br/>
+            #community #common_space #co-living #co-working <br/>
+            #environmental_issue #upcycle #urban_issue #public_space #POPS
           </p>
         </header>
 
@@ -62,11 +62,10 @@ class App extends React.Component {
         {/* // (this.state.projects is an array, so map does something for each item in the array) */}
         {this.state.projects.map((x) =>
           <div>
-            <h2 style={{color: x.color}}>
+            <div style={{color: x.color}}>
               {x.title}
-            </h2>
-            <i>{x.date}</i>
-            <p>{x.text}</p>
+            </div>
+            <div>{x.text}</div>
 
             {/* make a carousel for each project */}
             <Carousel>

@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  background-color: rgba(154, 140, 120, 0.85);
+  font-size: 14px ;
+  color: white;
+
 }
 
 .App-logo {
@@ -8,21 +12,30 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: rgba(250, 189, 52, 0.9);
+  height: 180px;
   padding: 20px;
   color: white;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 1.2em;
+  font-family: sans-serif;
+  color : rgba(128, 107, 80, 0.4);
 }
 
 .App-intro {
-  font-size: large;
+  font-size: 0.7rem;
+  color : rgba(128, 107, 80, 0.60);
+  padding-top: 0rem ;
 }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.p {
+  font-size: 0.6rem ;
+  color : rgb(128, 107, 80);
 }
