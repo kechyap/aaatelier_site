@@ -1,89 +1,85 @@
+// Import the things from other people in node_modules
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
+// Import things we made ourselves
+import logo from './logo.svg';
+import './App.css';
+
+// Make an App Component
 class App extends React.Component {
+
+  // All data and settings for this App Component
   constructor(props) {
     super(props)
 
     this.state = {
       projects: [
         {
-          date: 'februari 2018',
-          title: 'Something',
-          text: 'I did a lot of cool things for this building',
-          color: 'blue',
-          url: './images/newThing.png'
+          folderName:  'PF_01_Seam',
+          date:        'february 2018',
+          title:       'Seam center',
+          text:        'co-working and co-living space ',
+          color:       'blue',
+          photoAmount: ['01','02','03','04','05']
         },
         {
-          date: 'june 2017',
-          title: 'Tego building project',
-          text: 'I did a lot of cool things for this building',
-          color: 'red',
-          url: './images/tego.svg'
+          folderName:  'PF_02_POPS',
+          date:        '2017',
+          title:       'POPS Private Owned Public Space',
+          text:        'I did branding and stuff for this beautiful restaurant.',
+          color:       'pink',
+          photoAmount: ['01','02','03','04']
         },
         {
-          date: 'august 2017',
-          title: 'Grill Bag Restaurant',
-          text: 'I did branding and stuff for this beautiful restaurant.',
-          color: 'pink',
-          url: './images/grill.jpg'
+          folderName:  'PF_03_Grill',
+          date:        'august 2017',
+          title:       'Grill Bag Restaurant',
+          text:        'I did branding and stuff for this beautiful restaurant.',
+          color:       'pink',
+          photoAmount: ['01','02','03','04']
         }
       ]
     }
   }
 
+  // Rendering this App Component
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Art and Architecture Atelier </h1>
+          <p className="App-intro">
+            #shared_office #shared_house #community
+            #brading #space_identity
+            #urban_issue
+          </p>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
 
-        <Carousel>
+        {/* //* projects loop, do the same layout for each project */}
+        {/* // (this.state.projects is an array, so map does something for each item in the array) */}
+        {this.state.projects.map((x) =>
           <div>
-            <img src={require("./pf_01_seam/seam_1.png")} />
-            <p className="legend">Seam center</p>
-          </div>
+            <h2 style={{color: x.color}}>
+              {x.title}
+            </h2>
+            <i>{x.date}</i>
+            <p>{x.text}</p>
 
-          <div>
-            <img src={require("./pf_01_seam/seam_2.png")} />
-            <p className="legend">Seam center</p>
-          </div>
+            {/* make a carousel for each project */}
+            <Carousel>
+              {/* //* Do something 4 times (map always does something for each item in an array, so I just made an array with four items, lol) */}
+              {x.photoAmount.map((y) =>
+                <div>
+                  {/* //* folder name for image is the project.codename, and file name is the i variable made by map */}
+                  <img src={require(`./${x.folderName}/${y}.png`)} />
+                  <p> {x.title} </p>
+                </div>
+              )}
+            </Carousel>
 
-          <div>
-            <img src={require("./pf_01_seam/seam_3.png")}/>
-            <p className="legend">Seam center</p>
-          </div>
-
-          <div>
-            <img src={require("./pf_01_seam/seam_4.png")}/>
-            <p className="legend">Seam center</p>
-          </div>
-        </Carousel>
-
-        {['seam_1', 'seam_2', 'seam_3', 'seam_4'].map((doggyLunch) =>
-          <div>
-            <img src={require(`./pf_01_seam/${doggyLunch}.png`)} />
-            This is repeated {doggyLunch}
-          </div>
-        )}
-
-        {this.state.projects.map((herring) =>
-          <div>
-            <img src={herring.url} />
-            <h1 style={{color: herring.color}}>
-              {herring.title}
-             </h1>
-            <i>{herring.date}</i>
-            <p>{herring.text}</p>
           </div>
         )}
       </div>
@@ -91,4 +87,5 @@ class App extends React.Component {
   }
 }
 
+// Export the App Component so we can import it in other files
 export default App;
