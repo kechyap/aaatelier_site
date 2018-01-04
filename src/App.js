@@ -1,5 +1,6 @@
 // Import the things from other people in node_modules
 import React from 'react';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
@@ -58,29 +59,38 @@ class App extends React.Component {
           </p>
         </header>
 
-        {/* //* projects loop, do the same layout for each project */}
-        {/* // (this.state.projects is an array, so map does something for each item in the array) */}
-        {this.state.projects.map((x) =>
-          <div>
-            <div style={{color: x.color}}>
-              {x.title}
-            </div>
-            <div>{x.text}</div>
+        <Grid fluid>
+          <Row>
 
-            {/* make a carousel for each project */}
-            <Carousel>
-              {/* //* Do something 4 times (map always does something for each item in an array, so I just made an array with four items, lol) */}
-              {x.photoAmount.map((y) =>
-                <div>
-                  {/* //* folder name for image is the project.codename, and file name is the i variable made by map */}
-                  <img src={require(`./${x.folderName}/${y}.png`)} />
-                  <p> {x.title} </p>
+            {/* //* projects loop, do the same layout for each project */}
+            {/* // (this.state.projects is an array, so map does something for each item in the array) */}
+            {this.state.projects.map((x) =>
+              <Col xs={12} md={6} xl={4}>
+
+                <div style={{color: x.color, paddingTop:"0.5rem"}}>
+                  {x.title}
                 </div>
-              )}
-            </Carousel>
 
-          </div>
-        )}
+                <div style={{color:"rgb(128, 107, 80)", fontSize: "0.9rem" , paddingBottom: "0.3rem"}}>
+                  {x.text}
+                </div>
+
+                {/* make a carousel for each project */}
+                <Carousel showThumbs={false} infiniteLoop={true}>
+                  {/* //* Do something 4 times (map always does something for each item in an array, so I just made an array with four items, lol) */}
+                  {x.photoAmount.map((y) =>
+                    <div>
+                      {/* //* folder name for image is the project.codename, and file name is the i variable made by map */}
+                      <img src={require(`./${x.folderName}/${y}.png`)} />
+                    </div>
+                  )}
+                </Carousel>
+
+              </Col>
+            )}
+
+          </Row>
+        </Grid>
       </div>
     );
   }
