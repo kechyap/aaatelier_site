@@ -15,6 +15,7 @@ import icon_kakao from './icon/icon_kakao.svg';
 
 import './App.css';
 
+
 // Make an App Component
 class App extends React.Component {
 
@@ -62,13 +63,16 @@ class App extends React.Component {
           <img src={logo_white} className="App-logo" alt="logo" />
           <h1 className="App-title"> AAAtelier</h1>
           <h4 className="App-sub">  Art and Architecture Atelier  </h4>
-          <p className="App-intro">
-            #human #future #lifestyle #brading #space_identity <br/>
-            #social_issue #community #common_space #co-living #co-working <br/>
+          <p className="App-intro" style={{paddingRight:"15px" , paddingLeft:"15px"}}>
+            #human #future #lifestyle #brading #space_identity
+            #social_issue #community #common_space #co-living #co-working
             #environmental_issue #upcycle #urban_issue #public_space #POPS
           </p>
+
           <div>
-            <img src={icon_email} className="icon" alt="email" />
+            <a href="mailto:nowhere@mozilla.org">
+              <img src={icon_email} className="icon" alt="email" />
+            </a>
             <img src={icon_facebook} className="icon" alt="facebook" />
             <img src={icon_insta} className="icon" alt="insta" />
             <img src={icon_kakao} className="icon" alt="kakao" />
@@ -89,7 +93,7 @@ class App extends React.Component {
                   {x.text}
                 </div>
 
-                <Carousel showThumbs={false} infiniteLoop={true}>
+                <Carousel showThumbs={false} infiniteLoop={true} swipeScrollTolerance={10}>
                   {x.photoAmount.map((y) =>
                     <div>
                       <img src={require(`./${x.folderName}/${y}.png`)} />
