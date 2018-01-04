@@ -1,12 +1,16 @@
 {
-  "main.css": "static/css/main.09368efe.css",
-  "main.css.map": "static/css/main.09368efe.css.map",
-  "main.js": "static/js/main.ac60ee69.js",
-  "main.js.map": "static/js/main.ac60ee69.js.map",
-  "static/media/01.png": "static/media/01.fda41837.png",
+  "main.css": "static/css/main.5a339064.css",
+  "main.css.map": "static/css/main.5a339064.css.map",
+  "main.js": "static/js/main.231e688c.js",
+  "main.js.map": "static/js/main.231e688c.js.map",
+  "static/media/01.png": "static/media/01.c7bc1998.png",
   "static/media/02.png": "static/media/02.b8b9b93a.png",
-  "static/media/03.png": "static/media/03.d552acef.png",
+  "static/media/03.png": "static/media/03.2f63e7db.png",
   "static/media/04.png": "static/media/04.709ca36b.png",
   "static/media/05.png": "static/media/05.f1d989a4.png",
-  "static/media/logo.svg": "static/media/logo.e284d00c.svg"
+  "static/media/icon_email.svg": "static/media/icon_email.6a2b901b.svg",
+  "static/media/icon_facebook.svg": "static/media/icon_facebook.65d992fd.svg",
+  "static/media/icon_insta.svg": "static/media/icon_insta.3434234b.svg",
+  "static/media/icon_kakao.svg": "static/media/icon_kakao.32b6ff54.svg",
+  "static/media/logo_white.svg": "static/media/logo_white.0cfd295d.svg"
 }
