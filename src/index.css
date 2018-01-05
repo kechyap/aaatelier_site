@@ -1,12 +1,14 @@
 html {
   --main-yellow: rgb(250, 189, 52);
-  --brown: rgba(128, 107, 80, 0.6);
-  --grey-background: rgba(154, 140, 120, 0.5);
+  --brown: rgba(128, 107, 80, 0.8);
+  --grey-background: rgba(154, 140, 120, 0.6);
 }
 
 body {
-  font-family: 'Titillium Web', sans-serif;
-  background-color: var(--grey-background);
+  font-family: 'Titillium Web', sans-serif, noto-sans;
+  font-size: 15px;
+  background-color: rgba(154, 140, 120, 0.5);
+  color: white;
 }
 
 img {
@@ -18,4 +20,22 @@ hr {
   border: none;
   border-bottom: 1px solid var(--brown);
   margin: 2rem 0;
+}
+
+h2 {
+  font-weight: 400;
+  margin-bottom: -1rem;
+}
+
+
+h4 {
+  font-weight: 400;
+  color: rgba(128, 107, 80, 0.6);
+  margin-bottom: -0.7rem;
+}
+
+p {
+  font-size: 0.9rem;
+  font-weight:300;
+  color: rgba(255,255,255,0.8);
 }
