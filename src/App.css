@@ -54,13 +54,14 @@ Dosis 300 400 500 700*/
 
 /* Start manual overrides of the react-flexbox-grid css module */
 .container-fluid {
-  padding: 0;
+  padding: 0.2rem;
 }
 
 .row {
   margin-right: 0;
   margin-left: 0;
 }
+
 
 [class^="col-"] {
   padding: 0 ; /* 0.1rem = 16px * 0.1 = 1.6px. awkward. blurry.*/
@@ -80,6 +81,10 @@ p {
   font-size: 0.7rem ;
   color : rgb(128, 107, 80);
 
+}
+
+.carousel .slide {
+  background-color: rgba(255, 255, 255, 0) ;
 }
 
 .icon {

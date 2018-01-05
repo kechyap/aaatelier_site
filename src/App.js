@@ -105,7 +105,7 @@ class App extends React.Component {
         <Grid fluid>
           <Row>
             {this.state.projects.map((project_set) =>
-              <Col xs={12} sm={6} lg={4}>
+              <Col xs={12} sm={6} md={4}>
                 {project_set.map((x) =>
                   <div>
 
