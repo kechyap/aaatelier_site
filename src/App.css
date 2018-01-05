@@ -1,13 +1,16 @@
 /* rgb(250, 189, 52) main yellow
 rgba(128, 107, 80, 0.6) brown
 rgba(154, 140, 120, 0.5) grey background */
-
+/*'Titillium Web' 300,400,700
+Dosis 300 400 500 700*/
 
 
 .App {
+  font-family: 'Titillium Web', sans-serif, noto-sans;
+  font-weight: 300;
   text-align: center;
-  background-color: rgba(154, 140, 120, 0.4);
-  font-size: 13px;
+  background-color: rgba(154, 140, 120, 0.5);
+  font-size: 15px;
 }
 
 .App-logo {
@@ -22,20 +25,25 @@ rgba(154, 140, 120, 0.5) grey background */
 }
 
 .App-title {
-  font-size: 0.9rem;
-  font-family: sans-serif;
+  font-size: 1rem;
+  font-family: 'Dosis', sans-serif, noto-sans;
+  font-weight: 500;
   color : rgba(255, 255, 255, 0.8);
+
 }
 
 .App-sub {
-  font-size: 0.6rem;
-  color : rgba(255, 255, 255, 0.7);
+  font-size: 0.75rem;
+  color : rgba(255, 255, 255, 0.8);
   margin-top: -0.7rem;
+
+
 }
 
 .App-intro {
-  font-size: 0.6rem;
-  color : rgba(255, 255, 255, 0.7);
+  font-family: 'Titillium Web' , noto-sans;
+  font-size: 0.68rem;
+  color : rgba(255, 255, 255, 0.8);
   padding-top: 0rem ;
 }
 
@@ -48,22 +56,33 @@ rgba(154, 140, 120, 0.5) grey background */
 .container-fluid {
   padding: 0;
 }
+
 .row {
   margin-right: 0;
   margin-left: 0;
 }
 
 [class^="col-"] {
-  padding: 0.1rem; /* 0.1rem = 16px * 0.1 = 1.6px. awkward. blurry on old screens. */
+  padding: 0 ; /* 0.1rem = 16px * 0.1 = 1.6px. awkward. blurry.*/
 }
 /* End manual overrides of the react-flexbox-grid css module */
 
-.p {
-  font-size: 0.6rem ;
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Titillium Web', Noto Sans;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Titillium Web', Noto Sans;
+  font-size: 0.7rem ;
   color : rgb(128, 107, 80);
+
 }
 
 .icon {
   height: 2.3rem;
-  padding: 1px;
+  padding: 0;
 }

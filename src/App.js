@@ -25,30 +25,34 @@ class App extends React.Component {
 
     this.state = {
       projects: [
-        {
-          folderName:  'PF_01_Seam',
-          date:        'february 2018',
-          title:       'SEAM CENTER',
-          text:        'co-working and co-living space ',
-          color:       'rgba(255, 255, 255, 0.9)',
-          photoAmount: ['01','02','03','04','05']
-        },
-        {
-          folderName:  'PF_02_POPS',
-          date:        '2017',
-          title:       'P O P S FORUM',
-          text:        'Private Owned Public Space',
-          color:       'rgba(255, 255, 255, 0.9)',
-          photoAmount: ['01','02','03','04']
-        },
-        {
-          folderName:  'PF_03_Grill',
-          date:        'august 2017',
-          title:       'GRILL BAG',
-          text:        'social issue, restaurant',
-          color:       'rgba(255, 255, 255, 0.9)',
-          photoAmount: ['01','02','03','04']
-        }
+        [
+          {
+            folderName:  'PF_01_Seam',
+            date:        'february 2018',
+            title:       'SEAM CENTER',
+            text:        'co-working and co-living space ',
+            color:       'rgba(255, 255, 255, 0.9)',
+            photoAmount: ['01','02','03','04','05']
+          },
+          {
+            folderName:  'PF_02_POPS',
+            date:        '2017',
+            title:       'P O P S FORUM',
+            text:        'Private Owned Public Space',
+            color:       'rgba(255, 255, 255, 0.9)',
+            photoAmount: ['01','02','03','04']
+          }
+        ],
+        [
+          {
+            folderName:  'PF_03_Grill',
+            date:        'august 2017',
+            title:       'GRILL BAG',
+            text:        'social issue, restaurant',
+            color:       'rgba(255, 255, 255, 0.9)',
+            photoAmount: ['01','02','03','04']
+          }
+        ]
       ]
     }
   }
@@ -63,47 +67,56 @@ class App extends React.Component {
           <img src={logo_white} className="App-logo" alt="logo" />
           <h1 className="App-title"> AAAtelier</h1>
           <h4 className="App-sub">  Art and Architecture Atelier  </h4>
-          <p className="App-intro" style={{paddingRight:"15px" , paddingLeft:"15px"}}>
+          <p className="App-intro" style={{paddingRight:"6rem" , paddingLeft:"6rem"}}>
             #human #future #lifestyle #brading #space_identity
             #social_issue #community #common_space #co-living #co-working
             #environmental_issue #upcycle #urban_issue #public_space #POPS
           </p>
 
           <div>
-            <a href="mailto:nowhere@mozilla.org">
+            <a href="aaatelier@ejay.kim">
               <img src={icon_email} className="icon" alt="email" />
             </a>
-            <img src={icon_facebook} className="icon" alt="facebook" />
-            <img src={icon_insta} className="icon" alt="insta" />
-            <img src={icon_kakao} className="icon" alt="kakao" />
+
+            <a href="www.facebook.com/kechyap">
+              <img src={icon_facebook} className="icon" alt="facebook" />
+            </a>
+
+            <a href="www.instagram.com/aaatelier_ejay">
+              <img src={icon_insta} className="icon" alt="insta" />
+            </a>
+
+              <img src={icon_kakao} className="icon" alt="kakao" />
           </div>
         </header>
 
         <Grid fluid>
           <Row>
+            {this.state.projects.map((project_set) =>
+              <Col xs={12} md={6}>
+                {project_set.map((x) =>
+                  <div>
 
-            {this.state.projects.map((x) =>
-              <Col xs={12} sm={6} md={4} xl={3}>
+                    <h4 style={{color: x.color, marginTop:"0.9rem" , marginBottom:"0rem"}}>
+                      {x.title}
+                    </h4>
 
-                <h4 style={{color: x.color, marginTop:"0.9rem" , marginBottom:"0rem"}}>
-                  {x.title}
-                </h4>
-
-                <div style={{color:"rgba(255, 255, 255, 0.8)", fontSize: "0.75rem" , paddingBottom: "0.3rem"}}>
-                  {x.text}
-                </div>
-
-                <Carousel showThumbs={false} infiniteLoop={true} swipeScrollTolerance={10}>
-                  {x.photoAmount.map((y) =>
-                    <div>
-                      <img src={require(`./${x.folderName}/${y}.png`)} />
+                    <div style={{color:"rgba(255, 255, 255, 0.7)", fontSize: "0.8rem", fontWeight:"300", paddingBottom: "0.3rem"}}>
+                      {x.text}
                     </div>
-                  )}
-                </Carousel>
 
+                    <Carousel showThumbs={false} infiniteLoop={true} swipeScrollTolerance={20}>
+                      {x.photoAmount.map((y) =>
+                        <div>
+                          <img src={require(`./${x.folderName}/${y}.png`)} />
+                        </div>
+                      )}
+                    </Carousel>
+
+                  </div>
+                )}
               </Col>
             )}
-
           </Row>
         </Grid>
       </div>
