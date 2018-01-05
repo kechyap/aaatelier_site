@@ -43,6 +43,18 @@ class App extends React.Component {
             photoAmount: ['01','02','03','04']
           }
         ],
+
+        [
+          {
+            folderName:  'PF_03_Grill',
+            date:        'august 2017',
+            title:       'GRILL BAG',
+            text:        'social issue, restaurant',
+            color:       'rgba(255, 255, 255, 0.9)',
+            photoAmount: ['01','02','03','04']
+          }
+        ],
+
         [
           {
             folderName:  'PF_03_Grill',
@@ -93,7 +105,7 @@ class App extends React.Component {
         <Grid fluid>
           <Row>
             {this.state.projects.map((project_set) =>
-              <Col xs={12} md={6}>
+              <Col xs={12} sm={6} lg={4}>
                 {project_set.map((x) =>
                   <div>
 
