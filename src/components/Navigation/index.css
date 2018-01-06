@@ -1,0 +1,25 @@
+.navbar-wrapper,
+.navbar {
+  min-height: 2.6rem;
+}
+
+.navbar {
+  background: var(--main-yellow);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar a {
+  vertical-align: middle;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.simple_logo {
+  height: 1.5rem;
+  padding: 0.5rem;
+  vertical-align: middle;
+}
