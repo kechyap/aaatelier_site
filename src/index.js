@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom'
 
 import './index.css'
 
-import Aaatelier from './Aaatelier'
+import App from './App'
 
-ReactDOM.render(<Aaatelier />, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById('root'))

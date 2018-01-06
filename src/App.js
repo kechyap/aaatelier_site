@@ -3,10 +3,10 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import Intro from './Intro'
 
-import './Aaatelier.css'
+import './App.css'
 import './Intro.css'
 
-class Aaatelier extends React.Component {
+class App extends React.Component {
   constructor (props) {
     super(props)
 
@@ -108,4 +108,4 @@ class Aaatelier extends React.Component {
   }
 }
 
-export default Aaatelier
+export default App
