@@ -1,14 +1,15 @@
 html {
   --main-yellow: rgb(250, 189, 52);
   --brown: rgba(128, 107, 80, 0.8);
-  --grey-background: rgba(154, 140, 120, 0.6);
+  --grey-background: rgba(154, 140, 120, 0.5);
 }
 
 body {
   font-family: 'Titillium Web', sans-serif, noto-sans;
   font-size: 15px;
-  background-color: rgba(154, 140, 120, 0.5);
+  background-color: var(--grey-background);
   color: white;
+  margin: 0;
 }
 
 img {
@@ -29,12 +30,12 @@ h2 {
 
 h4 {
   font-weight: 400;
-  color: rgba(128, 107, 80, 0.6);
+  color: rgb(255,255,255);
   margin-bottom: -0.7rem;
 }
 
 p {
   font-size: 0.9rem;
   font-weight:300;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,0.7);
 }

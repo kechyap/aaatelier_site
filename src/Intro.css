@@ -1,3 +1,9 @@
 .icon {
   width: 2em;
 }
+
+.head {
+  background: linear-gradient(var(--main-yellow) 40%, rgba(255,255,255,0));
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}

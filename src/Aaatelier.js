@@ -4,6 +4,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 import Intro from './Intro'
 
 import './Aaatelier.css'
+import './Intro.css'
 
 class Aaatelier extends React.Component {
   constructor (props) {
@@ -16,6 +17,8 @@ class Aaatelier extends React.Component {
           date: 'february 2018',
           title: 'SEAM CENTER',
           text: 'co-working and co-living space ',
+          client: 'touch4good',
+          venue: 'SETEC, Seoul',
           color: 'rgba(255, 255, 255, 0.9)',
           photos: ['01', '02', '03', '04', '05']
         },
@@ -24,6 +27,8 @@ class Aaatelier extends React.Component {
           date: '2017',
           title: 'P O P S FORUM',
           text: 'Private Owned Public Space',
+          client: 'touch4good',
+          venue: 'SETEC, Seoul',
           color: 'rgba(255, 255, 255, 0.9)',
           photos: ['01', '02', '03', '04']
         },
@@ -32,6 +37,8 @@ class Aaatelier extends React.Component {
           date: 'august 2017',
           title: 'GRILL BAG',
           text: 'social issue, restaurant',
+          client: 'touch4good',
+          venue: 'SETEC, Seoul',
           color: 'rgba(255, 255, 255, 0.9)',
           photos: ['01', '02', '03', '04']
         },
@@ -40,8 +47,20 @@ class Aaatelier extends React.Component {
           date: 'august 2017',
           title: 'GRILL BAG',
           text: 'social issue, restaurant',
+          client: 'touch4good',
+          venue: 'SETEC, Seoul',
           color: 'rgba(255, 255, 255, 0.9)',
           photos: ['01', '02', '03', '04']
+        },
+        {
+          folder: 'PF_04_Upcycle',
+          date: 'December 2017',
+          title: 'Upcycle Exhibition',
+          text: 'Upcycle network exhibition',
+          client: 'touch4good',
+          venue: 'SETEC, Seoul',
+          color: 'rgba(255, 255, 255, 0.9)',
+          photos: ['01', '02', '03']
         }
       ]
     }
@@ -49,18 +68,21 @@ class Aaatelier extends React.Component {
 
   render () {
     return (
-      <Grid fluid>
+      <div>
         <Intro />
 
-        {this.state.projects.map((project) =>
-          <div>
-            <hr />
-
+        <Grid fluid>
+          {this.state.projects.map((project) =>
             <Row>
               <Col xs={12} md={4}>
                 <h4 style={{color: project.color}}>
                   {project.title}
                 </h4>
+                <p>
+                  client - {project.client}
+                  <br />
+                  venue - {project.venue}
+                </p>
                 <p>
                   {project.text}
                 </p>
@@ -74,15 +96,14 @@ class Aaatelier extends React.Component {
                       <br />
                       <br />
                     </Col>
-
                   )}
+
                 </Row>
               </Col>
             </Row>
-
-          </div>
-        )}
-      </Grid>
+          )}
+        </Grid>
+      </div>
     )
   }
 }
