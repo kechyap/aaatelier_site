@@ -68,51 +68,41 @@ class Home extends React.Component {
 
   render () {
     return (
-      <div>
-        <Intro />
+      <Grid fluid>
+        {this.state.projects.map((project) =>
+          <Row>
+            <Col xs={12} md={4}>
+              <h4 style={{color: project.color}}>
+                {project.title}
+              </h4>
+              <p>
+                client - {project.client}
+                <br />
+                venue - {project.venue}
+              </p>
+              <p>
+                {project.text}
+              </p>
+            </Col>
 
-        <Grid fluid>
-          {this.state.projects.map((project) =>
-            <Row>
-              <Col xs={12} md={4}>
-                <h4 style={{color: project.color}}>
-                  {project.title}
-                </h4>
-                <p>
-                  client - {project.client}
-                  <br />
-                  venue - {project.venue}
-                </p>
-                <p>
-                  {project.text}
-                </p>
-              </Col>
+            <Col xs={12} md={8}>
+              <Row>
+                {project.photos.map((photo) =>
+                  <Col xs={12} sm={6}>
+                    <img src={require(`./${project.folder}/${photo}.png`)} />
+                    <br />
+                    <br />
+                  </Col>
+                )}
 
-              <Col xs={12} md={8}>
-                <Row>
-                  {project.photos.map((photo) =>
-                    <Col xs={12} sm={6}>
-                      <img src={require(`./${project.folder}/${photo}.png`)} />
-                      <br />
-                      <br />
-                    </Col>
-                  )}
-
-                </Row>
-              </Col>
-            </Row>
-          )}
-        </Grid>
-      </div>
+              </Row>
+            </Col>
+          </Row>
+        )}
+      </Grid>
     )
   }
 }
-
-const About = () => (
-  <div>
-    <h2>About</h2>
-  </div>
-)
 
 class App extends React.Component {
   constructor (props) {
@@ -123,24 +113,15 @@ class App extends React.Component {
 
   render () {
     return (
+      <Router>
+        <div>
+          <Link to='/'>Home Link</Link>
+          <Link to='/intro'>Intro Link</Link>
 
-      <div>
-        <Router>
-          <div>
-            <ul>
-              <li><Link to='/'>Home</Link></li>
-              <li><Link to='/about'>About</Link></li>
-            </ul>
-
-            <hr />
-
-            <Route exact path='/' component={Home} />
-            <Route path='/about' component={About} />
-
-          </div>
-        </Router>
-
-      </div>
+          <Route exact path='/' component={Home} />
+          <Route path='/intro' component={Intro} />
+        </div>
+      </Router>
     )
   }
 }
