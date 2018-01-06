@@ -19,6 +19,25 @@ const Seam = () => (
         </ul>
       </Col>
     </Row>
+    <Row>
+      <p>
+        Hheheiehi ehiheih eihihie Hheheiehi ehiheih eihihie Hheheiehi ehiheih eihihie Hheheiehi ehiheih eihihie Hheheiehi ehiheih eihihie Hheheiehi ehiheih eihihie
+      </p>
+      <img src={require(`./01.png`)} />
+      <p>
+        Hheheiehi ehiheih eihihie Hheheiehi ehiheih eihihie Hheheiehi ehiheih eihihie Hheheiehi ehiheih eihihie Hheheiehi ehiheih eihihie Hheheiehi ehiheih eihihie
+      </p>
+      <img src={require(`./02.png`)} />
+      <p>
+        Hheheiehi ehiheih eihihie Hheheiehi ehiheih eihihie Hheheiehi ehiheih eihihie Hheheiehi ehiheih eihihie Hheheiehi ehiheih eihihie Hheheiehi ehiheih eihihie
+      </p>
+      <img src={require(`./03.png`)} />
+      <p>
+        Hheheiehi ehiheih eihihie Hheheiehi ehiheih eihihie Hheheiehi ehiheih eihihie Hheheiehi ehiheih eihihie Hheheiehi ehiheih eihihie Hheheiehi ehiheih eihihie Hheheiehi ehiheih eihihie Hheheiehi ehiheih eihihie Hheheiehi ehiheih eihihie
+      </p>
+      <img src={require(`./04.png`)} />
+      <img src={require(`./05.png`)} />
+    </Row>
   </Grid>
 )
 
