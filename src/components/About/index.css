@@ -10,7 +10,13 @@
 }
 
 .head {
-  background: linear-gradient(rgba(255,200,190,1), rgba(255,170,160,0.0));
+  background: linear-gradient(rgba(255,200,190,0), rgba(255,170,160,1));
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.h3 {
+  font-family: noto-sans;
+  weight: 400 ;
+  color: rgba(80,90,50,1);
 }

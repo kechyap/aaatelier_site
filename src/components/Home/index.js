@@ -16,8 +16,7 @@ const projects = [
     text: 'co-working and co-living space ',
     client: 'touch4good',
     venue: 'SETEC, Seoul',
-    color: 'rgba(255, 255, 255, 0.9)',
-    photos: ['01', '02', '03', '04', '05']
+    photos: ['01.png', '02.png', '03.png', '04.png', '05.png']
   },
   {
     folder: 'Pops',
@@ -26,8 +25,7 @@ const projects = [
     text: 'Private Owned Public Space',
     client: 'touch4good',
     venue: 'SETEC, Seoul',
-    color: 'rgba(255, 255, 255, 0.9)',
-    photos: ['01', '02', '03', '04']
+    photos: ['01.png', '02.png', '03.png', '04.png']
   },
   {
     folder: 'Grill',
@@ -36,8 +34,7 @@ const projects = [
     text: 'social issue, restaurant',
     client: 'touch4good',
     venue: 'SETEC, Seoul',
-    color: 'rgba(255, 255, 255, 0.9)',
-    photos: ['01', '02', '03', '04']
+    photos: ['01.png', '02.png', '03.png', '04.png']
   },
   {
     folder: 'Grill',
@@ -46,8 +43,7 @@ const projects = [
     text: 'social issue, restaurant',
     client: 'touch4good',
     venue: 'SETEC, Seoul',
-    color: 'rgba(255, 255, 255, 0.9)',
-    photos: ['01', '02', '03', '04']
+    photos: ['01.png', '02.png', '03.png', '04.png']
   },
   {
     folder: 'Upcycle',
@@ -56,14 +52,14 @@ const projects = [
     text: 'Upcycle network exhibition',
     client: 'touch4good',
     venue: 'SETEC, Seoul',
-    color: 'rgba(255, 255, 255, 0.9)',
-    photos: ['01', '02', '03']
+    photos: ['00.svg', '01.png', '02.png', '03.png', '06.svg', '07.svg', '08.svg', '09.svg', '10.svg']
   }
 ]
 
 const Home = () => (
   <div class='Home'>
     <div className='Front'>
+
       <Grid fluid>
         <Row>
           <Col xs={4} >
@@ -72,14 +68,15 @@ const Home = () => (
 
           <Col xs={8}>
             <div>
-              <h2 style={{marginTop: '1rem', color: 'rgba(255,200,190,1)'}}> AAAtelier </h2>
+              <h2 style={{marginTop: '0.5rem', color: 'rgba(255,200,190,1)'}}> AAAtelier </h2>
 
               <p style={{color: 'rgba(255,190,180,0.8)'}}>
                 Art and Architecture Atelier
               </p>
 
-              <p style={{display: 'top', color: 'rgba(255,170,160,1)', marginTop: '-0.3rem'}}>
-                Design Solution, Spatial Design Identity
+              <p style={{display: 'top', marginTop: '-0.4rem'}}>
+                Total Design Solution <br />
+                Spatial Identity Design
               </p>
 
             </div>
@@ -92,7 +89,7 @@ const Home = () => (
       {projects.map((project) =>
         <Row>
           <Col xs={12} md={4}>
-            <h4 style={{color: project.color}}>
+            <h4>
               {project.title}
             </h4>
             <p>
@@ -109,8 +106,7 @@ const Home = () => (
             <Row>
               {project.photos.map((photo) =>
                 <Col xs={12} sm={6}>
-                  <img src={require(`../${project.folder}/${photo}.png`)} />
-
+                  <img src={require(`../${project.folder}/${photo}`)} />
                   <br />
                   <br />
                 </Col>
