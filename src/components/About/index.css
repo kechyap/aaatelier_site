@@ -1,9 +1,16 @@
+/* TEXT
+1- rgba(255,200,190,1)
+2- rgba(255,190,180,0.8)
+3- rgba(255,170,160,1)
+*/
+
+
 .icon {
-  width: 2em;
+  width: 3em;
 }
 
 .head {
-  background: linear-gradient(var(--main-yellow) 40%, rgba(255,255,255,0));
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  background: linear-gradient(rgba(255,200,190,1), rgba(255,170,160,0.0));
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }

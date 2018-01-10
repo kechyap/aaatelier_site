@@ -6,14 +6,14 @@ const Upcycle = () => (
   <Grid fluid>
     <Row>
       <Col xs={12} md={4}>
-        <h1>Upcyle</h1>
+        <h1> Upcyle Network </h1>
       </Col>
       <Col xs={12} md={4}>
-        <p>Some text about project</p>
+        <p> Hand made fair 2017, winter </p>
       </Col>
       <Col xs={12} md={4}>
         <ul>
-          <li>Something</li>
+          <li>Exhibition for promoting enterpreneurs in the Upcycle industry </li>
           <li>Something</li>
           <li>Something</li>
         </ul>

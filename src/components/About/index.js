@@ -2,7 +2,7 @@ import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 import './index.css'
 
-import logo from '../../images/logo.svg'
+import logo_white from '../../images/logo_white.svg'
 import iconEmail from '../../images/icon_email.svg'
 import iconFacebook from '../../images/icon_facebook.svg'
 import iconInsta from '../../images/icon_insta.svg'
@@ -13,11 +13,11 @@ const About = () => (
     <Grid fluid>
       <Row>
         <Col xs={12} md={4}>
-          <img src={logo} style={{width: '5rem'}} />
+          <img src={logo_white} style={{width: '5rem'}} />
         </Col>
         <Col xs={12} md={8}>
           <h2>AAAtelier</h2>
-          <p>Art and Architecture Atelier</p>
+          <p style={{paddingBottom: '3rem'}}>Art and Architecture Atelier</p>
           <div>
             <h4>문제 해결.</h4>
             <p>급속한 도시화로 인한 문제 및 환경 문제, 사회 이슈들을 개선하기 위한 제안과 그에 따른 합리적인 디자인을 제안드립니다.</p>

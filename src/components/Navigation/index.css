@@ -1,25 +1,28 @@
+/*
+1- rgba(255,200,190,1)
+2- rgba(255,190,180,0.8)
+3- rgba(255,170,160,1)
+*/
+
+
 .navbar-wrapper,
 .navbar {
-  min-height: 2.6rem;
+  min-height: 1.5rem;
 }
 
 .navbar {
-  background: var(--main-yellow);
+  background: transparent;
   position: fixed;
-  top: 0;
+  text-align: right;
+  font-size: 0.9rem;
+  top: 0.7rem;
   left: 0;
-  right: 0;
+  right: 0.3rem;
 }
 
 .navbar a {
   vertical-align: middle;
   margin-right: 1rem;
   text-decoration: none;
-  color: white;
-}
-
-.simple_logo {
-  height: 1.5rem;
-  padding: 0.5rem;
-  vertical-align: middle;
+  color: rgba(255,170,160,0.8);
 }
