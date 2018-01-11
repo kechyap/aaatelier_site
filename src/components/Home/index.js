@@ -9,42 +9,42 @@ import iconInsta from '../../images/icon_insta.svg'
 import iconKakao from '../../images/icon_kakao.svg'
 
 const projects = [
-  {
-    folder: 'Seam',
-    date: 'february 2018',
-    title: 'SEAM CENTER',
-    text: 'co-working and co-living space ',
-    client: 'touch4good',
-    venue: 'SETEC, Seoul',
-    photos: ['01.png', '02.png', '03.png', '04.png', '05.png']
-  },
-  {
-    folder: 'Pops',
-    date: '2017',
-    title: 'P O P S FORUM',
-    text: 'Private Owned Public Space',
-    client: 'touch4good',
-    venue: 'SETEC, Seoul',
-    photos: ['01.png', '02.png', '03.png', '04.png']
-  },
-  {
-    folder: 'Grill',
-    date: 'august 2017',
-    title: 'GRILL BAG',
-    text: 'social issue, restaurant',
-    client: 'touch4good',
-    venue: 'SETEC, Seoul',
-    photos: ['01.png', '02.png', '03.png', '04.png']
-  },
-  {
-    folder: 'Grill',
-    date: 'august 2017',
-    title: 'GRILL BAG',
-    text: 'social issue, restaurant',
-    client: 'touch4good',
-    venue: 'SETEC, Seoul',
-    photos: ['01.png', '02.png', '03.png', '04.png']
-  },
+  // {
+  //   folder: 'Seam',
+  //   date: 'february 2018',
+  //   title: 'SEAM CENTER',
+  //   text: 'co-working and co-living space ',
+  //   client: 'touch4good',
+  //   venue: 'SETEC, Seoul',
+  //   photos: ['01.png', '02.png', '03.png', '04.png', '05.png']
+  // },
+  // {
+  //   folder: 'Pops',
+  //   date: '2017',
+  //   title: 'P O P S FORUM',
+  //   text: 'Private Owned Public Space',
+  //   client: 'touch4good',
+  //   venue: 'SETEC, Seoul',
+  //   photos: ['01.png', '02.png', '03.png', '04.png']
+  // },
+  // {
+  //   folder: 'Grill',
+  //   date: 'august 2017',
+  //   title: 'GRILL BAG',
+  //   text: 'social issue, restaurant',
+  //   client: 'touch4good',
+  //   venue: 'SETEC, Seoul',
+  //   photos: ['01.png', '02.png', '03.png', '04.png']
+  // },
+  // {
+  //   folder: 'Grill',
+  //   date: 'august 2017',
+  //   title: 'GRILL BAG',
+  //   text: 'social issue, restaurant',
+  //   client: 'touch4good',
+  //   venue: 'SETEC, Seoul',
+  //   photos: ['01.png', '02.png', '03.png', '04.png']
+  // },
   {
     folder: 'Upcycle',
     date: 'December 2017',
@@ -52,7 +52,17 @@ const projects = [
     text: 'Upcycle network exhibition',
     client: 'touch4good',
     venue: 'SETEC, Seoul',
-    photos: ['00.svg', '01.png', '02.png', '03.png', '06.svg', '07.svg', '08.svg', '09.svg', '10.svg']
+    photos: [
+      { filename: '00.svg', break: { xs: 12, sm: 8, md: 8, lg: 4, xl: 3 } },
+      { filename: '01.png', break: { xs: 12, sm: 4, md: 8, lg: 4, xl: 3 } },
+      { filename: '02.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
+      { filename: '03.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
+      { filename: '06.svg', break: { xs: 12, sm: 12, md: 8, lg: 4, xl: 3 } },
+      { filename: '07.svg', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
+      { filename: '08.svg', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
+      { filename: '09.svg', break: { xs: 12, sm: 4, md: 8, lg: 4, xl: 3 } },
+      { filename: '10.svg', break: { xs: 12, sm: 8, md: 8, lg: 4, xl: 3 } }
+    ]
   }
 ]
 
@@ -88,7 +98,7 @@ const Home = () => (
     <Grid fluid>
       {projects.map((project) =>
         <Row>
-          <Col xs={12} md={4}>
+          <Col xs={12} md={3} style={{margin: '0', padding: '0'}}>
             <h4>
               {project.title}
             </h4>
@@ -102,13 +112,11 @@ const Home = () => (
             </p>
           </Col>
 
-          <Col xs={12} md={8}>
+          <Col xs={12} md={9} style={{padding: '0'}}>
             <Row>
               {project.photos.map((photo) =>
-                <Col xs={12} sm={6}>
-                  <img src={require(`../${project.folder}/${photo}`)} />
-                  <br />
-                  <br />
+                <Col xs={photo.break.xs} sm={photo.break.sm} md={photo.break.md} lg={photo.break.lg} xl={photo.break.xl} style={{padding: '0'}}>
+                  <img src={require(`../${project.folder}/${photo.filename}`)} /> <br />
                 </Col>
             )}
             </Row>

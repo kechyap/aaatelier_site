@@ -2,13 +2,13 @@
 
 
 .Front {
-  height: 11rem ;
+  height: 12rem ;
   padding-top: 4rem ;
   padding-bottom: 1rem ;
-  background: linear-gradient(rgba(40,40,100,0.9) 5%, rgba(165,99,133,0.6) 70%, rgba(165,99,133,0) 100%) ;
+  background: linear-gradient(rgba(55,45,90,0.9) 5%, rgba(165,100,130,0.5) 70%, rgba(165,100,130,0) 100%) ;
 }
 
 .Home {
-background-color: rgba(100,105,130,0.9);
+background-color: rgba(70,65,75,0.9);
 
 }

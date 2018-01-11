@@ -14,11 +14,14 @@ body {
   background-color: var(--pink1);
   color: white;
   margin: 0;
+  padding: 0;
 }
 
 img {
   max-width: 100%;
   shape-outside: padding-box;
+  margin: 0;
+  padding: 0;
   height: auto;
 }
 
