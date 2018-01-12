@@ -9,42 +9,63 @@ import iconInsta from '../../images/icon_insta.svg'
 import iconKakao from '../../images/icon_kakao.svg'
 
 const projects = [
-  // {
-  //   folder: 'Seam',
-  //   date: 'february 2018',
-  //   title: 'SEAM CENTER',
-  //   text: 'co-working and co-living space ',
-  //   client: 'touch4good',
-  //   venue: 'SETEC, Seoul',
-  //   photos: ['01.png', '02.png', '03.png', '04.png', '05.png']
-  // },
-  // {
-  //   folder: 'Pops',
-  //   date: '2017',
-  //   title: 'P O P S FORUM',
-  //   text: 'Private Owned Public Space',
-  //   client: 'touch4good',
-  //   venue: 'SETEC, Seoul',
-  //   photos: ['01.png', '02.png', '03.png', '04.png']
-  // },
-  // {
-  //   folder: 'Grill',
-  //   date: 'august 2017',
-  //   title: 'GRILL BAG',
-  //   text: 'social issue, restaurant',
-  //   client: 'touch4good',
-  //   venue: 'SETEC, Seoul',
-  //   photos: ['01.png', '02.png', '03.png', '04.png']
-  // },
-  // {
-  //   folder: 'Grill',
-  //   date: 'august 2017',
-  //   title: 'GRILL BAG',
-  //   text: 'social issue, restaurant',
-  //   client: 'touch4good',
-  //   venue: 'SETEC, Seoul',
-  //   photos: ['01.png', '02.png', '03.png', '04.png']
-  // },
+  {
+    folder: 'Seam',
+    date: 'february 2018',
+    title: 'SEAM CENTER',
+    text: 'co-working and co-living space ',
+    client: 'touch4good',
+    venue: 'SETEC, Seoul',
+    photos: [
+      { filename: '01.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
+      { filename: '02.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
+      { filename: '03.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
+      { filename: '04.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
+      { filename: '05.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } }
+    ]
+  },
+  {
+    folder: 'Pops',
+    date: '2017',
+    title: 'P O P S FORUM',
+    text: 'Private Owned Public Space',
+    client: 'touch4good',
+    venue: 'SETEC, Seoul',
+    photos: [
+      { filename: '01.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
+      { filename: '02.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
+      { filename: '03.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
+      { filename: '04.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } }
+    ]
+  },
+  {
+    folder: 'Grill',
+    date: 'august 2017',
+    title: 'GRILL BAG',
+    text: 'social issue, restaurant',
+    client: 'touch4good',
+    venue: 'SETEC, Seoul',
+    photos: [
+      { filename: '01.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
+      { filename: '02.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
+      { filename: '03.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
+      { filename: '04.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } }
+    ]
+  },
+  {
+    folder: 'Grill',
+    date: 'august 2017',
+    title: 'GRILL BAG',
+    text: 'social issue, restaurant',
+    client: 'touch4good',
+    venue: 'SETEC, Seoul',
+    photos: [
+      { filename: '01.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
+      { filename: '02.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
+      { filename: '03.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
+      { filename: '04.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } }
+    ]
+  },
   {
     folder: 'Upcycle',
     date: 'December 2017',
@@ -53,15 +74,14 @@ const projects = [
     client: 'touch4good',
     venue: 'SETEC, Seoul',
     photos: [
-      { filename: '00.svg', break: { xs: 12, sm: 8, md: 8, lg: 4, xl: 3 } },
-      { filename: '01.png', break: { xs: 12, sm: 4, md: 8, lg: 4, xl: 3 } },
-      { filename: '02.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
-      { filename: '03.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
-      { filename: '06.svg', break: { xs: 12, sm: 12, md: 8, lg: 4, xl: 3 } },
-      { filename: '07.svg', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
-      { filename: '08.svg', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
-      { filename: '09.svg', break: { xs: 12, sm: 4, md: 8, lg: 4, xl: 3 } },
-      { filename: '10.svg', break: { xs: 12, sm: 8, md: 8, lg: 4, xl: 3 } }
+      { filename: '00.png', break: { xs: 12, sm: 6, md: 6, lg: 6, xl: 5 } },
+      { filename: '10.png', break: { xs: 12, sm: 6, md: 6, lg: 6, xl: 5 } },
+      { filename: '01.png', break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
+      { filename: '02.png', break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
+      { filename: '03.png', break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
+      { filename: '06.svg', break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
+      { filename: '07.svg', break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
+      { filename: '08.svg', break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } }
     ]
   }
 ]
@@ -98,25 +118,29 @@ const Home = () => (
     <Grid fluid>
       {projects.map((project) =>
         <Row>
-          <Col xs={12} md={3} style={{margin: '0', padding: '0'}}>
-            <h4>
+          <Col xs={12} md={4} xl={3} style={{padding: '0'}}>
+            <h3 style={{paddingLeft: '1rem', paddingTop: '2rem', marginBottom: '0.5rem'}}>
               {project.title}
-            </h4>
-            <p>
-            client - {project.client}
-              <br />
-            venue - {project.venue}
-            </p>
-            <p>
+            </h3>
+
+            <p style={{paddingLeft: '1rem', marginTop: '-0.2rem'}}>
               {project.text}
             </p>
+
+            <hr style={{margin: '0.5rem'}} />
+            <ul style={{paddingLeft: '2rem'}}>
+              <li> Client - {project.client} </li>
+              <li> Venue - {project.venue} </li>
+            </ul>
+
           </Col>
 
-          <Col xs={12} md={9} style={{padding: '0'}}>
+          <Col xs={12} md={8} xl={9} style={{paddingTop: '3rem'}}>
             <Row>
               {project.photos.map((photo) =>
-                <Col xs={photo.break.xs} sm={photo.break.sm} md={photo.break.md} lg={photo.break.lg} xl={photo.break.xl} style={{padding: '0'}}>
-                  <img src={require(`../${project.folder}/${photo.filename}`)} /> <br />
+                <Col xs={photo.break.xs} sm={photo.break.sm} md={photo.break.md} lg={photo.break.lg} xl={photo.break.xl}
+                  style={{padding: '0.1rem'}}>
+                  <img src={require(`../${project.folder}/${photo.filename}`)} />
                 </Col>
             )}
             </Row>

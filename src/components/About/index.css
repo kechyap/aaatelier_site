@@ -11,12 +11,16 @@
 
 .head {
   background: linear-gradient(rgba(255,200,190,0), rgba(255,170,160,1));
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
 }
 
 .h3 {
   font-family: noto-sans;
   weight: 400 ;
   color: rgba(80,90,50,1);
+}
+
+.icon {
+  padding-top: 2rem;
 }
