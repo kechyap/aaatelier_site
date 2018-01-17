@@ -11,10 +11,11 @@ import iconKakao from '../../images/icon_kakao.svg'
 const projects = [
   {
     folder: 'Seam',
-    date: 'february 2018',
+    date: 'february 2017',
     title: 'SEAM CENTER',
     text: 'co-working and co-living space ',
     client: 'touch4good',
+    link: 'www.google.com',
     venue: 'SETEC, Seoul',
     photos: [
       { filename: '01.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
@@ -30,12 +31,13 @@ const projects = [
     title: 'P O P S FORUM',
     text: 'Private Owned Public Space',
     client: 'touch4good',
+    link: 'www.google.com',
     venue: 'SETEC, Seoul',
     photos: [
-      { filename: '01.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
-      { filename: '02.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
-      { filename: '03.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
-      { filename: '04.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } }
+      { filename: '01.png', break: { xs: 12, sm: 6, md: 6, lg: 6, xl: 5 } },
+      { filename: '02.png', break: { xs: 12, sm: 6, md: 6, lg: 6, xl: 10 } },
+      { filename: '03.png', break: { xs: 12, sm: 6, md: 6, lg: 6, xl: 5 } },
+      { filename: '04.png', break: { xs: 12, sm: 6, md: 6, lg: 6, xl: 5 } }
     ]
   },
   {
@@ -43,35 +45,29 @@ const projects = [
     date: 'august 2017',
     title: 'GRILL BAG',
     text: 'social issue, restaurant',
-    client: 'touch4good',
-    venue: 'SETEC, Seoul',
+    client: 'MYSC',
+    link: 'www.google.com',
+    venue: 'Seoungsu, Seoul',
     photos: [
-      { filename: '01.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
-      { filename: '02.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
-      { filename: '03.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
-      { filename: '04.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } }
+      { filename: '01.png', break: { xs: 12, sm: 6, md: 6, lg: 6, xl: 5 } },
+      { filename: '02.png', break: { xs: 12, sm: 6, md: 6, lg: 6, xl: 5 } },
+      { filename: '06.png', break: { xs: 12, sm: 6, md: 6, lg: 6, xl: 5 } },
+      { filename: '07.png', break: { xs: 12, sm: 6, md: 6, lg: 6, xl: 5 } },
+
+      { filename: '05.png', break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
+      { filename: '03.png', break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
+      { filename: '04.png', break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
+      { filename: '08.png', break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } }
     ]
   },
-  {
-    folder: 'Grill',
-    date: 'august 2017',
-    title: 'GRILL BAG',
-    text: 'social issue, restaurant',
-    client: 'touch4good',
-    venue: 'SETEC, Seoul',
-    photos: [
-      { filename: '01.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
-      { filename: '02.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
-      { filename: '03.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
-      { filename: '04.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } }
-    ]
-  },
+
   {
     folder: 'Upcycle',
     date: 'December 2017',
     title: 'Upcycle Exhibition',
     text: 'Upcycle network exhibition',
     client: 'touch4good',
+    link: 'www.google.com',
     venue: 'SETEC, Seoul',
     photos: [
       { filename: '00.png', break: { xs: 12, sm: 6, md: 6, lg: 6, xl: 5 } },
@@ -129,7 +125,11 @@ const Home = () => (
 
             <hr style={{margin: '0.5rem'}} />
             <ul style={{paddingLeft: '2rem'}}>
-              <li> Client - {project.client} </li>
+
+              <a href={project.link}>
+                <li> Client - {project.client} </li>
+              </a>
+
               <li> Venue - {project.venue} </li>
             </ul>
 
@@ -139,7 +139,7 @@ const Home = () => (
             <Row>
               {project.photos.map((photo) =>
                 <Col xs={photo.break.xs} sm={photo.break.sm} md={photo.break.md} lg={photo.break.lg} xl={photo.break.xl}
-                  style={{padding: '0.1rem'}}>
+                  style={{paddingBottom: '1px', paddingRight: '1px'}}>
                   <img src={require(`../${project.folder}/${photo.filename}`)} />
                 </Col>
             )}
