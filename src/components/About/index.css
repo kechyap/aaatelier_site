@@ -18,11 +18,11 @@
 .h3 {
   font-family: noto-sans;
   weight: 400 ;
-  color: rgba(80,90,50,1);
+  color: rgba(50,90,50,1);
 }
 
 .icon {
-  size: 2rem; 
+  size: 2rem;
   padding-top: 2rem;
 
 }

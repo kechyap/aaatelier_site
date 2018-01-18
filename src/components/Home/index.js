@@ -14,28 +14,28 @@ const projects = [
     date: 'february 2017',
     title: 'SEAM CENTER',
     text: 'co-working and co-living space ',
-    client: 'touch4good',
-    link: 'www.google.com',
+    client: '더작은재단',
+    link: 'seam.center',
     venue: 'SETEC, Seoul',
     photos: [
-      { filename: '01.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
-      { filename: '02.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
-      { filename: '03.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
-      { filename: '04.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } },
-      { filename: '05.png', break: { xs: 12, sm: 6, md: 8, lg: 4, xl: 3 } }
+      { filename: '01.png', break: { xs: 12, sm: 12, md: 6, lg: 6, xl: 5 } },
+      { filename: '02.png', break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
+      { filename: '03.png', break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
+      { filename: '04.png', break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
+      { filename: '05.png', break: { xs: 12, sm: 6, md: 6, lg: 6, xl: 5 } }
     ]
   },
   {
     folder: 'Pops',
     date: '2017',
-    title: 'P O P S FORUM',
+    title: 'P.O.P.S FORUM',
     text: 'Private Owned Public Space',
     client: 'touch4good',
     link: 'www.google.com',
     venue: 'SETEC, Seoul',
     photos: [
       { filename: '01.png', break: { xs: 12, sm: 6, md: 6, lg: 6, xl: 5 } },
-      { filename: '02.png', break: { xs: 12, sm: 6, md: 6, lg: 6, xl: 10 } },
+      { filename: '02.png', break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
       { filename: '03.png', break: { xs: 12, sm: 6, md: 6, lg: 6, xl: 5 } },
       { filename: '04.png', break: { xs: 12, sm: 6, md: 6, lg: 6, xl: 5 } }
     ]
@@ -46,14 +46,13 @@ const projects = [
     title: 'GRILL BAG',
     text: 'social issue, restaurant',
     client: 'MYSC',
-    link: 'www.google.com',
+    link: 'mysc.co.kr',
     venue: 'Seoungsu, Seoul',
     photos: [
       { filename: '01.png', break: { xs: 12, sm: 6, md: 6, lg: 6, xl: 5 } },
       { filename: '02.png', break: { xs: 12, sm: 6, md: 6, lg: 6, xl: 5 } },
       { filename: '06.png', break: { xs: 12, sm: 6, md: 6, lg: 6, xl: 5 } },
       { filename: '07.png', break: { xs: 12, sm: 6, md: 6, lg: 6, xl: 5 } },
-
       { filename: '05.png', break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
       { filename: '03.png', break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
       { filename: '04.png', break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
@@ -139,7 +138,7 @@ const Home = () => (
             <Row>
               {project.photos.map((photo) =>
                 <Col xs={photo.break.xs} sm={photo.break.sm} md={photo.break.md} lg={photo.break.lg} xl={photo.break.xl}
-                  style={{paddingBottom: '1px', paddingRight: '1px'}}>
+                  style={{padding: '0', margin: '0'}}>
                   <img src={require(`../${project.folder}/${photo.filename}`)} />
                 </Col>
             )}

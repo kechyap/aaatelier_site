@@ -21,7 +21,7 @@ img {
   max-width: 100%;
   shape-outside: padding-box;
   margin: 0;
-  padding: 0rem;
+  padding: 0;
   height: auto;
 }
 
@@ -36,7 +36,14 @@ h2 {
   margin-bottom: -0.6rem;
 }
 
-h3, h4 {
+
+h3 {
+  font-weight: 400;
+  color: var(--pink1);
+}
+
+
+h4 {
   font-weight: 400;
   color: var(--pink1);
 }
