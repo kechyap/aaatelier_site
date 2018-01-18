@@ -88,18 +88,18 @@ const Home = () => (
       <Grid fluid>
         <Row>
           <Col xs={4} >
-            <img src={logo_pink} style={{width: '5.5rem', margin: '1rem'}} />
+            <img src={logo_pink} style={{width: '6rem', margin: '1rem'}} />
           </Col>
 
           <Col xs={8}>
             <div>
-              <h2 style={{marginTop: '0.5rem', color: 'rgba(255,200,190,1)'}}> AAAtelier </h2>
+              <h2 style={{marginTop: '0.7rem', color: 'rgba(255,200,190,1)'}}> AAAtelier </h2>
 
               <p style={{color: 'rgba(255,190,180,0.8)'}}>
                 Art and Architecture Atelier
               </p>
 
-              <p style={{display: 'top', marginTop: '-0.4rem'}}>
+              <p style={{color: 'rgba(220, 160, 150, 1)', display: 'top'}}>
                 Total Design Solution <br />
                 Spatial Identity Design
               </p>
@@ -134,7 +134,7 @@ const Home = () => (
 
           </Col>
 
-          <Col xs={12} md={8} xl={9} style={{paddingTop: '3rem'}}>
+          <Col xs={12} md={8} xl={9}>
             <Row>
               {project.photos.map((photo) =>
                 <Col xs={photo.break.xs} sm={photo.break.sm} md={photo.break.md} lg={photo.break.lg} xl={photo.break.xl}

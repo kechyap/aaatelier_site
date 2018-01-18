@@ -10,19 +10,24 @@
 }
 
 .head {
-  background: linear-gradient(rgba(255,200,190,0), rgba(255,170,160,1));
-  padding-top: 5rem;
+  height: 70rem;
+  background: linear-gradient( rgba(90,70,80,1) 10%, rgba(140,110,120,0.7) 70%, rgba(230,170,180,0) 100%);
+  padding-top: 4rem;
   padding-bottom: 10rem;
 }
 
-.h3 {
+.intro.h4 {
   font-family: noto-sans;
-  weight: 400 ;
+  padding-top: 3rem;
+  weight: 600 ;
   color: rgba(50,90,50,1);
+}
+
+.intro.p {
+  color: withe;
 }
 
 .icon {
   size: 2rem;
-  padding-top: 2rem;
-
+  padding-top: 10rem;
 }
