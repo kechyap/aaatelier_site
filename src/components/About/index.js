@@ -2,35 +2,33 @@ import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 import './index.css'
 
-import logo_white from '../../images/logo_white.svg'
+import logoWhite from '../../images/logo_white.svg'
 import iconEmail from '../../images/icon_email.svg'
 import iconFacebook from '../../images/icon_facebook.svg'
 import iconInsta from '../../images/icon_insta.svg'
 import iconKakao from '../../images/icon_kakao.svg'
 
 const About = () => (
-  <div class='head'>
+  <div className='About'>
     <Grid fluid>
 
       <Row>
         <Col xs={12} md={4}>
-          <img src={logo_white} style={{width: '5rem'}} />
+          <img src={logoWhite} style={{width: '5rem'}} />
         </Col>
 
         <Col xs={12} md={8}>
           <h2>AAAtelier</h2>
-          <p style={{paddingBottom: '3rem'}}>Art and Architecture Atelier</p>
+          <p>Art and Architecture Atelier</p>
 
-          <div className='intro'>
-            <h3 style={{paddingTop: '3rem'}}> Social Issue </h3>
-            <p>급속한 도시화로 인한 문제 및 환경 문제, 사회 이슈들을 개선하기 위한 제안과 그에 따른 합리적인 디자인을 제안드립니다.</p>
+          <h3> Social Issue </h3>
+          <p>급속한 도시화로 인한 문제 및 환경 문제, 사회 이슈들을 개선하기 위한 제안과 그에 따른 합리적인 디자인을 제안드립니다.</p>
 
-            <h3 style={{paddingTop: '3rem'}}> Community Space </h3>
-            <p>크리에이티브한 창작자들을 위한 쉐어 하우스, 코워킹 스페이스, 창작자 마을을 구축하기 위한 커뮤니티 공유 공간을 제안 드립니다.</p>
+          <h3> Community Space </h3>
+          <p>크리에이티브한 창작자들을 위한 쉐어 하우스, 코워킹 스페이스, 창작자 마을을 구축하기 위한 커뮤니티 공유 공간을 제안 드립니다.</p>
 
-            <h3 style={{paddingTop: '3rem'}}> Total Design Solution </h3>
-            <p>도시, 건축, 인테리어, 가구, 소품, 그래픽 디자인을 통합하여 다양한 스케일에서 일관된 해결책을 찾고자 하는 Art and Architecture Atelier입니다.</p>
-          </div>
+          <h3> Total Design Solution </h3>
+          <p>도시, 건축, 인테리어, 가구, 소품, 그래픽 디자인을 통합하여 다양한 스케일에서 일관된 해결책을 찾고자 하는 Art and Architecture Atelier입니다.</p>
         </Col>
       </Row>
 

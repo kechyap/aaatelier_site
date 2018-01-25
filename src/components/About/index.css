@@ -1,33 +1,26 @@
-/* TEXT
-1- rgba(255,200,190,1)
-2- rgba(255,190,180,0.8)
-3- rgba(255,170,160,1)
-*/
-
-
 .icon {
   width: 3em;
 }
 
-.head {
+.About {
   height: 70rem;
-  background: linear-gradient( rgba(90,70,80,1) 10%, rgba(140,110,120,0.7) 70%, rgba(230,170,180,0) 100%);
+  background: linear-gradient( rgba(255,120,140,1) 10%, rgba(255,180,190,0.7) 70%, rgba(230,170,180,0) 100%);
   padding-top: 4rem;
   padding-bottom: 10rem;
 }
 
-.intro.h4 {
-  font-family: noto-sans;
+.About h4 {
+  font-family: 'Titillium Web', 'Noto Sans KR', sans-serif ;
   padding-top: 3rem;
   weight: 600 ;
   color: rgba(50,90,50,1);
 }
 
-.intro.p {
-  color: withe;
+.About p {
+  color: var(--pink1)
 }
 
-.icon {
+.About .icon {
   size: 2rem;
   padding-top: 10rem;
 }
