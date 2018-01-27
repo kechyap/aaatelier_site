@@ -14,7 +14,9 @@ const About = () => (
 
       <Row>
         <Col xs={12} md={4}>
-          <img src={logoWhite} style={{width: '5rem'}} />
+          <div className='logo'>
+            <img src={logoWhite} />
+          </div>
         </Col>
 
         <Col xs={12} md={8}>
@@ -45,6 +47,12 @@ const About = () => (
             <img src={iconInsta} className='icon' />
           </a>
           <img src={iconKakao} className='icon' />
+
+          <hr style={{paddingTop: '15rem'}} />
+          <div className='ending'>
+            <p>Contact AAAtelier. aaatelier@ejay.kim</p>
+
+          </div>
         </Col>
       </Row>
     </Grid>
