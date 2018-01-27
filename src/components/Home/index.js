@@ -8,6 +8,8 @@ import iconFacebook from '../../images/icon_facebook.svg'
 import iconInsta from '../../images/icon_insta.svg'
 import iconKakao from '../../images/icon_kakao.svg'
 
+import grillImage from '../Grill/00.png'
+
 const projects = [
 
   {
@@ -145,11 +147,23 @@ const Home = () => (
                   xs={photo.break.xs}
                   sm={photo.break.sm}
                   xl={photo.break.xl}>
-                  {photo.filename == 'notAnImage' ? (
-                    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="40" viewBox="0 0 500 40">
-                      <text x="0" y="35" font-family="Verdana" font-size="35">
-                        I AM SVG OMG YAY
-                      </text>
+                  {photo.filename === 'notAnImage' ? (
+                    <svg viewBox='0 0 1800 994' xmlns='http://www.w3.org/2000/svg'>
+                      <image xlinkHref={grillImage} height='994' width='1800' />
+                      <g transform='translate(590 86)'>
+                        <circle className='st2' r='3'>
+                          <animateTransform
+                            attributeType='xml'
+                            attributeName='transform'
+                            type='scale'
+                            from='0'
+                            to='50'
+                            begin='0s'
+                            dur='1s'
+                            repeatCount='indefinite'
+                          />
+                        </circle>
+                      </g>
                     </svg>
                   ) : (
                     <img src={require(`../${project.folder}/${photo.filename}`)} />
