@@ -19,7 +19,7 @@ const projects = [
     link: 'mysc.co.kr',
     venue: 'Seoungsu, Seoul',
     photos: [
-      { filename: '00.svg', break: { xs: 12, sm: 12, xl: 10 } },
+      { filename: 'notAnImage', break: { xs: 12, sm: 6, xl: 5 } },
       { filename: '01.png', break: { xs: 12, sm: 6, xl: 5 } },
       { filename: '02.png', break: { xs: 12, sm: 6, xl: 5 } },
       { filename: '06.png', break: { xs: 12, sm: 6, xl: 5 } },
@@ -145,7 +145,15 @@ const Home = () => (
                   xs={photo.break.xs}
                   sm={photo.break.sm}
                   xl={photo.break.xl}>
-                  <img src={require(`../${project.folder}/${photo.filename}`)} />
+                  {photo.filename == 'notAnImage' ? (
+                    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="40" viewBox="0 0 500 40">
+                      <text x="0" y="35" font-family="Verdana" font-size="35">
+                        I AM SVG OMG YAY
+                      </text>
+                    </svg>
+                  ) : (
+                    <img src={require(`../${project.folder}/${photo.filename}`)} />
+                  )}
                 </Col>
             )}
             </Row>
