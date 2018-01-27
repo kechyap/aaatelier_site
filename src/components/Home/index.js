@@ -21,7 +21,7 @@ const projects = [
     link: 'mysc.co.kr',
     venue: 'Seoungsu, Seoul',
     photos: [
-      { filename: 'notAnImage', break: { xs: 12, sm: 6, xl: 5 } },
+      { filename: 'notAnImage', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '01.png', break: { xs: 12, sm: 6, xl: 5 } },
       { filename: '02.png', break: { xs: 12, sm: 6, xl: 5 } },
       { filename: '06.png', break: { xs: 12, sm: 6, xl: 5 } },
@@ -32,8 +32,8 @@ const projects = [
       { filename: '08.png', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '09.png', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '10.png', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '11.png', break: { xs: 12, sm: 12, xl: 5 } },
-      { filename: '12.png', break: { xs: 12, sm: 12, xl: 5 } }
+      { filename: '11.png', break: { xs: 12, sm: 12, xl: 10 } },
+      { filename: '12.png', break: { xs: 12, sm: 12, xl: 10 } }
     ]
   },
 
@@ -66,10 +66,11 @@ const projects = [
     link: 'www.google.com',
     venue: 'SETEC, Seoul',
     photos: [
-      { filename: '01.png', break: { xs: 12, sm: 6, xl: 5 } },
+
       { filename: '02.png', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '03.png', break: { xs: 12, sm: 6, xl: 5 } },
-      { filename: '04.png', break: { xs: 12, sm: 6, xl: 5 } }
+      { filename: '04.png', break: { xs: 12, sm: 6, xl: 5 } },
+      { filename: '01.png', break: { xs: 12, sm: 6, xl: 5 } }
     ]
   },
 
@@ -82,7 +83,7 @@ const projects = [
     link: 'seam.center',
     venue: 'SETEC, Seoul',
     photos: [
-      { filename: '01.png', break: { xs: 12, sm: 12, xl: 5 } },
+      { filename: '01.png', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '02.png', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '03.png', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '04.png', break: { xs: 12, sm: 12, xl: 10 } },
@@ -150,14 +151,14 @@ const Home = () => (
                   {photo.filename === 'notAnImage' ? (
                     <svg viewBox='0 0 1800 994' xmlns='http://www.w3.org/2000/svg'>
                       <image xlinkHref={grillImage} height='994' width='1800' />
-                      <g transform='translate(590 86)'>
-                        <circle className='st2' r='3'>
+                      <g transform='translate(1395 382)'>
+                        <circle className='st2' r='1' style={{color: 'rgba(255,255,255,0.1)'}}>
                           <animateTransform
                             attributeType='xml'
                             attributeName='transform'
                             type='scale'
                             from='0'
-                            to='50'
+                            to='60'
                             begin='0s'
                             dur='1s'
                             repeatCount='indefinite'
