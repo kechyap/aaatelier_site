@@ -25,7 +25,7 @@
 
 .Home h3 {
   font-weight: 400;
-  color: var(--pink1);
+  color: var(--pink4);
   padding-left: 1rem ;
   padding-top:  1rem ;
   margin-bottom: 0.5rem;
@@ -43,25 +43,9 @@
  }
 
 hr {
-   margin: 0.5 ;
+   margin-right: 1rem ;
 }
 
 ul {
    padding-left: 1rem;
 }
-
-
-/*
-.Front {
-  height: 12rem ;
-  padding-top: 4rem ;
-  padding-bottom: 1rem ;
-  background: linear-gradient(rgba(55,45,90,0.9) 5%, rgba(165,100,130,0.5) 70%, rgba(165,100,130,0) 100%) ;
-}
-
-.Home {
-background-color: rgba(70,65,75,0.9);
-
-}
-
-*/

@@ -20,6 +20,7 @@ const projects = [
     venue: 'Seoungsu, Seoul',
     photos: [
       { filename: 'notAnImage', break: { xs: 12, sm: 6, xl: 5 } },
+      { filename: '01.png', break: { xs: 12, sm: 6, xl: 5 } },
       { filename: '02.png', break: { xs: 12, sm: 6, xl: 5 } },
       { filename: '06.png', break: { xs: 12, sm: 6, xl: 5 } },
       { filename: '07.png', break: { xs: 12, sm: 6, xl: 5 } },
@@ -27,7 +28,10 @@ const projects = [
       { filename: '03.png', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '04.png', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '08.png', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '09.svg', break: { xs: 12, sm: 12, xl: 10 } }
+      { filename: '09.png', break: { xs: 12, sm: 12, xl: 10 } },
+      { filename: '10.png', break: { xs: 12, sm: 12, xl: 10 } },
+      { filename: '11.png', break: { xs: 12, sm: 12, xl: 5 } },
+      { filename: '12.png', break: { xs: 12, sm: 12, xl: 5 } }
     ]
   },
 
@@ -76,7 +80,7 @@ const projects = [
     link: 'seam.center',
     venue: 'SETEC, Seoul',
     photos: [
-      { filename: '01.png', break: { xs: 12, sm: 6, xl: 5 } },
+      { filename: '01.png', break: { xs: 12, sm: 12, xl: 5 } },
       { filename: '02.png', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '03.png', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '04.png', break: { xs: 12, sm: 12, xl: 10 } },

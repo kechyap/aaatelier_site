@@ -5,7 +5,8 @@ html {
 
   --pink1: rgba(255,230,225,1);
   --pink2: rgba(255,190,180,0.8);
-  --pink3: rgba(170,150,150,1);
+  --pink3: rgba(200,150,150,1);
+  --pink4: rgba(190,110,110,1);
 }
 
 body {
@@ -19,7 +20,7 @@ body {
 
 @media (min-width: 1000px) {
   body {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
@@ -31,7 +32,6 @@ img {
 hr {
   border: none;
   border-bottom: 1px solid var(--pink3);
-  margin: 0;
 }
 
 h2 {
