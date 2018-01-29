@@ -13,15 +13,24 @@ import grillImage from '../Grill/00.png'
 const projects = [
 
   {
-    folder: 'Grill',
-    date: 'august 2017',
-    title: 'GRILL BAG',
-    text: 'social issue, restaurant',
-    client: 'MYSC',
-    link: 'mysc.co.kr',
-    venue: 'Seoungsu, Seoul',
+    Folder: 'Grill',
+    Date: 'October 2017',
+    Title: 'Grill Bag',
+    Text: 'social inovation business, restaurant',
+
+    Venue: 'Seoungsu, Seoul',
+    DesignPlanning: 'AAAtelier',
+    Construction: 'AAAtelier',
+    Signage: 'AAAtelier',
+    Photograph: 'AAAtelier',
+    Client: 'MYSC',
+    ClientLink: 'mysc.co.kr',
+    ProjectLink: 'www.instagram.com/grillbag',
+
     photos: [
+      { filename: 'menuU.svg', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: 'notAnImage', break: { xs: 12, sm: 12, xl: 10 } },
+      { filename: 'menuP.svg', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '01.png', break: { xs: 12, sm: 6, xl: 5 } },
       { filename: '02.png', break: { xs: 12, sm: 6, xl: 5 } },
       { filename: '06.png', break: { xs: 12, sm: 6, xl: 5 } },
@@ -30,21 +39,26 @@ const projects = [
       { filename: '03.png', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '04.png', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '08.png', break: { xs: 12, sm: 12, xl: 10 } },
+      { filename: 'menuD.svg', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '09.png', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '10.png', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '11.png', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '12.png', break: { xs: 12, sm: 12, xl: 10 } }
+      { filename: '12.png', break: { xs: 12, sm: 12, xl: 10 } },
+      { filename: 'menuS.svg', break: { xs: 12, sm: 12, xl: 10 } },
+      { filename: '13.png', break: { xs: 12, sm: 12, xl: 10 } },
+      { filename: '14.png', break: { xs: 12, sm: 12, xl: 10 } }
     ]
   },
 
   {
-    folder: 'Upcycle',
-    date: 'December 2017',
-    title: 'Upcycle Exhibition',
-    text: 'Upcycle network exhibition',
-    client: 'touch4good',
-    link: 'www.google.com',
-    venue: 'SETEC, Seoul',
+
+    Folder: 'Upcycle',
+    Date: 'December 2017',
+    Title: 'Upcycle Exhibition',
+    Text: 'Upcycle network exhibition',
+    Client: 'touch4good',
+    Link: 'www.google.com',
+    Venue: 'SETEC, Seoul',
     photos: [
       { filename: '00.png', break: { xs: 12, sm: 6, xl: 5 } },
       { filename: '10.png', break: { xs: 12, sm: 6, xl: 5 } },
@@ -58,13 +72,13 @@ const projects = [
   },
 
   {
-    folder: 'Pops',
-    date: '2017',
-    title: 'P.O.P.S FORUM',
-    text: 'Private Owned Public Space',
-    client: 'touch4good',
-    link: 'www.google.com',
-    venue: 'SETEC, Seoul',
+    Folder: 'Pops',
+    Date: '2017',
+    Title: 'P.O.P.S FORUM',
+    Text: 'Private Owned Public Space',
+    Client: 'touch4good',
+    Link: 'www.google.com',
+    Venue: 'SETEC, Seoul',
     photos: [
 
       { filename: '02.png', break: { xs: 12, sm: 12, xl: 10 } },
@@ -75,13 +89,13 @@ const projects = [
   },
 
   {
-    folder: 'Seam',
-    date: 'february 2017',
-    title: 'SEAM CENTER',
-    text: 'co-working and co-living space ',
-    client: '더작은재단',
-    link: 'seam.center',
-    venue: 'SETEC, Seoul',
+    Folder: 'Seam',
+    Date: 'february 2017',
+    Title: 'SEAM CENTER',
+    Text: 'co-working and co-living space ',
+    Client: '더작은재단',
+    Link: 'seam.center',
+    Venue: 'SETEC, Seoul',
     photos: [
       { filename: '01.png', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '02.png', break: { xs: 12, sm: 12, xl: 10 } },
@@ -127,18 +141,27 @@ const Home = () => (
         <Row>
           <Col xs={12} md={4} xl={3}>
 
-            <h3> {project.title} </h3>
-            <p> {project.text} </p>
+            <h3> {project.Title} </h3>
+            <p> {project.Text} </p>
 
             <hr />
-
             <ul>
-              <a href={project.link}>
-                <li> Client - {project.client} </li>
-              </a>
-              <li> Venue - {project.venue} </li>
+              <li> Design Planning - {project.DesignPlanning} </li>
+              <li> Construction - {project.Construction} </li>
+              <li> Signage - {project.Signage} </li>
+              <li> Photograph - {project.Photograph} </li>
+              <li> Venue - {project.Venue} </li>
+              <li> Business Planning - {project.Client}</li>
             </ul>
-
+            <hr />
+            <h4> SUPPORTING </h4>
+            <a href={project.ClientLink}>
+              {project.Client}
+            </a>
+            <br / >
+            <a href={project.ProjectLink} >
+              {project.Title}
+            </a>
           </Col>
 
           <Col xs={12} md={8} xl={9} style={{padding: '0', margin: '0'}}>
@@ -152,22 +175,23 @@ const Home = () => (
                     <svg viewBox='0 0 1800 994' xmlns='http://www.w3.org/2000/svg'>
                       <image xlinkHref={grillImage} height='994' width='1800' />
                       <g transform='translate(1395 382)'>
-                        <circle className='st2' r='1' style={{color: 'rgba(255,255,255,0.1)'}}>
+                        <circle className='st2' r='1'
+                          style={{color: 'rgba(255,255,255,0.1)'}}>
                           <animateTransform
                             attributeType='xml'
                             attributeName='transform'
                             type='scale'
-                            from='0'
-                            to='60'
+                            from='0'to='60'
                             begin='0s'
                             dur='1s'
-                            repeatCount='indefinite'
-                          />
+                            repeatCount='indefinite' />
                         </circle>
                       </g>
                     </svg>
+
                   ) : (
-                    <img src={require(`../${project.folder}/${photo.filename}`)} />
+
+                    <img src={require(`../${project.Folder}/${photo.filename}`)} />
                   )}
                 </Col>
             )}

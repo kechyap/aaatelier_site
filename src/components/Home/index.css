@@ -47,6 +47,19 @@
   fill:#F16C6D;
 }
 
+h4 {
+  color: var(--pink4);
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  font-size: 0.9rem;
+  padding-left: 1rem;
+  line-height: 1.8rem;
+  color: var(--pink3);
+}
+
 hr {
    margin-right: 1rem ;
 }
