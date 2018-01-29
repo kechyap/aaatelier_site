@@ -28,25 +28,118 @@ const projects = [
     ProjectLink: 'www.instagram.com/grillbag',
 
     photos: [
-      { filename: 'menuU.svg', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: 'notAnImage', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: 'menuP.svg', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '01.png', break: { xs: 12, sm: 6, xl: 5 } },
-      { filename: '02.png', break: { xs: 12, sm: 6, xl: 5 } },
-      { filename: '06.png', break: { xs: 12, sm: 6, xl: 5 } },
-      { filename: '07.png', break: { xs: 12, sm: 6, xl: 5 } },
-      { filename: '05.png', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '03.png', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '04.png', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '08.png', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: 'menuD.svg', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '09.png', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '10.png', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '11.png', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '12.png', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: 'menuS.svg', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '13.png', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '14.png', break: { xs: 12, sm: 12, xl: 10 } }
+      {
+        filename: 'menuU.svg',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: 'So cool',
+        text: 'I made this one and omg so cool there was a dude and he was lit af.'
+      },
+      {
+        filename: 'notAnImage',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: 'menuP.svg',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '01.png',
+        break: { xs: 12, sm: 6, xl: 5 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '02.png',
+        break: { xs: 12, sm: 6, xl: 5 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '06.png',
+        break: { xs: 12, sm: 6, xl: 5 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '07.png',
+        break: { xs: 12, sm: 6, xl: 5 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '05.png',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '03.png',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '04.png',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '08.png',
+        break: { xs: 12, sm: 12, xl: 10 }
+      },
+      {
+        filename: 'menuD.svg',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '09.png',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '10.png',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: 'Some title here',
+        text: 'Dis was cool'
+      },
+      {
+        filename: '11.png',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '12.png',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: 'menuS.svg',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '13.png',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '14.png',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: '',
+        text: ''
+      }
     ]
   },
 
@@ -60,14 +153,54 @@ const projects = [
     Link: 'www.google.com',
     Venue: 'SETEC, Seoul',
     photos: [
-      { filename: '00.png', break: { xs: 12, sm: 6, xl: 5 } },
-      { filename: '10.png', break: { xs: 12, sm: 6, xl: 5 } },
-      { filename: '01.png', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '02.png', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '03.png', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '06.svg', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '07.svg', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '08.svg', break: { xs: 12, sm: 12, xl: 10 } }
+      {
+        filename: '00.png',
+        break: { xs: 12, sm: 6, xl: 5 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '10.png',
+        break: { xs: 12, sm: 6, xl: 5 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '01.png',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '02.png',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '03.png',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '06.svg',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '07.svg',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '08.svg',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: '',
+        text: ''
+      }
     ]
   },
 
@@ -81,10 +214,30 @@ const projects = [
     Venue: 'SETEC, Seoul',
     photos: [
 
-      { filename: '02.png', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '03.png', break: { xs: 12, sm: 6, xl: 5 } },
-      { filename: '04.png', break: { xs: 12, sm: 6, xl: 5 } },
-      { filename: '01.png', break: { xs: 12, sm: 6, xl: 5 } }
+      {
+        filename: '02.png',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '03.png',
+        break: { xs: 12, sm: 6, xl: 5 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '04.png',
+        break: { xs: 12, sm: 6, xl: 5 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '01.png',
+        break: { xs: 12, sm: 6, xl: 5 },
+        title: '',
+        text: ''
+      }
     ]
   },
 
@@ -97,11 +250,36 @@ const projects = [
     Link: 'seam.center',
     Venue: 'SETEC, Seoul',
     photos: [
-      { filename: '01.png', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '02.png', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '03.png', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '04.png', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '05.png', break: { xs: 12, sm: 6, xl: 5 } }
+      {
+        filename: '01.png',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '02.png',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '03.png',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '04.png',
+        break: { xs: 12, sm: 12, xl: 10 },
+        title: '',
+        text: ''
+      },
+      {
+        filename: '05.png',
+        break: { xs: 12, sm: 6, xl: 5 },
+        title: 'Hi mom',
+        text: 'I like dickens'
+      }
     ]
   }
 
@@ -158,7 +336,7 @@ const Home = () => (
             <a href={project.ClientLink}>
               {project.Client}
             </a>
-            <br / >
+            <br />
             <a href={project.ProjectLink} >
               {project.Title}
             </a>
@@ -167,16 +345,12 @@ const Home = () => (
           <Col xs={12} md={8} xl={9} style={{padding: '0', margin: '0'}}>
             <Row>
               {project.photos.map((photo) =>
-                <Col style={{padding: '0', margin: '0'}}
-                  xs={photo.break.xs}
-                  sm={photo.break.sm}
-                  xl={photo.break.xl}>
+                <Col style={{padding: '0', margin: '0'}} xs={photo.break.xs} sm={photo.break.sm} xl={photo.break.xl}>
                   {photo.filename === 'notAnImage' ? (
                     <svg viewBox='0 0 1800 994' xmlns='http://www.w3.org/2000/svg'>
                       <image xlinkHref={grillImage} height='994' width='1800' />
                       <g transform='translate(1395 382)'>
-                        <circle className='st2' r='1'
-                          style={{color: 'rgba(255,255,255,0.1)'}}>
+                        <circle className='st2' r='1' style={{color: 'rgba(255,255,255,0.1)'}}>
                           <animateTransform
                             attributeType='xml'
                             attributeName='transform'
@@ -188,10 +362,16 @@ const Home = () => (
                         </circle>
                       </g>
                     </svg>
-
                   ) : (
-
-                    <img src={require(`../${project.Folder}/${photo.filename}`)} />
+                    <div style={{position: 'relative'}}>
+                      <div style={{position: 'absolute', top: 0, left: 0, right: 0}}>
+                        {photo.title}
+                      </div>
+                      <img src={require(`../${project.Folder}/${photo.filename}`)} />
+                      <div style={{position: 'absolute', bottom: 0, left: 0, right: 0}}>
+                        {photo.text}
+                      </div>
+                    </div>
                   )}
                 </Col>
             )}
