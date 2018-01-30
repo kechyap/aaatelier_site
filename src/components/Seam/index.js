@@ -1,6 +1,7 @@
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 import './index.css'
+import map from './00.png'
 
 const project = [
   {
@@ -9,6 +10,7 @@ const project = [
     Text: 'co-working & co-living place',
 
     photos: [
+      { filename: 'notAnImage', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '01.png', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '02.png', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '03.png', break: { xs: 12, sm: 12, xl: 10 } },
@@ -62,7 +64,28 @@ const Seam = () => (
                 xs={photo.break.xs}
                 sm={photo.break.sm}
                 xl={photo.break.xl}>
-                <img src={require(`../${project.Folder}/${photo.filename}`)} />
+                {photo.filename === 'notAnImage' ? (
+                  <svg viewBox='0 0 1380 1385' xmlns='http://www.w3.org/2000/svg'>
+                    <image xlinkHref={map} height='1500' width='1385' />
+                    <g transform='translate(1010 790)'>
+                      <circle className='st2' r='1'
+                        style={{color: 'rgba(255,255,255,0.1)'}}>
+                        <animateTransform
+                          attributeType='xml'
+                          attributeName='transform'
+                          type='scale'
+                          from='0'to='50'
+                          begin='0s'
+                          dur='1s'
+                          repeatCount='indefinite' />
+                      </circle>
+                    </g>
+                  </svg>
+                ) : (
+
+                  <img src={require(`../${project.Folder}/${photo.filename}`)} />
+                )}
+
               </Col>
               )}
           </Row>
