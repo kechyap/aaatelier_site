@@ -16,8 +16,12 @@
   color: rgba(255,220,225,1);
 }
 
+.aboutText {
+  color: var(--pink3);
+}
+
 .About p {
-  color: var(--pink4)
+  color: var(--pink4);
 }
 
 .About .icon {

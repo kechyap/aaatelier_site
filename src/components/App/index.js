@@ -2,14 +2,14 @@ import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './index.css'
 
-import Navigation from '../Navigation'
-import Home from '../Home'
-import About from '../About'
+import Navigation from '../Navigation/index.js'
+import Home from '../Home/index.js'
+import About from '../About/index.js'
 
-import Seam from '../Seam'
-import Upcycle from '../Upcycle'
-import Grill from '../Grill'
-import Pops from '../Pops'
+import Seam from '../Seam/index.js'
+import Upcycle from '../Upcycle/index.js'
+import Grill from '../Grill/index.js'
+import Pops from '../Pops/index.js'
 
 const App = () => (
   <Router>
