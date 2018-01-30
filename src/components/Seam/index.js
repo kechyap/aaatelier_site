@@ -10,7 +10,9 @@ const project = [
     Text: 'co-working & co-living place',
 
     photos: [
+      { filename: 'menuU.svg', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: 'notAnImage', break: { xs: 12, sm: 12, xl: 10 } },
+      { filename: 'menuP.svg', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '01.png', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '02.png', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '03.png', break: { xs: 12, sm: 12, xl: 10 } },
@@ -50,7 +52,7 @@ const Seam = () => (
           <a href={'seam.center'}>
             SEAM CENTER
           </a>
-          <br / >
+          <br />
           <a href={'www.impactsquare.com'}>
           Impact Square
           </a>
@@ -60,13 +62,17 @@ const Seam = () => (
         <Col xs={12} md={8} xl={9} style={{padding: '0', margin: '0'}}>
           <Row>
             {project.photos.map((photo) =>
-              <Col style={{padding: '0', margin: '0'}}
+              <Col
+                style={{padding: '0', margin: '0'}}
                 xs={photo.break.xs}
                 sm={photo.break.sm}
-                xl={photo.break.xl}>
+                xl={photo.break.xl}
+              >
                 {photo.filename === 'notAnImage' ? (
-                  <svg viewBox='0 0 1380 1385' xmlns='http://www.w3.org/2000/svg'>
-                    <image xlinkHref={map} height='1500' width='1385' />
+                  <svg
+                    viewBox='0 0 1500 1385' xmlns='http://www.w3.org/2000/svg' style={{background: 'black'}}
+                  >
+                    <image xlinkHref={map} width='1500' height='1385' />
                     <g transform='translate(1010 790)'>
                       <circle className='st2' r='1'
                         style={{color: 'rgba(255,255,255,0.1)'}}>
@@ -77,7 +83,8 @@ const Seam = () => (
                           from='0'to='50'
                           begin='0s'
                           dur='1s'
-                          repeatCount='indefinite' />
+                          repeatCount='indefinite'
+                        />
                       </circle>
                     </g>
                   </svg>
