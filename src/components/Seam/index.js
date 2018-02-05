@@ -16,6 +16,7 @@ const project = [
       { filename: '01.jpg', break: { xs: 12, sm: 12, md: 12, xl: 10 } },
       { filename: '02.jpg', break: { xs: 12, sm: 12, md: 12, xl: 10 } },
       { filename: '03.jpg', break: { xs: 12, sm: 12, md: 12, xl: 10 } },
+      { filename: '001.jpg', break: { xs: 12, sm: 12, md: 12, xl: 10 } },
       { filename: '04.jpg', break: { xs: 12, sm: 6, md: 6, xl: 5 } },
       { filename: '05.jpg', break: { xs: 12, sm: 6, md: 6, xl: 5 } },
       { filename: '06.jpg', break: { xs: 12, sm: 12, md: 12, xl: 10 } },
@@ -26,11 +27,17 @@ const project = [
       { filename: '10.jpg', break: { xs: 12, sm: 12, md: 12, xl: 10 } },
       { filename: '11.jpg', break: { xs: 12, sm: 12, md: 12, xl: 10 } },
       { filename: '12.jpg', break: { xs: 12, sm: 12, md: 12, xl: 10 } },
-      { filename: '13.jpg', break: { xs: 12, sm: 12, md: 12, xl: 10 } },
+      { filename: 'menuD.svg', break: { xs: 12, sm: 12, md: 12, xl: 10 } },
       { filename: '1F.jpg', break: { xs: 12, sm: 12, md: 12, xl: 10 } },
       { filename: '2F.jpg', break: { xs: 12, sm: 12, md: 12, xl: 10 } },
       { filename: '3F.jpg', break: { xs: 12, sm: 12, md: 12, xl: 10 } },
-      { filename: '4F.jpg', break: { xs: 12, sm: 12, md: 12, xl: 10 } }
+      { filename: '4F.jpg', break: { xs: 12, sm: 12, md: 12, xl: 10 } },
+      { filename: '14.jpg', break: { xs: 12, sm: 12, md: 12, xl: 10 } },
+      { filename: '13.jpg', break: { xs: 12, sm: 12, md: 12, xl: 10 } },
+      { filename: 'menuS.svg', break: { xs: 12, sm: 12, md: 12, xl: 10 } },
+      { filename: '15.jpg', break: { xs: 12, sm: 12, md: 12, xl: 10 } },
+      { filename: '17.jpg', break: { xs: 12, sm: 12, md: 12, xl: 10 } },
+      { filename: '16.jpg', break: { xs: 12, sm: 12, md: 12, xl: 10 } }
     ]
   }
 ]

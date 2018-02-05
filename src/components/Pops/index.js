@@ -9,10 +9,25 @@ const projects = [
     Text: 'Forum',
 
     photos: [
-    { filename: '02.png', break: { xs: 12, sm: 12, xl: 10 } },
-    { filename: '03.png', break: { xs: 12, sm: 6, xl: 5 } },
-    { filename: '04.png', break: { xs: 12, sm: 6, xl: 5 } },
-    { filename: '01.png', break: { xs: 12, sm: 6, xl: 5 } }
+    { filename: 'menuP.svg', break: { xs: 12, sm: 12, xl: 10 } },
+    { filename: '01.jpg', break: { xs: 12, sm: 12, xl: 10 } },
+    { filename: '02.jpg', break: { xs: 12, sm: 6, xl: 5 } },
+    { filename: '03.jpg', break: { xs: 12, sm: 6, xl: 5 } },
+    { filename: 'menuF.svg', break: { xs: 12, sm: 12, xl: 10 } },
+    { filename: 's2.jpg', break: { xs: 12, sm: 12, xl: 10 } },
+    { filename: 's0.jpg', break: { xs: 6, sm: 6, xl: 5 } },
+    { filename: 'p1.jpg', break: { xs: 6, sm: 6, xl: 5 } },
+
+    { filename: 'p3.jpg', break: { xs: 6, sm: 6, xl: 5 } },
+    { filename: 'p4.jpg', break: { xs: 6, sm: 6, xl: 5 } },
+
+    { filename: '05.jpg', break: { xs: 6, sm: 6, xl: 5 } },
+    { filename: '04.jpg', break: { xs: 6, sm: 6, xl: 5 } },
+    { filename: '00.jpg', break: { xs: 12, sm: 12, xl: 10 } },
+    { filename: 'menuB.svg', break: { xs: 12, sm: 12, xl: 10 } },
+    { filename: '07.jpg', break: { xs: 12, sm: 12, xl: 10 } },
+    { filename: '08.jpg', break: { xs: 12, sm: 12, xl: 10 } }
+
     ]
   }
 ]
@@ -26,8 +41,9 @@ const Pops = () => (
           <h3> {project.Title} </h3>
           <h4> {project.Text} </h4>
           <div className='category'>
-            Sharing Solutions about P.O.P.S (Private Owned Public Space) forum, Improving Life though citizen innovation. <br />
-            Event Planning, Reaserch, Forum, Booklets
+            Event Planning, Reaserching, Booklets. <br />
+            Sharing Solutions about P.O.P.S (Private Owned Public Space) forum, Improving Urban Life quaility though citizen innovation. <br />
+
           </div>
 
           <hr />
