@@ -27,9 +27,9 @@ const projects = [
       { filename: '11.png', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: '12.png', break: { xs: 12, sm: 12, xl: 10 } },
       { filename: 'menuS.svg', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '131.png', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '13.png', break: { xs: 12, sm: 12, xl: 10 } },
-      { filename: '14.png', break: { xs: 12, sm: 12, xl: 10 } }
+      { filename: '131.png', break: { xs: 12, sm: 12, xl: 9 } },
+      { filename: '13.png', break: { xs: 12, sm: 12, xl: 5 } },
+      { filename: '14.png', break: { xs: 12, sm: 12, xl: 5 } }
     ]
   }
 ]

@@ -6,6 +6,7 @@ import Grill from '../Grill/index.js'
 import Upcycle from '../Upcycle/index.js'
 import Pops from '../Pops/index.js'
 import Seam from '../Seam/index.js'
+import Tego from '../Tego/index.js'
 
 import logo_pink from '../../images/logo_pink.svg'
 import iconEmail from '../../images/icon_email.svg'
@@ -20,7 +21,7 @@ const Home = () => (
     <div className='Front'>
 
       <Grid fluid>
-        <Row style={{ paddingTop: '4rem'}}>
+        <Row style={{ paddingTop: '3rem'}}>
           <Col xs={4} >
             <img className='logo_pink' src={logo_pink} />
           </Col>
@@ -48,9 +49,11 @@ const Home = () => (
     <br /> <br /> <br /> <br /> <br />
     <Upcycle />
     <br /> <br /> <br /> <br /> <br />
-    <Pops />
-    <br /> <br /> <br /> <br /> <br />
     <Seam />
+    <br /> <br /> <br /> <br /> <br />
+    <Tego />
+    <br /> <br /> <br /> <br /> <br />
+    <Pops />
     <br /> <br /> <br /> <br /> <br />
 
   </div>
