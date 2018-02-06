@@ -9,10 +9,6 @@ import Seam from '../Seam/index.js'
 import Tego from '../Tego/index.js'
 
 import logo_pink from '../../images/logo_pink.svg'
-import iconEmail from '../../images/icon_email.svg'
-import iconFacebook from '../../images/icon_facebook.svg'
-import iconInsta from '../../images/icon_insta.svg'
-import iconKakao from '../../images/icon_kakao.svg'
 
 import grillImage from '../Grill/00.png'
 
