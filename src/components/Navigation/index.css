@@ -14,11 +14,13 @@
   top: 0.9rem;
   left: 0;
   right: 0.3rem;
+
 }
 
 .navbar a {
   vertical-align: middle;
   margin-right: 1rem;
+
   text-decoration: none;
-  color: rgba(255,170,160,0.8);
+  color: rgb(255,170,160);
 }

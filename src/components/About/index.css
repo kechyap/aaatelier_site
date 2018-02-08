@@ -1,12 +1,23 @@
+.intro {
+  margin:0;
+  padding:0;
+  height: 6rem;
+}
+
+@media (min-width: 576px) {
+  .intro {
+    height: 20rem;
+  }
+}
+
 .About .logo {
   width: 5.5rem;
 }
 
 .About {
-  height: 40rem;
+  height: 50rem;
   background: linear-gradient( rgba(210,110,125,1) 0%, rgba(230,190,180,0.7) 70%, rgba(250,190,195,0) 100%);
-  padding-top: 4rem;
-  padding-bottom: 10rem;
+  padding-top: 0rem;
 }
 
 .About h4 {
@@ -24,13 +35,24 @@
   margin-top: 3rem;
 }
 
-.aboutImage {
+.aboutTextL {
   margin:0;
   padding-right:0;
-  padding-top: 5rem;
+  padding-top: 0rem;
 }
 
+.introHead {
+  margin-left: 3rem;
+  margin-right:3rem;
+  margin-top:5.5rem;
+}
 
+@media (max-width: 576px) {
+  .introHead {
+    margin-right:1.5rem;
+    margin-left:1.5rem;
+  }
+}
 
 .About .icon {
   color: var(--pink3);
@@ -38,11 +60,24 @@
   padding-top: 1rem;
 }
 
-.ab0 {
+
+.diagram {
+  height:28rem;
   background-color: rgba(255,255,255,0);
-  padding-top: 2.5rem;
+  padding-left:3rem;
+  padding-top: 5rem;
   padding-Bottom: 3rem;
 }
+
+@media (max-width: 576px) {
+  .diagram {
+    align-items: center;
+    height: 23rem;
+    padding-left: 1rem;
+    padding-top:2rem;
+  }
+}
+
 
 .ending {
   backgound-color: rgba(255,255,255,1);
@@ -50,4 +85,26 @@
   font-size:1rem;
   padding-Bottom : 2rem ;
   padding-Top: 1rem ;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.font-dosis {
+  font-family: 'Dosis', sans-serif;
+}
+
+.width-bold {
+  font-weight: bold;
+}
+
+.vertical-text {
+  text-align: center;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.text-grey {
+  color: #EEE;
 }
