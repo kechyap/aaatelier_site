@@ -1,12 +1,31 @@
 .intro {
   margin:0;
   padding:0;
-  height: 6rem;
+  height: 4rem;
 }
+
+.introHead {
+  font-family: 'Titillium Web', sans-serif ;
+  padding-top: 0rem;
+  margin-top: 0rem;
+  padding-left: 1.5rem;
+  weight: 400 ;
+  color: rgba(250,200,200,1);
+}
+
+.introText {
+  font-family: 'Titillium Web', sans-serif ;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  weight: 400 ;
+  color: rgba(250,220,220,1);
+}
+
 
 @media (min-width: 576px) {
   .intro {
-    height: 20rem;
+    height: 13rem;
   }
 }
 
@@ -14,8 +33,12 @@
   width: 5.5rem;
 }
 
+.About hr {
+  color: white ;
+}
+
 .About {
-  height: 50rem;
+  height: 100rem;
   background: linear-gradient( rgba(210,110,125,1) 0%, rgba(230,190,180,0.7) 70%, rgba(250,190,195,0) 100%);
   padding-top: 0rem;
 }
@@ -39,20 +62,9 @@
   margin:0;
   padding-right:0;
   padding-top: 0rem;
+  padding-left:0rem;
 }
 
-.introHead {
-  margin-left: 3rem;
-  margin-right:3rem;
-  margin-top:5.5rem;
-}
-
-@media (max-width: 576px) {
-  .introHead {
-    margin-right:1.5rem;
-    margin-left:1.5rem;
-  }
-}
 
 .About .icon {
   color: var(--pink3);
@@ -60,9 +72,8 @@
   padding-top: 1rem;
 }
 
-
 .diagram {
-  height:28rem;
+  height:26rem;
   background-color: rgba(255,255,255,0);
   padding-left:3rem;
   padding-top: 5rem;
@@ -78,6 +89,10 @@
   }
 }
 
+.diagramExplanation {
+  margin-top: 6rem;
+}
+
 
 .ending {
   backgound-color: rgba(255,255,255,1);
@@ -87,17 +102,30 @@
   padding-Top: 1rem ;
 }
 
+.brandIdentityM {
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .brandIdentityM {
+    display: none;
+  }
+}
+
 .text-centered {
   text-align: center;
 }
 
-.font-dosis {
+.font-dosis1 {
+  font-family: 'Dosis', sans-serif;
+  margin-left: 2rem;
+}
+
+.font-dosis2 {
+  margin-left: 2rem;
   font-family: 'Dosis', sans-serif;
 }
 
-.width-bold {
-  font-weight: bold;
-}
 
 .vertical-text {
   text-align: center;
