@@ -7,19 +7,19 @@
 
 
 .navbar {
+  font-weight: 400;
   position: fixed;
   text-align: right;
   font-size: 0.9rem;
   text-decoration: overline;
-  top: 0.9rem;
+  top: 1rem;
   left: 0;
-  right: 0.3rem;
-
+  right: 2rem;
 }
 
 .navbar a {
   vertical-align: middle;
-  margin-right: 1rem;
+  margin-right: 0.3rem;
 
   text-decoration: none;
   color: rgb(255,170,160);

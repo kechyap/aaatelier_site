@@ -38,8 +38,6 @@ const About = () => (
         </Col>
       </Row>
 
-      <hr style={{marginBottom: '3rem'}} />
-
       <Row>
         <Col xs={12} sm={10} md={9} lg={6} xl={5}>
           <div className='aboutImage' style={{textAlign: 'center'}} />
@@ -64,7 +62,8 @@ const About = () => (
                 & URBAN PLANNING
               </div>
 
-              <div className='text-grey text-justified' style={{letterSpacing: '0.062em'}}>
+              <div className='text-grey text-justified'
+                style={{letterSpacing: '0.062em'}}>
                urban issue, social issue
                <br />
                community, remodeling
@@ -139,6 +138,8 @@ const About = () => (
         <Col xs={0} sm={1} md={2} xl={2} />
       </Row>
 
+      <hr />
+
       <Row>
         <Col xs={0} sm={0} md={0} lg={1} />
         <Col xs={12} sm={6} md={5} lg={4}>
@@ -150,25 +151,29 @@ const About = () => (
           </div>
         </Col>
         <Col xs={12} sm={1} md={1} lg={1} />
-        <Col xs={12} sm={5} md={5} lg={4}>
+        <Col xs={12} sm={5} md={5} lg={5}>
           <div style={{padding: '2rem'}} />
           <h4> 1. Brand Identity </h4>
           <p> AAAtelier의 작업 프로세스는 생명을 창조하는 것과 같습니다. Branding과 공간은 하나의 개성을 지니고 있는 한 생명이며, 각 개체가 가지고 있는 고유한 영혼이 곧 Brand의 Identity입니다. </p>
 
           <h4> 2. Planning Layout, Structure </h4>
-          <p> Brand의 정의가 정해지면 Client와의 상담을 통해 Brand에 맞는 Structure 및 평면 구성을 제안 드립니다. 평면 작업이 가장 중요하다고 볼 수 있습니다. </p>
+          <p> 모든 프로세스 중에서 평면 작업이 가장 중요하다고 볼 수 있습니다. Brand의 정의가 정해지면 Client와의 상담을 통해 Brand에 맞는 Structure 및 평면 구성을 Brand에 맞는 맞춤형으로 제안 드립니다. </p>
 
           <h4> 3. Construction Materials </h4>
           <ul>
-            <li> Visual atmosphere에 따른 분류 : 마감재는 브랜드의 전체 분위기가 표면적으로 보여지는 부분이며 전체 color 및 pattern 마감재 비율을 고려하여 제안 드립니다. </li>
-            <li> Budget에 따른 분류 :  또한 budget에 따라 Marble, Wood, Tile등 최고의 효과를 낼 수 있는 합리적인 마감재 선택을 제안 드립니다. </li> </ul>
+            <li> Visual Language에 따른 Suggestion <br />
+            마감재는 브랜드의 전체 분위기가 표면적으로 보여지는 부분이며 전체 color 및 pattern 마감재 비율을 고려하여 제안 드립니다. </li>
+            <li> Budget에 따른 Suggestion <br />
+            또한 budget에 따라 Marble, Wood, Tile등 최고의 효과를 낼 수 있는 합리적인 마감재 선택을 제안 드립니다. </li>
+          </ul>
 
           <h4> 4.Signage, furniture, Lighting </h4>
           <p> 브랜드의 특성을 더욱 돋보이게 하는 모든 Fashion display 부분입니다. Fabric, Art works, Lighting, Furniture plan이 이에 속하며, Marketing service 부분에서는 signage, booklet등의 Visual Graphic 작업이 이루어집니다. </p>
         </Col>
-        <Col xs={12} sm={0} md={1} lg={2} />
+        <Col xs={12} sm={0} md={1} lg={1} />
       </Row>
 
+      <hr / >
       <Row>
         <Col xs={4} sm={3}>
           <h4> SOCIAL ISSUE </h4>

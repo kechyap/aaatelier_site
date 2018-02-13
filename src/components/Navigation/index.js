@@ -2,6 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './index.css'
 
+import about from './about.svg'
+import project from './project.svg'
+
 export const Navigation = () => (
   <div className='navbar-wrapper'>
     <div className='navbar'>

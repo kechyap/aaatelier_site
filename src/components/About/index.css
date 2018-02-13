@@ -32,6 +32,10 @@
   color: rgba(250,220,220,1);
 }
 
+.About li {
+  font-weight: 300;
+  list-style: disc;
+}
 
 .About .logo {
   width: 5.5rem;
@@ -76,7 +80,7 @@
 }
 
 .diagram {
-  height: 24rem;
+  height: 27rem;
   text-align: center;
   background-color: rgba(255,255,255,0);
   padding-left:0rem;
@@ -87,7 +91,7 @@
 @media (max-width: 576px) {
   .diagram {
     padding-left: 1rem;
-    padding-top: 2rem;
+    padding-top: 3rem;
   }
   .introText {
     padding-right:3rem;
