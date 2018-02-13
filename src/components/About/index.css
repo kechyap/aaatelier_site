@@ -79,7 +79,7 @@
   height: 24rem;
   text-align: center;
   background-color: rgba(255,255,255,0);
-  padding-left:1rem;
+  padding-left:0rem;
   padding-top: 5rem;
   padding-Bottom: 3rem;
 }
@@ -113,16 +113,16 @@
 
 .brandIdentityM {
   text-align: center;
-  margin-left: 0.8rem;
   display: none;
-  height: 6rem ;
+  height: 4rem ;
   margin-top: 1rem ;
 }
 
 .brandIdentityT {
+  height: 6rem ;
   text-align: center;
-  margin-Bottom: 2rem;
-  margin-left: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 0rem;
   display: block;
 }
 
@@ -141,12 +141,10 @@
 
 .font-dosis1 {
   font-family: 'Dosis', sans-serif;
-  margin-left: 2rem;
   text-align: center;
 }
 
 .font-dosis2 {
-  margin-left: 2rem;
   font-family: 'Dosis', sans-serif;
   text-align: center;
 }

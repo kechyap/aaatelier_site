@@ -60,7 +60,7 @@ const About = () => (
               <div style={{letterSpacing: '0.4em', paddingLeft: '0.4em'}}>
                ARCHITECTURE
               </div>
-              <div style={{letterSpacing: '0.17em', marginRight: '-0.17em'}}>
+              <div style={{letterSpacing: '0.17em', paddingLeft: '0.17em'}}>
                 & URBAN PLANNING
               </div>
 
@@ -72,13 +72,13 @@ const About = () => (
 
               <br />
 
-              <div style={{letterSpacing: '0.95em', marginRight: '-0.95em'}}>
+              <div style={{letterSpacing: '0.95em', paddingLeft: '0.95em'}}>
                 INTERIOR
             </div>
-              <div style={{letterSpacing: '1.46em', marginRight: '-1.46em'}}>
+              <div style={{letterSpacing: '1.46em', paddingLeft: '1.46em'}}>
                 DESIGN
             </div>
-              <div className='text-grey' style={{letterSpacing: '0.001em', marginRight: '-0.001em'}}>
+              <div className='text-grey' style={{letterSpacing: '0.001em', paddingLeft: '0.001em'}}>
               exhibition, furniture, display
             </div>
               <br />
@@ -90,10 +90,10 @@ const About = () => (
               <div>
                 <img src={logo} />
               </div>
-              <div style={{letterSpacing: '0.4em', marginRight: '-0.4em'}}>
+              <div style={{letterSpacing: '0.4em', paddingLeft: '0.4em'}}>
              BRAND
              </div>
-              <div style={{letterSpacing: '0.11em', marginRight: '-0.11em'}}>
+              <div style={{letterSpacing: '0.11em', paddingLeft: '0.11em'}}>
              IDENTITY
               </div>
             </div>
@@ -102,26 +102,26 @@ const About = () => (
           <Col xs={0} sm={0} md={1} lg={1} />
           <Col xs={12} sm={5} md={3} lg={3}>
             <div className='font-dosis2'>
-              <div style={{letterSpacing: '0.95em', marginRight: '-0.95em'}}>
+              <div style={{letterSpacing: '0.95em', paddingLeft: '0.95em'}}>
               ARTISTIC
             </div>
-              <div style={{letterSpacing: '0.55em', marginRight: '-0.55em'}}>
+              <div style={{letterSpacing: '0.55em', paddingLeft: '0.55em'}}>
               INSPIRATION
             </div>
 
-              <div className='text-grey' style={{letterSpacing: '0.07em', marginRight: '-0.07em'}}>
+              <div className='text-grey' style={{letterSpacing: '0.07em', paddingLeft: '0.07em'}}>
               illustration, photograph
             </div>
               <br />
 
-              <div style={{letterSpacing: '1.5em', marginRight: '-1.5em'}}>
+              <div style={{letterSpacing: '1.5em', paddingLeft: '1.5em'}}>
              VISUAL
             </div>
 
-              <div style={{letterSpacing: '1.5em', marginRight: '-1.5em'}}>
+              <div style={{letterSpacing: '1.5em', paddingLeft: '1.5em'}}>
              DESIGN
             </div>
-              <div className='text-grey' style={{letterSpacing: '0.02em', marginRight: '-0.02em'}}>
+              <div className='text-grey' style={{letterSpacing: '0.02em', paddingLeft: '0.02em'}}>
               signage, poster, publishing
             </div>
               <br />
@@ -155,11 +155,13 @@ const About = () => (
           <h4> 1. Brand Identity </h4>
           <p> AAAtelier의 작업 프로세스는 생명을 창조하는 것과 같습니다. Branding과 공간은 하나의 개성을 지니고 있는 한 생명이며, 각 개체가 가지고 있는 고유한 영혼이 곧 Brand의 Identity입니다. </p>
 
-          <h4> 2. Planning Space Structure </h4>
-          <p> Brand의 정의가 정해지면 Client와의 상담을 통해 Brand에 맞는 Structure를 세웁니다. </p>
+          <h4> 2. Planning Layout, Structure </h4>
+          <p> Brand의 정의가 정해지면 Client와의 상담을 통해 Brand에 맞는 Structure 및 평면 구성을 제안 드립니다. 평면 작업이 가장 중요하다고 볼 수 있습니다. </p>
 
           <h4> 3. Construction Materials </h4>
-          <p> 마감재는 브랜드의 전체 분위기가 표면적으로 보여지는 부분이며 또한 budget에 따라 Marble, Wood, Tile등 합리적인 마감재 선택이 가능합니다. 전체 color 및 pattern 마감재를 선택하는 </p>
+          <ul>
+            <li> Visual atmosphere에 따른 분류 : 마감재는 브랜드의 전체 분위기가 표면적으로 보여지는 부분이며 전체 color 및 pattern 마감재 비율을 고려하여 제안 드립니다. </li>
+            <li> Budget에 따른 분류 :  또한 budget에 따라 Marble, Wood, Tile등 최고의 효과를 낼 수 있는 합리적인 마감재 선택을 제안 드립니다. </li> </ul>
 
           <h4> 4.Signage, furniture, Lighting </h4>
           <p> 브랜드의 특성을 더욱 돋보이게 하는 모든 Fashion display 부분입니다. Fabric, Art works, Lighting, Furniture plan이 이에 속하며, Marketing service 부분에서는 signage, booklet등의 Visual Graphic 작업이 이루어집니다. </p>
