@@ -1,33 +1,37 @@
 .intro {
   margin:0;
   padding:0;
-  height: 4rem;
+  height: 7rem;
+}
+
+@media (min-width: 576px) {
+  .intro {
+    height: 15rem;
+  }
 }
 
 .introHead {
+  text-align: center;
   font-family: 'Titillium Web', sans-serif ;
-  padding-top: 0rem;
-  margin-top: 0rem;
-  padding-left: 1.5rem;
+  margin-top: 1.2rem;
   weight: 400 ;
   color: rgba(250,200,200,1);
+}
+
+.introHead h2 {
+  color: whtie ;
+  margin-bottom: 1rem;
 }
 
 .introText {
   font-family: 'Titillium Web', sans-serif ;
   padding-top: 1rem;
   padding-bottom: 2rem;
-  padding-left: 1.5rem;
+  padding-left: 2rem;
   weight: 400 ;
   color: rgba(250,220,220,1);
 }
 
-
-@media (min-width: 576px) {
-  .intro {
-    height: 13rem;
-  }
-}
 
 .About .logo {
   width: 5.5rem;
@@ -45,14 +49,14 @@
 
 .About h4 {
   font-family: 'Titillium Web', sans-serif ;
-  padding-top: 2rem;
+  padding-top: 0rem;
   padding-left: 0rem;
-  weight: 600 ;
   color: rgba(230,130,130,1);
 }
 
 .aboutText {
   font-family: 'Titillium Web', 'Noto Sans KR', sans-serif ;
+  text-align: center;
   color: var(--pink1);
   font-size: 0.9rem;
   margin-top: 3rem;
@@ -65,7 +69,6 @@
   padding-left:0rem;
 }
 
-
 .About .icon {
   color: var(--pink3);
   height: 1.2rem;
@@ -73,26 +76,32 @@
 }
 
 .diagram {
-  height:26rem;
+  height: 24rem;
+  text-align: center;
   background-color: rgba(255,255,255,0);
-  padding-left:3rem;
+  padding-left:1rem;
   padding-top: 5rem;
   padding-Bottom: 3rem;
 }
 
 @media (max-width: 576px) {
   .diagram {
-    align-items: center;
-    height: 23rem;
     padding-left: 1rem;
-    padding-top:2rem;
+    padding-top: 2rem;
+  }
+  .introText {
+    padding-right:3rem;
+  }
+  .introHead {
+    text-align: left;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
 
 .diagramExplanation {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
-
 
 .ending {
   backgound-color: rgba(255,255,255,1);
@@ -104,10 +113,24 @@
 
 .brandIdentityM {
   text-align: center;
+  margin-left: 0.8rem;
+  display: none;
+  height: 6rem ;
+  margin-top: 1rem ;
 }
 
-@media (max-width: 576px) {
+.brandIdentityT {
+  text-align: center;
+  margin-Bottom: 2rem;
+  margin-left: 1rem;
+  display: block;
+}
+
+@media (min-width: 576px) {
   .brandIdentityM {
+    display: block;
+  }
+  .brandIdentityT {
     display: none;
   }
 }
@@ -119,11 +142,13 @@
 .font-dosis1 {
   font-family: 'Dosis', sans-serif;
   margin-left: 2rem;
+  text-align: center;
 }
 
 .font-dosis2 {
   margin-left: 2rem;
   font-family: 'Dosis', sans-serif;
+  text-align: center;
 }
 
 
