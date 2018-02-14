@@ -12,7 +12,7 @@ import iconFacebook from './icon_facebook.svg'
 import iconInsta from './icon_insta.svg'
 
 import logo from '../../images/logo_white.svg'
-
+import Foot from '../Foot/index.js'
 const About = () => (
   <div className='About'>
     <div className='intro'>
@@ -197,32 +197,8 @@ const About = () => (
       </Row>
     </Grid>
 
-    <hr style={{paddingTop: '1rem'}} />
+    <Foot />
 
-    <div className='ending'>
-      <Grid fluid>
-        <Row>
-          <Col xs={4.1} sm={4} md={3}>
-             CONTACT AAAtelier
-            <p style={{height: '0.9rem', marginTop: '0.3rem'}}>
-             aaatelier @ ejay.kim
-           </p>
-          </Col>
-
-          <Col xs={7.9} sm={8} md={7} >
-            <a href='aaatelier@ejay.kim'>
-              <img src={iconEmail} className='icon' />
-            </a>
-            <a href='www.facebook.com/kechyap'>
-              <img src={iconFacebook} className='icon' />
-            </a>
-            <a href='www.instagram.com/aaatelier_ejay'>
-              <img src={iconInsta} className='icon' />
-            </a>
-          </Col>
-        </Row>
-      </Grid>
-    </div>
   </div>
 )
 
