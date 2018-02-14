@@ -65,3 +65,8 @@ li {
   color: var(--pink3);
   weight: 400;
 }
+
+.container-fluid {
+  margin: 0 auto; /* Keep in the middle of the page */
+  max-width: 1200px; /* Max width on all the <Grid /> components */
+}
