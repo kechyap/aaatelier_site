@@ -1,28 +1,32 @@
+/* Styles for html tags on all pages! (No classes!) */
+
 html {
+  /* colors */
   --main-yellow: rgb(250, 189, 52);
   --brown: rgba(128, 107, 80, 0.8);
   --grey-background: rgba(154, 140, 120, 0.5);
-
   --pink1: rgba(255,230,225,1);
   --pink2: rgba(255,190,180,0.8);
   --pink3: rgba(200,150,150,1);
   --pink4: rgba(190,110,110,1);
+
+  /* sizes */
+  --xs: 0;
+  --sm: 576;
+  --md: 768;
+  --lg: 992;
+  --xl: 1200;
+
+  font-size: 16px; /* <html> is ROOT from Rem */
+  line-height: 1.5; /* this automatically em */
+  font-family: 'Titillium Web', 'Noto Sans KR', sans-serif; /* standard fonts for everything */
 }
 
 body {
-  font-family: 'Titillium Web', 'Noto Sans KR', sans-serif;
-  font-size: 15px;
-  line-height: 1.5rem;
-  background-color: var(--pink1);
-  color: white;
   margin: 0;
-  padding: 0;
-}
 
-@media (min-width: 1024px) {
-  body {
-    font-size: 16px;
-  }
+  color: white;
+  background-color: var(--pink1);
 }
 
 img {
@@ -36,37 +40,63 @@ hr {
 }
 
 h2 {
-  font-weight: 400;
   margin-bottom: -0.6rem;
+
+  font-weight: 400;
 }
 
 
 h3 {
-  font-weight: 600;
   color: var(--pink1);
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 
 h4 {
-  font-weight: 400;
   color: var(--pink1);
+
+  font-weight: 400;
 }
 
 p {
+  color: var(--pink3);
+
   font-size: 0.9rem;
   font-weight:300;
-  color: var(--pink3);
 }
 
-
 li {
-  font-size: 0.85rem;
   padding-bottom: 0.45rem;
+
   color: var(--pink3);
+
+  font-size: 0.85rem;
+
   weight: 400;
 }
 
-.container-fluid {
-  margin: 0 auto; /* Keep in the middle of the page */
-  max-width: 1400px; /* Max width on all the <Grid /> components */
+h4 {
+  margin-bottom: 1rem;
+
+  color: var(--pink4);
+}
+
+a {
+  color: var(--pink3);
+
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+}
+
+hr {
+   margin-top: 1rem ;
+   margin-right: 2rem;
+   margin-bottom: 1rem ;
+   margin-left: 0.5rem ;
+}
+
+ul {
+   line-height: 1.3rem;
+   padding-left: 1.3rem;
 }

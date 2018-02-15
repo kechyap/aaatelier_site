@@ -3,10 +3,13 @@ import { Router, Route, Redirect, Switch } from 'react-router-dom'
 import createHistory from 'history/createBrowserHistory'
 
 import './index.css'
+
 import googleAnalytics from './googleAnalytics'
 import ScrollToTop from './ScrollToTop'
 
 import Navigation from '../Navigation/index.js'
+import Foot from '../Foot'
+
 import Home from '../Home/index.js'
 import About from '../About/index.js'
 
@@ -34,12 +37,13 @@ const Routes = () => (
     <Switch>
       <Route exact path='/' component={Home} />
       <Route path='/about' component={About} />
-      <Route path='/seam' component={Home} />
-      <Route path='/upcycle' component={Home} />
-      <Route path='/grill' component={Home} />
-      <Route path='/pops' component={Home} />
+      <Route path='/seam' component={Seam} />
+      <Route path='/upcycle' component={Upcycle} />
+      <Route path='/grill' component={Grill} />
+      <Route path='/pops' component={Pops} />
       <Route component={Error} />
     </Switch>
+    <Foot />
   </div>
 )
 

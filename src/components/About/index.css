@@ -11,8 +11,6 @@
 }
 
 .introHead {
-  text-align: center;
-  font-family: 'Titillium Web', sans-serif ;
   margin-top: 1.2rem;
   weight: 400 ;
   color: rgba(250,200,200,1);
@@ -24,7 +22,6 @@
 }
 
 .introText {
-  font-family: 'Titillium Web', sans-serif ;
   padding-top: 1rem;
   padding-bottom: 2rem;
   padding-left: 2rem;
@@ -52,14 +49,12 @@
 }
 
 .About h4 {
-  font-family: 'Titillium Web', sans-serif ;
   padding-top: 0rem;
   padding-left: 0rem;
   color: rgba(230,130,130,1);
 }
 
 .aboutText {
-  font-family: 'Titillium Web', 'Noto Sans KR', sans-serif ;
   text-align: center;
   color: var(--pink1);
   font-size: 0.9rem;
@@ -99,54 +94,4 @@
 
 .diagramExplanation {
   margin-top: 4rem;
-}
-
-
-.brandIdentityM {
-  text-align: center;
-  display: none;
-  height: 4rem ;
-  margin-top: 1rem ;
-}
-
-.brandIdentityT {
-  height: 6rem ;
-  text-align: center;
-  margin-bottom: 2rem;
-  margin-left: 0rem;
-  display: block;
-}
-
-@media (min-width: 576px) {
-  .brandIdentityM {
-    display: block;
-  }
-  .brandIdentityT {
-    display: none;
-  }
-}
-
-.text-centered {
-  text-align: center;
-}
-
-.font-dosis1 {
-  font-family: 'Dosis', sans-serif;
-  text-align: center;
-}
-
-.font-dosis2 {
-  font-family: 'Dosis', sans-serif;
-  text-align: center;
-}
-
-
-.vertical-text {
-  text-align: center;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-}
-
-.text-grey {
-  color: #EEE;
 }
