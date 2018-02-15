@@ -11,6 +11,7 @@ html {
   --pink333: rgb(230,150,150,1) ;
   --pink3: rgba(200,150,150,1);
   --pink4: rgba(190,110,110,1);
+  --pink5: rgba(215,200,200,1);
 
   /* sizes */
   --xs: 0;
@@ -28,7 +29,7 @@ body {
   margin: 0;
 
   color: white;
-  background-color: var(--pink1);
+  background-color: var(--pink5);
 }
 
 img {

@@ -1,14 +1,8 @@
 .intro {
   margin:0;
   padding:0;
-  height: 7rem;
 }
 
-@media (min-width: 576px) {
-  .intro {
-    height: 15rem;
-  }
-}
 
 .introHead {
   margin-top: 1.2rem;
@@ -34,7 +28,6 @@
 
 
 .About {
-  height: 100rem;
   background: linear-gradient( rgba(210,110,125,1) 0%, rgba(230,190,180,0.7) 70%, rgba(250,190,195,0) 100%);
   padding-top: 0rem;
 }

@@ -7,22 +7,21 @@ import './index.css'
 import googleAnalytics from './googleAnalytics'
 import ScrollToTop from './ScrollToTop'
 
-import Navigation from '../Navigation/index.js'
-import Foot from '../Foot'
+import Navigation from '../Navigation'
 
-import Home from '../Home/index.js'
-import About from '../About/index.js'
+import Home from '../Home'
+import About from '../About'
 
-import Seam from '../Seam/index.js'
-import Upcycle from '../Upcycle/index.js'
-import Grill from '../Grill/index.js'
-import Pops from '../Pops/index.js'
+import Seam from '../Seam'
+import Upcycle from '../Upcycle'
+import Grill from '../Grill'
+import Pops from '../Pops'
 
 // Error component
 //   Used in the Routes component
 const Error = () => (
   <div>
-    <h1>Error</h1>
+    <h1>Error, page not found</h1>
   </div>
 )
 
@@ -35,15 +34,28 @@ const Routes = () => (
   <div>
     <Navigation />
     <Switch>
-      <Route exact path='/' component={Home} />
-      <Route path='/about' component={About} />
-      <Route path='/seam' component={Seam} />
-      <Route path='/upcycle' component={Upcycle} />
-      <Route path='/grill' component={Grill} />
-      <Route path='/pops' component={Pops} />
-      <Route component={Error} />
+      <Route exact path='/'>
+        <Home />
+      </Route>
+      <Route path='/about'>
+        <About />
+      </Route>
+      <Route path='/seam'>
+        <Seam />
+      </Route>
+      <Route path='/upcycle'>
+        <Upcycle />
+      </Route>
+      <Route path='/grill'>
+        <Grill />
+      </Route>
+      <Route path='/pops'>
+        <Pops />
+      </Route>
+      <Route>
+        <Error />
+      </Route>
     </Switch>
-    <Foot />
   </div>
 )
 

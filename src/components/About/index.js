@@ -2,6 +2,7 @@ import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 import './index.css'
 
+import Foot from '../Foot'
 import TextIllustration from '../TextIllustration'
 
 const About = () => (
@@ -118,6 +119,8 @@ const About = () => (
 
       </Row>
     </Grid>
+
+    <Foot />
   </div>
 )
 

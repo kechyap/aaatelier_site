@@ -3,9 +3,9 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 import './index.css'
 
 const project = {
-  Folder: 'Seam',
-  Title: 'SEAM CENTER',
-  Text: 'co-working & co-living place',
+  folder: 'Seam',
+  title: 'SEAM CENTER',
+  text: 'co-working & co-living place',
   photos: [
     { filename: 'menuU.svg', break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
     { filename: 'notAnImage', break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
@@ -43,11 +43,11 @@ const Seam = () => (
     <Row>
       <Col xs={12} md={4} xl={3}>
         <h3>
-          {project.Title}
+          {project.title}
         </h3>
 
         <h4>
-          {project.Text}
+          {project.text}
         </h4>
 
         <p>

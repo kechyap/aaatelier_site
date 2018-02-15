@@ -2,6 +2,7 @@ import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 import './index.css'
 
+import Foot from '../Foot'
 import Grill from '../Grill'
 import Upcycle from '../Upcycle'
 import Pops from '../Pops'
@@ -60,6 +61,8 @@ const Home = () => (
     <div className='vertical-space'>
       <Pops />
     </div>
+
+    <Foot />
   </div>
 )
 
