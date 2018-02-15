@@ -11,7 +11,7 @@ const About = () => (
       <img src={require('./images/stripesRed.png')} />
     </div>
 
-    <Grid>
+    <Grid fluid>
       <Row>
         <Col xs={12} sm={3} md={3} lg={3}>
           <h2 className='introHead'>

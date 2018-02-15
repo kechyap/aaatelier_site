@@ -10,27 +10,12 @@
   color: rgba(255, 200, 190, 1);
 }
 
-.Front h4 {
+.Front h3 {
   color: rgba(255, 190, 180, 0.8);
 }
 
-.Front h6 {
+.Front h4 {
   color: rgba(220, 160, 150, 1);
-}
-
-.Home h3 {
-  color: var(--pink4);
-}
-
-.category {
-   margin-top: 3rem ;
-   margin-right: 2rem;
-   padding-left: 1rem ;
-
-   color: var(--pink3) ;
-
-   font-size: 0.8rem;
-   line-height: 1.4rem;
 }
 
 .st2 {

@@ -31,46 +31,46 @@ const project = {
 }
 
 const Pops = () => (
-  <Grid>
+  <Grid fluid>
     <Row>
       <Col xs={12} md={4} xl={3}>
+        <div className='py-2 px-1'>
+          <h3> {project.Title} </h3>
+          <h4> {project.Text} </h4>
+          <p>
+            Event Planning, Reaserching, Booklets.
+            <br />
+            Sharing Solutions about P.O.P.S (Private Owned Public Space) forum, Improving Urban Life quaility though citizen innovation.
+          </p>
 
-        <h3> {project.Title} </h3>
-        <h4> {project.Text} </h4>
-        <p>
-          Event Planning, Reaserching, Booklets.
+          <hr />
+
+          <ul>
+            <li> Completion Date - Dec, 2016 </li>
+            <li> Planning - AAAtelier, Urban Society, 00UNIV. </li>
+            <li> Graphic Design - AAAtelier </li>
+            <li> Venue - Gyeongui Railway Park, Seoul </li>
+            <li> Business Planning - AAAtelier, Urban Society </li>
+            <li> Client - Seoul Metropolitan Government </li>
+          </ul>
+
+          <hr />
+
+          <h4> SUPPORTING </h4>
+          <a href={'oouniv.org'}>
+            00UNIV
+          </a>
           <br />
-          Sharing Solutions about P.O.P.S (Private Owned Public Space) forum, Improving Urban Life quaility though citizen innovation.
-        </p>
-
-        <hr />
-
-        <ul>
-          <li> Completion Date - Dec, 2016 </li>
-          <li> Planning - AAAtelier, Urban Society, 00UNIV. </li>
-          <li> Graphic Design - AAAtelier </li>
-          <li> Venue - Gyeongui Railway Park, Seoul </li>
-          <li> Business Planning - AAAtelier, Urban Society </li>
-          <li> Client - Seoul Metropolitan Government </li>
-        </ul>
-
-        <hr />
-
-        <h4> SUPPORTING </h4>
-        <a href={'oouniv.org'}>
-          00UNIV
-        </a>
-        <br />
-        <a href={project.ProjectLink} >
-          {project.Title}
-        </a>
-        <br /> <br /> <br /> <br />
+          <a href={project.ProjectLink} >
+            {project.Title}
+          </a>
+        </div>
       </Col>
 
-      <Col xs={12} md={8} xl={9}>
-        <Row nopadding>
+      <Col xs={12} md={8} xl={9} className='no-pm'>
+        <Row>
           {project.photos.map((photo) =>
-            <Col xs={photo.break.xs} sm={photo.break.sm} xl={photo.break.xl}>
+            <Col xs={photo.break.xs} sm={photo.break.sm} xl={photo.break.xl} className='no-pm'>
               <img src={require(`./images/${photo.filename}`)} />
             </Col>
           )}

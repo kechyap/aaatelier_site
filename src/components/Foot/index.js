@@ -6,7 +6,7 @@ const Foot = () => (
   <div className='ending'>
     <hr />
 
-    <Grid>
+    <Grid fluid>
       <Row>
         <Col xs={4.1} sm={4} md={3}>
           <h5>

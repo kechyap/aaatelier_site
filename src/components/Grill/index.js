@@ -32,55 +32,57 @@ const project = {
 }
 
 const Grill = () => (
-  <Grid>
+  <Grid fluid>
     <Row>
       <Col xs={12} md={4} xl={3}>
-        <h3>
-          {project.Title}
-        </h3>
+        <div className='py-2 px-1'>
+          <h3>
+            {project.Title}
+          </h3>
 
-        <h4>
-          {project.Text}
-        </h4>
+          <h4>
+            {project.Text}
+          </h4>
 
-        <p>
-          SOCIAL INOVATION BUSINESS, BRANDING, SPACE IDENTITY
-        </p>
+          <p>
+            SOCIAL INOVATION BUSINESS, BRANDING, SPACE IDENTITY
+          </p>
 
-        <hr />
+          <hr />
 
-        <ul>
-          <li>Completion Date - Oct, 2017</li>
-          <li>Design Planning - AAAtelier</li>
-          <li>Construction - AAAtelier</li>
-          <li>Signage - AAAtelier</li>
-          <li>Photograph - AAAtelier</li>
-          <li>Venue - Seoungsu, Seoul</li>
-          <li>Client - MYSC</li>
-          <li>Business Planning - MYSC</li>
-        </ul>
+          <ul>
+            <li>Completion Date - Oct, 2017</li>
+            <li>Design Planning - AAAtelier</li>
+            <li>Construction - AAAtelier</li>
+            <li>Signage - AAAtelier</li>
+            <li>Photograph - AAAtelier</li>
+            <li>Venue - Seoungsu, Seoul</li>
+            <li>Client - MYSC</li>
+            <li>Business Planning - MYSC</li>
+          </ul>
 
-        <hr />
+          <hr />
 
-        <h4>
-          SUPPORTING
-        </h4>
+          <h4>
+            SUPPORTING
+          </h4>
 
-        <a href='mysc.co.kr' target='_blank'>
-          MYSC
-        </a>
+          <a href='mysc.co.kr' target='_blank'>
+            MYSC
+          </a>
 
-        <br />
+          <br />
 
-        <a href='www.instagram.com/grillbag' target='_blank'>
-          Grill Bag
-        </a>
+          <a href='www.instagram.com/grillbag' target='_blank'>
+            Grill Bag
+          </a>
+        </div>
       </Col>
 
-      <Col xs={12} md={8} xl={9}>
+      <Col xs={12} md={8} xl={9} className='no-pm'>
         <Row>
           {project.photos.map((photo) =>
-            <Col xs={photo.break.xs} sm={photo.break.sm} xl={photo.break.xl}>
+            <Col xs={photo.break.xs} sm={photo.break.sm} xl={photo.break.xl} className='no-pm'>
               {photo.filename === 'notAnImage' ? (
                 <svg viewBox='0 0 1800 994' xmlns='http://www.w3.org/2000/svg'>
                   <image xlinkHref={require('./images/00.png')} height='994' width='1800' />

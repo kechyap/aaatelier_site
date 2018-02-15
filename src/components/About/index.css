@@ -1,84 +1,17 @@
-.intro {
-  margin:0;
-  padding:0;
-}
-
-
-.introHead {
-  margin-top: 1.2rem;
-  weight: 400 ;
-  color: rgba(250,200,200,1);
-}
-
-.introHead h2 {
-  color: whtie ;
-  margin-bottom: 1rem;
-}
-
-.introText {
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  weight: 400 ;
-  color: rgba(250,220,220,1);
-}
-
-.About .logo {
-  width: 5.5rem;
-}
-
-
 .About {
-  background: linear-gradient( rgba(210,110,125,1) 0%, rgba(230,190,180,0.7) 70%, rgba(250,190,195,0) 100%);
-  padding-top: 0rem;
-}
-
-.About h4 {
-  color: rgb(230,130,130,1)
-}
-
-.aboutText {
-  text-align: center;
+  background: linear-gradient(
+    rgba(210,110,125,1) 0%,
+    rgba(230,190,180,0.7) 70%,
+    rgba(250,190,195,0) 100%
+  );
   color: var(--pink1);
-  font-size: 0.9rem;
-  margin-top: 3rem;
 }
 
-.process {
-  width: 19rem;
-  text-align: center;
-  padding-left:0rem;
-  padding-top: 8rem;
-
-}
-
-@media (max-width: 576px) {
-  .process {
-    width: 16rem;
-    text-align: center;
-    padding-top: 2rem;
-  }
-  .introText {
-    padding-right:1.5rem;
-    padding-left: 1.5rem;
-  }
-  .introHead {
-    text-align: left;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-}
-
-
-.diagramIntroText {
-  color: var(--pink3);
-  padding-left:1.5rem;
-  padding-right:1.5rem;
-  padding-top:2rem;
-  text-align: justify ;
-}
-
-.diagramExplanation {
-  padding-left: 1.5rem;
-  padding-right:1.5rem;
-  text-align: justify ;
+.About h1,
+.About h2,
+.About h3,
+.About h4,
+.About h5,
+.About h6 {
+  color: var(--pink1);
 }

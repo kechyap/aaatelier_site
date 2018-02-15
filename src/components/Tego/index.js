@@ -35,52 +35,54 @@ const project = {
 }
 
 const Tego = () => (
-  <Grid>
+  <Grid fluid>
     <Row>
       <Col xs={12} md={4} xl={3}>
-        <h3>
-          {project.Title}
-        </h3>
+        <div className='py-2 px-1'>
+          <h3>
+            {project.Title}
+          </h3>
 
-        <h4>
-          {project.Text}
-        </h4>
+          <h4>
+            {project.Text}
+          </h4>
 
-        <p>
-          Interior design, Furniture design
-        </p>
+          <p>
+            Interior design, Furniture design
+          </p>
 
-        <hr />
+          <hr />
 
-        <ul>
-          <li>Schematic Design - OCT, 2016</li>
+          <ul>
+            <li>Schematic Design - OCT, 2016</li>
 
-          <li>Design Development - MAR, 2017</li>
+            <li>Design Development - MAR, 2017</li>
 
-          <li>Construction Documents - JUNE, 2017</li>
+            <li>Construction Documents - JUNE, 2017</li>
 
-          <li>Design Planning - AAAtelier, Urban society</li>
+            <li>Design Planning - AAAtelier, Urban society</li>
 
-          <li>Venue - Makok R&D Innovative district, Seoul</li>
+            <li>Venue - Makok R&D Innovative district, Seoul</li>
 
-          <li>Client - Tego Science</li>
-        </ul>
+            <li>Client - Tego Science</li>
+          </ul>
 
-        <hr />
+          <hr />
 
-        <h4>
-          SUPPORTING
-        </h4>
+          <h4>
+            SUPPORTING
+          </h4>
 
-        <a href='www.tegoscience.com' target='_blank'>
-          Tego science
-        </a>
+          <a href='www.tegoscience.com' target='_blank'>
+            Tego science
+          </a>
+        </div>
       </Col>
 
-      <Col xs={12} md={8} xl={9}>
+      <Col xs={12} md={8} xl={9} className='no-pm'>
         <Row>
           {project.photos.map((photo) => (
-            <Col xs={photo.break.xs} sm={photo.break.sm} md={photo.break.md} lg={photo.break.lg} xl={photo.break.xl}>
+            <Col xs={photo.break.xs} sm={photo.break.sm} md={photo.break.md} lg={photo.break.lg} xl={photo.break.xl} className='no-pm'>
               <img src={require(`./images/${photo.filename}`)} />
             </Col>
           ))}

@@ -11,54 +11,56 @@ import Tego from '../Tego'
 
 const Home = () => (
   <div className='Home'>
-    <div className='Front vertical-space'>
-      <Grid>
+    <div className='Front py-5'>
+      <br />
+      <br />
+      <Grid fluid>
         <Row>
-          <Col xs={2}>
+          <Col xs={4} sm={4} md={4} lg={4} xl={4}>
             <img
               src={require('./images/logo_pink.svg')}
-              style={{ paddingTop: '1.3rem' }}
+              style={{ width: '6rem' }}
             />
           </Col>
 
-          <Col xs={2} />
-
-          <Col xs={8}>
-            <h2>
+          <Col xs={8} sm={8} md={8} lg={8} xl={8}>
+            <h2 className='py-0'>
               AAAtelier
             </h2>
 
-            <h4>
+            <h3 className='pt-0 pb-1 weight-400'>
               Art and Architecture Atelier
-            </h4>
+            </h3>
 
-            <h6>
+            <h4 className='py-0'>
               Total Design Solution
               <br />
               Spatial Identity Design
-            </h6>
+            </h4>
           </Col>
         </Row>
       </Grid>
+      <br />
+      <br />
     </div>
 
-    <div className='vertical-space'>
+    <div className='py-1'>
       <Grill />
     </div>
 
-    <div className='vertical-space'>
+    <div className='py-1'>
       <Upcycle />
     </div>
 
-    <div className='vertical-space'>
+    <div className='py-1'>
       <Seam />
     </div>
 
-    <div className='vertical-space'>
+    <div className='py-1'>
       <Tego />
     </div>
 
-    <div className='vertical-space'>
+    <div className='py-1'>
       <Pops />
     </div>
 

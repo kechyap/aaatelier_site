@@ -3,8 +3,8 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 import './index.css'
 
 const TextIllustration = () => (
-  <div className='text-centered'>
-    <Grid>
+  <div className='font-dosis text-align-centered'>
+    <Grid fluid>
       <Row>
         <Col xs={12}>
           <div className='show-xs-sm'>

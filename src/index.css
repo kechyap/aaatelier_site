@@ -20,20 +20,20 @@ html {
   --lg: 992;
   --xl: 1200;
 
-  font-size: 16px; /* <html> is ROOT from Rem */
-  line-height: 1.5; /* this automatically em */
+  font-size: 15px; /* <html> is ROOT from Rem */
   font-family: 'Titillium Web', 'Noto Sans KR', sans-serif; /* standard fonts for everything */
 }
 
 body {
   margin: 0;
+  line-height: 1.7em;
 
-  color: white;
+  color: var(--pink3);
   background-color: var(--pink5);
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -42,64 +42,36 @@ hr {
   border-bottom: 1px solid var(--pink3);
 }
 
-h2 {
-  margin-bottom: -0.6rem;
+h1, h2, h3, h4, h5, h6 {
+  color: var(--pink4);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.5em;
+}
 
+h1, h2, h4, h5, h6 {
   font-weight: 400;
 }
 
-
-h3 {
-  color: var(--pink1);
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-
-h4 {
-  color: var(--pink1);
-
-  font-weight: 400;
-}
-
-p {
+a {
   color: var(--pink3);
+}
 
-  font-size: 0.9rem;
-  font-weight:300;
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid var(--pink3);
+}
+
+ul {
+  line-height: 1.3rem;
+  padding-left: 1.3rem;
 }
 
 li {
   font-size: 0.85rem;
   padding-bottom: 0.5rem;
   color: var(--pink3);
-
-  font-size: 0.85rem;
-
-  weight: 400;
-}
-
-h4 {
-  margin-bottom: 1rem;
-
-  color: var(--pink4);
-}
-
-a {
-  color: var(--pink3);
-
-  font-size: 0.9rem;
-  line-height: 1.8rem;
-}
-
-hr {
-   margin-top: 1rem ;
-   margin-right: 2rem;
-   margin-bottom: 1rem ;
-   margin-left: 0.5rem ;
-}
-
-ul {
-   line-height: 1.3rem;
-   padding-left: 1.3rem;
 }

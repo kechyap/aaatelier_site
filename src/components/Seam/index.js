@@ -39,68 +39,70 @@ const project = {
 }
 
 const Seam = () => (
-  <Grid>
+  <Grid fluid>
     <Row>
       <Col xs={12} md={4} xl={3}>
-        <h3>
-          {project.title}
-        </h3>
+        <div className='py-2 px-1'>
+          <h3>
+            {project.title}
+          </h3>
 
-        <h4>
-          {project.text}
-        </h4>
+          <h4>
+            {project.text}
+          </h4>
 
-        <p>
-          SEAM(Social Entrepreneurship And mission) CENTER is the HUB to promote and support Social Enterprisers in pursuit of Christian faith. We plan to minimize alterations to the exterior but entirely convert inside of building into community hub – basement and 1st floor are designed for co-working space and 2nd & 3rd floor are planned for share house. The theme of this building is “Platform of spare sharing”
-        </p>
+          <p>
+            SEAM(Social Entrepreneurship And mission) CENTER is the HUB to promote and support Social Enterprisers in pursuit of Christian faith. We plan to minimize alterations to the exterior but entirely convert inside of building into community hub – basement and 1st floor are designed for co-working space and 2nd & 3rd floor are planned for share house. The theme of this building is “Platform of spare sharing”
+          </p>
 
-        <p>
-          This building was built in 1990 as a typical multifamily housing. It borders high-rise apartment neighboring Seoul Forest. We extend existing outer-stairway and newly make main entrance of co-working space in order to have closer relationship with the dead end road (outside of building). Instead of hiding old and poor condition of the outer wall, we choose facade design using paint finishing and wooden louver to bring memories and traces of the past in natural way.
-        </p>
+          <p>
+            This building was built in 1990 as a typical multifamily housing. It borders high-rise apartment neighboring Seoul Forest. We extend existing outer-stairway and newly make main entrance of co-working space in order to have closer relationship with the dead end road (outside of building). Instead of hiding old and poor condition of the outer wall, we choose facade design using paint finishing and wooden louver to bring memories and traces of the past in natural way.
+          </p>
 
-        <hr />
+          <hr />
 
-        <ul>
-          <li>Completion Date - Feb, 2017</li>
+          <ul>
+            <li>Completion Date - Feb, 2017</li>
 
-          <li>Design Planning - AAAtelier, Urban society</li>
+            <li>Design Planning - AAAtelier, Urban society</li>
 
-          <li>Supervising - AAAtelier, Urban society</li>
+            <li>Supervising - AAAtelier, Urban society</li>
 
-          <li>Construction - ILwoo Design</li>
+            <li>Construction - ILwoo Design</li>
 
-          <li>Signage - GramGram</li>
+            <li>Signage - GramGram</li>
 
-          <li>Photograph - Namsun Lee</li>
+            <li>Photograph - Namsun Lee</li>
 
-          <li>Venue - Seoungu, Seoul</li>
+            <li>Venue - Seoungu, Seoul</li>
 
-          <li>Client - The small foundation</li>
+            <li>Client - The small foundation</li>
 
-          <li>Building Management - Impact Square</li>
-        </ul>
+            <li>Building Management - Impact Square</li>
+          </ul>
 
-        <hr />
+          <hr />
 
-        <h4>
-          SUPPORTING
-        </h4>
+          <h4>
+            SUPPORTING
+          </h4>
 
-        <a href='seam.center' target='_blank'>
-          SEAM CENTER
-        </a>
+          <a href='seam.center' target='_blank'>
+            SEAM CENTER
+          </a>
 
-        <br />
+          <br />
 
-        <a href='www.impactsquare.com' target='_blank'>
-          Impact Square
-        </a>
+          <a href='www.impactsquare.com' target='_blank'>
+            Impact Square
+          </a>
+        </div>
       </Col>
 
-      <Col xs={12} md={8} xl={9}>
+      <Col xs={12} md={8} xl={9} className='no-pm'>
         <Row>
           {project.photos.map((photo) => (
-            <Col xs={photo.break.xs} sm={photo.break.sm} md={photo.break.md} lg={photo.break.lg} xl={photo.break.xl}>
+            <Col xs={photo.break.xs} sm={photo.break.sm} md={photo.break.md} lg={photo.break.lg} xl={photo.break.xl} className='no-pm'>
               {photo.filename === 'notAnImage' ? (
                 <svg viewBox='0 0 1500 1385' xmlns='http://www.w3.org/2000/svg'>
                   <image xlinkHref={require('./images/00.png')} width='1500' height='1385' />

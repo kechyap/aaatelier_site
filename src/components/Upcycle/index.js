@@ -23,44 +23,46 @@ const project = {
 }
 
 const Upcycle = () => (
-  <Grid>
+  <Grid fluid>
     <Row>
       <Col xs={12} md={4} xl={3}>
-        <h3>
-          {project.Title}
-        </h3>
-        <h4>
-          {project.Text}
-        </h4>
-        <div className='category'>
-          Promoting enterpreneurs in upcycle industry.
+        <div className='py-2 px-1'>
+          <h3>
+            {project.Title}
+          </h3>
+          <h4>
+            {project.Text}
+          </h4>
+          <div className='category'>
+            Promoting enterpreneurs in upcycle industry.
+          </div>
+
+          <hr />
+
+          <ul>
+            <li>Completion Date - Dec, 2017</li>
+            <li>Design Planning - AAAtelier</li>
+            <li>Installation - AAAtelier</li>
+            <li>Signage - AAAtelier</li>
+            <li>Venue - SETEC, Seoul</li>
+            <li>Client - Touch4good</li>
+          </ul>
+
+          <hr />
+
+          <h4>
+            SUPPORTING
+          </h4>
+          <a href='http://www.touch4good.com' target='_blank'>
+            Touch4good
+          </a>
         </div>
-
-        <hr />
-
-        <ul>
-          <li>Completion Date - Dec, 2017</li>
-          <li>Design Planning - AAAtelier</li>
-          <li>Installation - AAAtelier</li>
-          <li>Signage - AAAtelier</li>
-          <li>Venue - SETEC, Seoul</li>
-          <li>Client - Touch4good</li>
-        </ul>
-
-        <hr />
-
-        <h4>
-          SUPPORTING
-        </h4>
-        <a href='http://www.touch4good.com' target='_blank'>
-          Touch4good
-        </a>
       </Col>
 
-      <Col xs={12} md={8} xl={9}>
+      <Col xs={12} md={8} xl={9} className='no-pm'>
         <Row>
           {project.photos.map((photo) => (
-            <Col xs={photo.break.xs} sm={photo.break.sm} md={photo.break.md} lg={photo.break.lg} xl={photo.break.xl}>
+            <Col xs={photo.break.xs} sm={photo.break.sm} md={photo.break.md} lg={photo.break.lg} xl={photo.break.xl} className='no-pm'>
               <img src={require(`./images/${photo.filename}`)} />
             </Col>
           ))}
