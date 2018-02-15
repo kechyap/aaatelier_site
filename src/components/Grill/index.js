@@ -1,11 +1,15 @@
+// import npm files & components
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
+
+// import local files & components
 import './index.css'
 
+// make data
 const project = {
-  Folder: 'Grill',
-  Title: 'Grill Bag',
-  Text: 'Mexican restaurant',
+  folder: 'Grill',
+  title: 'Grill Bag',
+  text: 'Mexican restaurant',
 
   photos: [
     { filename: 'menuU.svg', break: { xs: 12, sm: 12, xl: 10 } },
@@ -31,22 +35,23 @@ const project = {
   ]
 }
 
+// make Grill component
 const Grill = () => (
-  <Grid fluid>
+  <Grid>
     <Row>
       <Col xs={12} md={4} xl={3}>
-        <div className='py-2 px-1'>
+        <div className='py-3 px-1'>
           <h3>
-            {project.Title}
+            {project.title}
           </h3>
 
-          <h4>
-            {project.Text}
+          <h4 className='mb-4'>
+            {project.text}
           </h4>
 
-          <p>
+          <small>
             SOCIAL INOVATION BUSINESS, BRANDING, SPACE IDENTITY
-          </p>
+          </small>
 
           <hr />
 
@@ -81,22 +86,14 @@ const Grill = () => (
 
       <Col xs={12} md={8} xl={9} className='no-pm'>
         <Row>
-          {project.photos.map((photo) =>
+          {project.photos.map((photo) => (
             <Col xs={photo.break.xs} sm={photo.break.sm} xl={photo.break.xl} className='no-pm'>
               {photo.filename === 'notAnImage' ? (
                 <svg viewBox='0 0 1800 994' xmlns='http://www.w3.org/2000/svg'>
                   <image xlinkHref={require('./images/00.png')} height='994' width='1800' />
                   <g transform='translate(1395 382)'>
                     <circle className='st2' r='1' style={{ color: 'rgba(255,255,255,0.1)' }}>
-                      <animateTransform
-                        attributeType='xml'
-                        attributeName='transform'
-                        type='scale'
-                        from='0'to='60'
-                        begin='0s'
-                        dur='1s'
-                        repeatCount='indefinite'
-                      />
+                      <animateTransform attributeType='xml' attributeName='transform' type='scale' from='0'to='60' begin='0s' dur='1s' repeatCount='indefinite' />
                     </circle>
                   </g>
                 </svg>
@@ -104,11 +101,12 @@ const Grill = () => (
                 <img src={require(`./images/${photo.filename}`)} />
               )}
             </Col>
-        )}
+          ))}
         </Row>
       </Col>
     </Row>
   </Grid>
 )
 
+// export Grill component
 export default Grill

@@ -1,23 +1,24 @@
+// import npm files & components
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
+
+// import local files & components
 import './index.css'
 
+// make Foot component
 const Foot = () => (
   <div className='ending'>
     <hr />
 
-    <Grid fluid>
+    <Grid>
       <Row>
         <Col xs={4.1} sm={4} md={3}>
-          <h5>
+          <h4>
             CONTACT AAAtelier
-          </h5>
-
-          <p>
-            <a href='mailto:aaatelier@ejay.kim'>
-              aaatelier@ejay.kim
-            </a>
-          </p>
+          </h4>
+          <a href='mailto:aaatelier@ejay.kim'>
+            aaatelier@ejay.kim
+          </a>
         </Col>
 
         <Col xs={7.9} sm={8} md={7} >
@@ -38,4 +39,5 @@ const Foot = () => (
   </div>
 )
 
+// export Foot component
 export default Foot

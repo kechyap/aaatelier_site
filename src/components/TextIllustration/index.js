@@ -1,15 +1,21 @@
+// import npm files & components
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
+
+// import local files & components
 import './index.css'
 
+// make TextIllustration component
 const TextIllustration = () => (
   <div className='font-dosis text-align-centered'>
-    <Grid fluid>
+    <Grid>
       <Row>
         <Col xs={12}>
           <div className='show-xs-sm'>
             <img src={require('./images/logo_white.svg')} style={{ maxWidth: '11rem' }} />
           </div>
+
+          <br />
         </Col>
       </Row>
 
@@ -44,11 +50,13 @@ const TextIllustration = () => (
           <div style={{ letterSpacing: '0.001em', paddingLeft: '0.001em', color: '#EEE' }}>
             exhibition, furniture, display
           </div>
+
+          <br />
         </Col>
 
         <Col xs={12} md={4}>
           <div className='hide-xs-sm'>
-            <img src={require('./images/logo_white.svg')} style={{ maxWidth: '11rem' }} />
+            <img src={require('./images/logo_white.svg')} style={{ maxWidth: '7rem', paddingTop: '2rem' }} />
 
             <div style={{ letterSpacing: '0.4em', paddingLeft: '0.4em' }}>
               BRAND
@@ -86,18 +94,22 @@ const TextIllustration = () => (
           <div style={{ letterSpacing: '0.02em', paddingLeft: '0.02em', color: '#EEE' }}>
             signage, poster, publishing
           </div>
+
+          <br />
         </Col>
       </Row>
 
       <Row>
-        <Col xs={12} md={2} />
-
-        <Col xs={12} md={8}>
-          <img src={require('./images/aboutFA.svg')} />
+        <Col xs={12} md={3} />
+        <Col xs={12} md={6}>
+          <div className='hide-xs-sm text-align-center'>
+            <img src={require('./images/aboutFA.svg')} />
+          </div>
         </Col>
       </Row>
     </Grid>
   </div>
 )
 
+// export TextIllustration component
 export default TextIllustration

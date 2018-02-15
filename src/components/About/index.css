@@ -1,17 +1,21 @@
 .About {
+  background: var(--pink1);
+}
+
+.About .front {
   background: linear-gradient(
     rgba(210,110,125,1) 0%,
     rgba(230,190,180,0.7) 70%,
     rgba(250,190,195,0) 100%
   );
-  color: var(--pink1);
+  color: white;
 }
 
-.About h1,
-.About h2,
-.About h3,
-.About h4,
-.About h5,
-.About h6 {
+.About .front h1,
+.About .front h2,
+.About .front h3,
+.About .front h4,
+.About .front h5,
+.About .front h6 {
   color: var(--pink1);
 }

@@ -1,11 +1,16 @@
+// import npm files & components
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
+
+// import local files & components
 import './index.css'
 
+// make data
 const project = {
   folder: 'Seam',
   title: 'SEAM CENTER',
   text: 'co-working & co-living place',
+
   photos: [
     { filename: 'menuU.svg', break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
     { filename: 'notAnImage', break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
@@ -38,16 +43,17 @@ const project = {
   ]
 }
 
+// make Seam component
 const Seam = () => (
-  <Grid fluid>
+  <Grid>
     <Row>
       <Col xs={12} md={4} xl={3}>
-        <div className='py-2 px-1'>
+        <div className='py-3 px-1'>
           <h3>
             {project.title}
           </h3>
 
-          <h4>
+          <h4 className='mb-4'>
             {project.text}
           </h4>
 
@@ -63,21 +69,13 @@ const Seam = () => (
 
           <ul>
             <li>Completion Date - Feb, 2017</li>
-
             <li>Design Planning - AAAtelier, Urban society</li>
-
             <li>Supervising - AAAtelier, Urban society</li>
-
             <li>Construction - ILwoo Design</li>
-
             <li>Signage - GramGram</li>
-
             <li>Photograph - Namsun Lee</li>
-
             <li>Venue - Seoungu, Seoul</li>
-
             <li>Client - The small foundation</li>
-
             <li>Building Management - Impact Square</li>
           </ul>
 
@@ -109,15 +107,7 @@ const Seam = () => (
 
                   <g transform='translate(1095 735)'>
                     <circle className='st2' r='1' style={{ color: 'rgba(255,255,255,0.1)' }}>
-                      <animateTransform
-                        attributeType='xml'
-                        attributeName='transform'
-                        type='scale'
-                        from='0'to='40'
-                        begin='0s'
-                        dur='1s'
-                        repeatCount='indefinite'
-                      />
+                      <animateTransform attributeType='xml' attributeName='transform' type='scale' from='0'to='40' begin='0s' dur='1s' repeatCount='indefinite' />
                     </circle>
                   </g>
                 </svg>
@@ -132,4 +122,5 @@ const Seam = () => (
   </Grid>
 )
 
+// export Seam component
 export default Seam

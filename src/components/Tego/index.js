@@ -1,11 +1,15 @@
+// import npm files & components
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
+
+// import local files & components
 import './index.css'
 
+// make data
 const project = {
-  Folder: 'Tego',
-  Title: 'TEGO SCIENCE OFFICE',
-  Text: 'office, laboratory',
+  folder: 'Tego',
+  title: 'TEGO SCIENCE OFFICE',
+  text: 'office, laboratory',
 
   photos: [
     { filename: 'menuE.svg', break: { xs: 12, sm: 12, md: 12, lg: 2, xl: 10 } },
@@ -34,36 +38,32 @@ const project = {
   ]
 }
 
+// make Tego component
 const Tego = () => (
-  <Grid fluid>
+  <Grid>
     <Row>
       <Col xs={12} md={4} xl={3}>
-        <div className='py-2 px-1'>
+        <div className='py-3 px-1'>
           <h3>
-            {project.Title}
+            {project.title}
           </h3>
 
-          <h4>
-            {project.Text}
+          <h4 className='mb-4'>
+            {project.text}
           </h4>
 
-          <p>
+          <small>
             Interior design, Furniture design
-          </p>
+          </small>
 
           <hr />
 
           <ul>
             <li>Schematic Design - OCT, 2016</li>
-
             <li>Design Development - MAR, 2017</li>
-
             <li>Construction Documents - JUNE, 2017</li>
-
             <li>Design Planning - AAAtelier, Urban society</li>
-
             <li>Venue - Makok R&D Innovative district, Seoul</li>
-
             <li>Client - Tego Science</li>
           </ul>
 
@@ -92,4 +92,5 @@ const Tego = () => (
   </Grid>
 )
 
+// export Tego component
 export default Tego

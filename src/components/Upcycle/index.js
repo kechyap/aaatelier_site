@@ -1,11 +1,15 @@
+// import npm files & components
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
+
+// import local files & components
 import './index.css'
 
+// make data
 const project = {
-  Folder: 'Upcycle',
-  Title: 'Upcycle Network',
-  Text: 'Exhibition',
+  folder: 'Upcycle',
+  title: 'Upcycle Network',
+  text: 'Exhibition',
 
   photos: [
     { filename: 'menuC.svg', break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
@@ -22,20 +26,23 @@ const project = {
   ]
 }
 
+// make Upcycle component
 const Upcycle = () => (
-  <Grid fluid>
+  <Grid>
     <Row>
       <Col xs={12} md={4} xl={3}>
-        <div className='py-2 px-1'>
+        <div className='py-3 px-1'>
           <h3>
-            {project.Title}
+            {project.title}
           </h3>
-          <h4>
-            {project.Text}
+
+          <h4 className='mb-4'>
+            {project.text}
           </h4>
-          <div className='category'>
+
+          <small>
             Promoting enterpreneurs in upcycle industry.
-          </div>
+          </small>
 
           <hr />
 
@@ -53,6 +60,7 @@ const Upcycle = () => (
           <h4>
             SUPPORTING
           </h4>
+
           <a href='http://www.touch4good.com' target='_blank'>
             Touch4good
           </a>
@@ -72,4 +80,5 @@ const Upcycle = () => (
   </Grid>
 )
 
+// export Upcycle component
 export default Upcycle
