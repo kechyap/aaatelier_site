@@ -1,10 +1,14 @@
 .ending {
-  padding-bottom: 2rem;
-  padding-top: 1rem;
+  backgound-color: rgba(255,255,255,1);
+  color: rgb(230,130,130);
+  font-size:1rem;
+  padding-Bottom : 2rem ;
+  padding-Top: 1rem ;
 }
+
 
 .ending .icon {
   color: var(--pink3);
-  height: 1.3em;
-  margin-right: 0.2em;
+  height: 1.2rem;
+  padding-top: 1rem;
 }

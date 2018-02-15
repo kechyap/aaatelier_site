@@ -1,10 +1,18 @@
 .intro {
   margin:0;
   padding:0;
+  height: 7rem;
 }
 
+@media (min-width: 576px) {
+  .intro {
+    height: 15rem;
+  }
+}
 
 .introHead {
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif ;
   margin-top: 1.2rem;
   weight: 400 ;
   color: rgba(250,200,200,1);
@@ -16,69 +24,129 @@
 }
 
 .introText {
+  font-family: 'Titillium Web', sans-serif ;
   padding-top: 1rem;
   padding-bottom: 2rem;
+  padding-left: 2rem;
   weight: 400 ;
   color: rgba(250,220,220,1);
+}
+
+.About li {
+  font-weight: 300;
+  list-style: disc;
 }
 
 .About .logo {
   width: 5.5rem;
 }
 
+.About hr {
+  color: white ;
+}
 
 .About {
+  height: 100rem;
   background: linear-gradient( rgba(210,110,125,1) 0%, rgba(230,190,180,0.7) 70%, rgba(250,190,195,0) 100%);
   padding-top: 0rem;
 }
 
 .About h4 {
-  color: rgb(230,130,130,1)
+  font-family: 'Titillium Web', sans-serif ;
+  padding-top: 0rem;
+  padding-left: 0rem;
+  color: rgba(230,130,130,1);
 }
 
 .aboutText {
+  font-family: 'Titillium Web', 'Noto Sans KR', sans-serif ;
   text-align: center;
   color: var(--pink1);
   font-size: 0.9rem;
   margin-top: 3rem;
 }
 
-.process {
-  width: 19rem;
-  text-align: center;
+.aboutTextL {
+  margin:0;
+  padding-right:0;
+  padding-top: 0rem;
   padding-left:0rem;
-  padding-top: 8rem;
+}
 
+.diagram {
+  height: 27rem;
+  text-align: center;
+  background-color: rgba(255,255,255,0);
+  padding-left:0rem;
+  padding-top: 5rem;
+  padding-Bottom: 3rem;
 }
 
 @media (max-width: 576px) {
-  .process {
-    width: 16rem;
-    text-align: center;
-    padding-top: 2rem;
+  .diagram {
+    padding-left: 1rem;
+    padding-top: 3rem;
   }
   .introText {
-    padding-right:1.5rem;
-    padding-left: 1.5rem;
+    padding-right:3rem;
   }
   .introHead {
     text-align: left;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
 
-
-.diagramIntroText {
-  color: var(--pink3);
-  padding-left:1.5rem;
-  padding-right:1.5rem;
-  padding-top:2rem;
-  text-align: justify ;
+.diagramExplanation {
+  margin-top: 4rem;
 }
 
-.diagramExplanation {
-  padding-left: 1.5rem;
-  padding-right:1.5rem;
-  text-align: justify ;
+
+.brandIdentityM {
+  text-align: center;
+  display: none;
+  height: 4rem ;
+  margin-top: 1rem ;
+}
+
+.brandIdentityT {
+  height: 6rem ;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-left: 0rem;
+  display: block;
+}
+
+@media (min-width: 576px) {
+  .brandIdentityM {
+    display: block;
+  }
+  .brandIdentityT {
+    display: none;
+  }
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.font-dosis1 {
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+}
+
+.font-dosis2 {
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+}
+
+
+.vertical-text {
+  text-align: center;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.text-grey {
+  color: #EEE;
 }
