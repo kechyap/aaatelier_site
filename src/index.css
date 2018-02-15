@@ -5,8 +5,11 @@ html {
 
   --pink1: rgba(255,230,225,1);
   --pink2: rgba(255,190,180,0.8);
+  --pink33: rgb(230,130,130,1);
+  --pink333: rgb(230,150,150,1) ;
   --pink3: rgba(200,150,150,1);
   --pink4: rgba(190,110,110,1);
+
 }
 
 body {
@@ -58,15 +61,14 @@ p {
   color: var(--pink3);
 }
 
-
 li {
   font-size: 0.85rem;
-  padding-bottom: 0.45rem;
+  padding-bottom: 0.5rem;
   color: var(--pink3);
   weight: 400;
 }
 
 .container-fluid {
   margin: 0 auto; /* Keep in the middle of the page */
-  max-width: 1400px; /* Max width on all the <Grid /> components */
+  max-width: 1200px; /* Max width on all the <Grid /> components */
 }
