@@ -1,4 +1,6 @@
 /* styles for html tags in all pages */
+/* version bump */
+
 html {
   --main-yellow: rgb(250, 189, 52);
   --brown: rgba(128, 107, 80, 0.8);
