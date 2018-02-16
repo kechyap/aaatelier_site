@@ -8,20 +8,20 @@ import './index.css'
 // make Foot component
 const Foot = () => (
   <div className='ending'>
-    <hr />
 
     <Grid>
-      <Row>
-        <Col xs={4.1} sm={4} md={3}>
-          <h4>
+      <hr />
+      <Row className='py-2'>
+        <Col xs={5} xsOffset={1} md={4} mdOffset={0}>
+          <h4 className='pb-0'>
             CONTACT AAAtelier
           </h4>
-          <a href='mailto:aaatelier@ejay.kim'>
-            aaatelier@ejay.kim
-          </a>
+          <small>
+            aaatelier @ ejay.kim
+          </small>
         </Col>
 
-        <Col xs={7.9} sm={8} md={7} >
+        <Col xs={6} md={7} className='pt-2'>
           <a href='mailto:aaatelier@ejay.kim'>
             <img src={require('./images/icon_email.svg')} className='icon' />
           </a>

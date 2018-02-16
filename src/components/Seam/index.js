@@ -45,7 +45,7 @@ const project = {
 
 // make Seam component
 const Seam = () => (
-  <Grid>
+  <Grid fluid>
     <Row>
       <Col xs={12} md={4} xl={3}>
         <div className='py-3 px-1'>

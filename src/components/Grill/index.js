@@ -1,6 +1,7 @@
 // import npm files & components
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
+import { Link } from 'react-router-dom'
 
 // import local files & components
 import './index.css'
@@ -37,12 +38,14 @@ const project = {
 
 // make Grill component
 const Grill = () => (
-  <Grid>
+  <Grid fluid>
     <Row>
       <Col xs={12} md={4} xl={3}>
-        <div className='py-3 px-1'>
+        <div className='py-3 px-1 pr-3'>
           <h3>
+            {/* <Link to='/grill'> */}
             {project.title}
+            {/* </Link> */}
           </h3>
 
           <h4 className='mb-4'>
@@ -75,6 +78,10 @@ const Grill = () => (
           <a href='mysc.co.kr' target='_blank'>
             MYSC
           </a>
+
+          <Link to='http://mysc.co.kr' target='_blank' rel='noopener noreferrer'>
+            MYSC
+          </Link>
 
           <br />
 

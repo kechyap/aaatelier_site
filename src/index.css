@@ -75,15 +75,23 @@ li {
 
   color: var(--pink3);
 
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 p {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   line-height: 1.8;
 }
 
 /* styles for classes in all pages  */
+.hide-xs { display: none; }
+.show-xs { display: block; }
+
+@media (min-width: 576px) {
+  .hide-xs { display: block; }
+  .show-xs { display: none; }
+}
+
 .hide-xs-sm { display: none; }
 .show-xs-sm { display: block; }
 
