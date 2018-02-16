@@ -52,17 +52,18 @@
 
 .aboutText {
   font-family: 'Titillium Web', 'Noto Sans KR', sans-serif ;
-  text-align: center;
-  color: var(--pink1);
+  text-align: left;
+  color: var(--pink2);
   font-size: 0.9rem;
-  margin-top: 3rem;
+  padding-top: 2.5rem;
+  padding-left:1.5rem;
 }
 
 .process {
   width: 19rem;
   text-align: center;
   padding-left:0rem;
-  padding-top: 8rem;
+  padding-top: 1rem;
 
 }
 
@@ -70,16 +71,24 @@
   .process {
     width: 16rem;
     text-align: center;
-    padding-top: 2rem;
   }
   .introText {
-    padding-right:1.5rem;
+    padding-right:2rem;
     padding-left: 1.5rem;
   }
   .introHead {
     text-align: left;
     margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-right: 2rem;
+  }
+  .issues {
+    color: var(--pink3) ;
+    font-weight: 300;
+    text-align: justify;
+    font-height: 0.85rem;
+    padding-top: 0rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
@@ -87,12 +96,14 @@
 .diagramIntroText {
   color: var(--pink3);
   padding-left:1.5rem;
-  padding-right:1.5rem;
   padding-top:2rem;
+  padding-right: 1.5rem;
   text-align: justify ;
+
 }
 
 .diagramExplanation {
+  color: var(--pink3) ;
   padding-left: 1.5rem;
   padding-right:1.5rem;
   text-align: justify ;
@@ -121,11 +132,15 @@
   .brandIdentityT {
     display: none;
   }
-  .diagramIntroText {
-    padding-right: 5rem;
+  .issues {
+    color: var(--pink3) ;
+    margin-top: 2.5rem;
+    font-weight: 300;
+    font-height: 0.85rem;
+    padding-left: 1.5rem;
+    text-align: justify;
   }
 }
-
 
 .font-dosis1 {
   font-family: 'Dosis', sans-serif;
@@ -145,3 +160,12 @@
 .text-grey {
   color: #EEE;
 }
+
+.tag {
+  color: rgb(250,180,180) ;
+  padding-left: 1.5rem;
+  padding-right:1.5rem;
+  padding-top: 2rem;
+  font-size: 0.8rem;
+
+ }

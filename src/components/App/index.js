@@ -19,7 +19,9 @@ import Pops from '../Pops/index.js'
 //   Used in the Routes component
 const Error = () => (
   <div>
-    <h1>Error</h1>
+    <h1>OPPS ! </h1>
+    <h2> This page is not working. <br />
+    Check the address again ! </h2>
   </div>
 )
 

@@ -13,10 +13,14 @@ const Foot = () => (
     <Grid fluid>
       <Row>
         <Col xs={4.1} sm={4} md={3}>
-             CONTACT AAAtelier
-            <p style={{height: '0.9rem', marginTop: '0.3rem'}}>
+          <h4 style={{marginLeft: '1.5rem', marginTop: '-1rem'}}>
+               CONTACT
+               AAAtelier
+            </h4>
+
+          <p style={{height: '0.9rem', marginTop: '0.3rem', marginLeft: '1.5rem'}}>
              aaatelier @ ejay.kim
-           </p>
+          </p>
         </Col>
 
         <Col xs={7.9} sm={8} md={7} >
