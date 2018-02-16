@@ -10,7 +10,7 @@ const Foot = () => (
   <div className='ending'>
 
     <Grid>
-      <hr />
+
       <Row className='py-2'>
         <Col xs={5} xsOffset={1} md={4} mdOffset={0}>
           <h4 className='pb-0'>

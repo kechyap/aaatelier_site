@@ -1,6 +1,7 @@
 // import npm files & components
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
+import { Link } from 'react-router-dom'
 
 // import local files & components
 import './index.css'
@@ -44,16 +45,16 @@ const Tego = () => (
     <Row>
       <Col xs={12} md={4} xl={3}>
         <div className='py-3 px-1'>
-          <h3>
+          <h2>
             {project.title}
-          </h3>
+          </h2>
 
           <h4 className='mb-4'>
             {project.text}
           </h4>
 
           <small>
-            Interior design, Furniture design
+            Interior design, Planning, Specifications, Furniture design
           </small>
 
           <hr />
@@ -62,7 +63,7 @@ const Tego = () => (
             <li>Schematic Design - OCT, 2016</li>
             <li>Design Development - MAR, 2017</li>
             <li>Construction Documents - JUNE, 2017</li>
-            <li>Design Planning - AAAtelier, Urban society</li>
+            <li>Design Planning - AAAtelier, Urban society </li>
             <li>Venue - Makok R&D Innovative district, Seoul</li>
             <li>Client - Tego Science</li>
           </ul>

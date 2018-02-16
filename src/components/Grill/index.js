@@ -42,11 +42,11 @@ const Grill = () => (
     <Row>
       <Col xs={12} md={4} xl={3}>
         <div className='py-3 px-1 pr-3'>
-          <h3>
+          <h2>
             {/* <Link to='/grill'> */}
             {project.title}
             {/* </Link> */}
-          </h3>
+          </h2>
 
           <h4 className='mb-4'>
             {project.text}

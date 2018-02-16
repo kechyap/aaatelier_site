@@ -1,6 +1,7 @@
 // import npm components & files
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
+import { Link } from 'react-router-dom'
 
 // import local components & files
 import './index.css'
@@ -37,9 +38,9 @@ const Pops = () => (
     <Row>
       <Col xs={12} md={4} xl={3}>
         <div className='py-3 px-1'>
-          <h3>
+          <h2>
             {project.title}
-          </h3>
+          </h2>
 
           <h4 className='mb-4'>
             {project.text}

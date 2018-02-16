@@ -21,12 +21,12 @@ const Home = () => (
             <Col xs={4} sm={4} md={4} lg={4} xl={4}>
               <img
                 src={require('./images/logo_pink.svg')}
-                style={{ width: '6rem' }}
+                style={{ width: '6.8rem', paddingTop: '1rem' }}
               />
             </Col>
 
             <Col xs={8} sm={8} md={8} lg={8} xl={8}>
-              <h2 className='py-0'>
+              <h2 className='no-pm'>
                 AAAtelier
               </h2>
 
@@ -65,6 +65,7 @@ const Home = () => (
       <Pops />
     </div>
 
+    <hr />
     <Foot />
   </div>
 )

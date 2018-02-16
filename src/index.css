@@ -1,17 +1,18 @@
 /* styles for html tags in all pages */
-/* version bump */
-
 html {
   --main-yellow: rgb(250, 189, 52);
   --brown: rgba(128, 107, 80, 0.8);
   --grey-background: rgba(154, 140, 120, 0.5);
+
   --pink1: rgba(255,230,225,1);
   --pink2: rgba(255,190,180,0.8);
-  --pink33: rgb(230,130,130,1);
-  --pink333: rgb(230,150,150,1) ;
   --pink3: rgba(200,150,150,1);
+  --pink33: rgb(230,130,130,1);
+  --pink333: rgb(230,150,150,1);
   --pink4: rgba(190,110,110,1);
+  --pink44: rgb(220,150,140);
   --pink5: rgba(215,200,200,1);
+
   --xs: 0;
   --sm: 576;
   --md: 768;
@@ -23,10 +24,8 @@ html {
 
 body {
   margin: 0;
-
   color: var(--pink3);
   background-color: var(--pink5);
-
   font-family: 'Titillium Web', 'Noto Sans KR', sans-serif;
   line-height: 1.7em;
 }
@@ -41,18 +40,26 @@ hr {
   border-bottom: 1px solid var(--pink3);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h5, h6 {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0.2em;
   padding-bottom: 0.5em;
-
+  font-weight: 400;
   color: var(--pink4);
 }
 
-h1, h2, h4, h5, h6 {
-  font-weight: 400;
+h2 {
+  color: var(--pink4);
+  font-weight: 400 ;
 }
+
+h4 {
+  font-weight: 400 ;
+  font-size: 1.1rem;
+  color: var(--pink4);
+}
+
 
 a {
   color: var(--pink3);
@@ -61,29 +68,28 @@ a {
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
-
   border: none;
   border-bottom: 1px solid var(--pink3);
 }
 
 ul {
   padding-left: 1.3rem;
-
   line-height: 1.3rem;
 }
 
 li {
   padding-bottom: 0.5rem;
-
   color: var(--pink3);
-
   font-size: 0.9rem;
 }
 
 p {
-  font-size: 0.9rem;
+  font-weight: 300;
+  font-size: 1rem;
   line-height: 1.8;
+  
 }
+
 
 /* styles for classes in all pages  */
 .hide-xs { display: none; }
@@ -115,7 +121,7 @@ p {
   font-family: 'Titillium Web', 'Noto Sans KR', sans-serif;
 }
 
-.weight-300 { font-weight: 300; }
+.weight-300 { font-weight: 300; , font-size: 0.9rem;}
 .weight-400 { font-weight: 400; }
 .weight-500 { font-weight: 500; }
 .weight-700 { font-weight: 700; }

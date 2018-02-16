@@ -12,10 +12,13 @@
 
 .Home .front .subtitle {
   color: rgba(255, 190, 180, 0.8);
+  font-size: 1.1rem;
 }
 
 .Home .front .subsubtitle {
-  color: rgba(220, 160, 150, 1);
+  color: rgb(250, 190, 180);
+  font-weight: 300 ;
+  font-size: 0.9rem;
 }
 
 .st2 {

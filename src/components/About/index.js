@@ -29,12 +29,12 @@ const About = () => (
                   Process for Space Identity Design
                 </h2>
 
-                <div style={{ color: 'var(--pink3)' }}>
+                <div style={{color: 'var(--pink3)', textAlign: 'justify'}}>
                   Brand Identity는 디자인 표면에서만 드러나는것이 아닙니다. 브랜드의 가치와 철학은 평면 작업에서부터 시작하여, 구조, 평면, 마감재, 작은 소품까지 모든 시각 언어로 사용자의 경험을 디자인합니다.
                 </div>
 
                 <Row>
-                  <Col xs={10} xsOffset={1} sm={6} smOffset={3} md={8} mdOffset={2} lg={8} lgOffset={2}>
+                  <Col xs={8} xsOffset={2} sm={6} smOffset={3} md={8} mdOffset={2} lg={8} lgOffset={2}>
                     <div className='diagram my-3' style={{textAlign: 'center'}} >
                       <img src={require('./images/process.svg')} />
                     </div>
@@ -48,7 +48,7 @@ const About = () => (
                     1. BRAND IDENTITY
                   </h4>
 
-                  <p className='text-align-justify'>
+                  <p className='text-align-justify' >
                     AAAtelier의 작업 프로세스는 생명을 창조하는 것과 같습니다. Branding과 공간은 하나의 개성을 지니고 있는 한 생명이며, 각 개체가 가지고 있는 고유한 영혼이 곧 Brand의 Identity입니다.
                   </p>
 
@@ -65,7 +65,9 @@ const About = () => (
                   </h4>
 
                   <div className='underline'>
-                    Suggestion 1: Visual Language에 따른 제안
+                    Suggestion1.
+                    <br />
+                     Visual Language에 따른 제안
                   </div>
 
                   <p className='text-align-justify'>
@@ -73,11 +75,12 @@ const About = () => (
                   </p>
 
                   <div className='underline'>
-                    Suggestion 2: Budget에 따른 제안
+                    Suggestion2: <br/>
+                    Budget에 따른 제안
                   </div>
 
                   <p className='text-align-justify'>
-                    또한 budget에 따라 Marble, Wood, Tile등 최고의 효과를 낼 수 있는 합리적인 마감재 선택을 제안 드립니다.
+                    Project의 budget에 따라 Marble, Wood, Tile등 최고의 효과를 낼 수 있는 합리적인 마감재 선택을 제안 드립니다.
                   </p>
 
                   <h4>
@@ -116,7 +119,8 @@ const About = () => (
 
             <Col xs={12} sm={8} lg={7}>
               <div className='text-align-justify'>
-                공간 디자인은 삶을 담아내는 그릇입니다. 유행을 따르기 보다는 우리의 삶을 이해하고 본질적인 문제 추구에서부터 디자인 작업을 시작하여 좋은 그릇을 만드는 것이 목표입니다.
+                <p> 공간 디자인은 삶을 담아내는 그릇입니다. 유행을 따르기 보다는 우리의 삶을 이해하고 본질적인 문제 추구에서부터 디자인 작업을 시작하여 좋은 그릇을 만드는 것이 목표입니다.
+                </p>
               </div>
             </Col>
           </Row>
@@ -130,7 +134,9 @@ const About = () => (
 
             <Col xs={12} sm={8} lg={7}>
               <div className='text-align-justify'>
-                AAAtelier는 급속한 도시화로 인한 문제 및 환경 문제 및 사회 이슈들을 개선하기 위해 고민하고, 그에 따른 합리적인 디자인을 제안드립니다.
+                <p>
+                  AAAtelier는 급속한 도시화로 인한 문제 및 환경 문제 및 사회 이슈들을 개선하기 위해 고민하고, 그에 따른 합리적인 디자인을 제안드립니다.
+                </p>
               </div>
             </Col>
           </Row>
@@ -144,7 +150,9 @@ const About = () => (
 
             <Col xs={12} sm={8} lg={7}>
               <div className='text-align-justify'>
-                크리에이티브한 창작자들을 위한 쉐어 하우스, 코워킹 스페이스, 창작자 마을을 구축하기 위한 커뮤니티 공유 공간을 제안 드립니다.
+                <p>
+                  크리에이티브한 창작자들을 위한 쉐어 하우스, 코워킹 스페이스, 창작자 마을을 구축하기 위한 커뮤니티 공유 공간을 제안 드립니다.
+                </p>
               </div>
             </Col>
           </Row>
@@ -157,11 +165,11 @@ const About = () => (
             </Col>
           </Row>
         </Col>
-        <hr />
       </Row>
     </Grid>
 
-  <Foot />
+    <hr />
+    <Foot />
   </div>
 )
 

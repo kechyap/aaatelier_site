@@ -13,7 +13,7 @@ const TextIllustration = () => (
         <Col xs={10} xsOffset={1} sm={12} smOffset={0}>
           <Row>
             <Col xs={12} md={4} lg={3} lgOffset={1}>
-              <h2 style={{ color: 'rgba(250, 200, 200, 1)' }}>
+              <h2 style={{ color: 'rgba(250, 200, 200, 1)', marginTop: '0rem'}}>
                 TOTAL DESIGN SOLUTION
               </h2>
             </Col>
