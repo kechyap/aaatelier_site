@@ -28,3 +28,7 @@
 .About small {
   color: rgb(250, 180, 180);
 }
+
+.About h4 {
+  margin-top: 2rem;
+}

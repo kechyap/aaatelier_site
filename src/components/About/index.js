@@ -35,7 +35,7 @@ const About = () => (
 
                 <Row>
                   <Col xs={8} xsOffset={2} sm={6} smOffset={3} md={8} mdOffset={2} lg={8} lgOffset={2}>
-                    <div className='diagram my-3' style={{textAlign: 'center'}} >
+                    <div className='diagram my-5' style={{textAlign: 'center'}} >
                       <img src={require('./images/process.svg')} />
                     </div>
                   </Col>
@@ -75,7 +75,7 @@ const About = () => (
                   </p>
 
                   <div className='underline'>
-                    Suggestion2: <br/>
+                    Suggestion2: <br />
                     Budget에 따른 제안
                   </div>
 
@@ -119,7 +119,8 @@ const About = () => (
 
             <Col xs={12} sm={8} lg={7}>
               <div className='text-align-justify'>
-                <p> 공간 디자인은 삶을 담아내는 그릇입니다. 유행을 따르기 보다는 우리의 삶을 이해하고 본질적인 문제 추구에서부터 디자인 작업을 시작하여 좋은 그릇을 만드는 것이 목표입니다.
+                <p>
+                  공간 디자인은 삶을 담아내는 그릇입니다. 유행을 따르기 보다는 우리의 삶을 이해하고 본질적인 문제 추구에서부터 디자인 작업을 시작하여 좋은 그릇을 만드는 것이 목표입니다.
                 </p>
               </div>
             </Col>
