@@ -1,20 +1,17 @@
+// import npm components & files
 import React from 'react'
 import { Link } from 'react-router-dom'
+
+// import local components & files
 import './index.css'
 
-import about from './about.svg'
-import project from './project.svg'
-
+// make Navigation component
 export const Navigation = () => (
-  <div className='navbar-wrapper'>
-    <div className='navbar'>
-
-      <Link to='/about'> ABOUT </Link>
-      <Link to='/'> PROJECT </Link>
-
-    </div>
+  <div className='navbar'>
+    <Link to='/about'>ABOUT</Link>
+    <Link to='/'>PROJECT</Link>
   </div>
-
 )
 
+// export Navigation component
 export default Navigation

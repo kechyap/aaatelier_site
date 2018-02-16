@@ -1,14 +1,17 @@
+// import npm components & files
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
+
+// import local components & files
 import './index.css'
 
-const projects = [
-  {
-    Folder: 'Pops',
-    Title: 'P.O.P.S',
-    Text: 'Forum',
+// make data
+const project = {
+  folder: 'Pops',
+  title: 'P.O.P.S',
+  text: 'Forum',
 
-    photos: [
+  photos: [
     { filename: 'menuP.svg', break: { xs: 12, sm: 12, xl: 10 } },
     { filename: '01.jpg', break: { xs: 12, sm: 12, xl: 10 } },
     { filename: '02.jpg', break: { xs: 12, sm: 6, xl: 5 } },
@@ -17,74 +20,74 @@ const projects = [
     { filename: 's2.jpg', break: { xs: 12, sm: 12, xl: 10 } },
     { filename: 's0.jpg', break: { xs: 6, sm: 6, xl: 5 } },
     { filename: 'p1.jpg', break: { xs: 6, sm: 6, xl: 5 } },
-
     { filename: 'p3.jpg', break: { xs: 6, sm: 6, xl: 5 } },
     { filename: 'p4.jpg', break: { xs: 6, sm: 6, xl: 5 } },
-
     { filename: '05.jpg', break: { xs: 6, sm: 6, xl: 5 } },
     { filename: '04.jpg', break: { xs: 6, sm: 6, xl: 5 } },
     { filename: '00.jpg', break: { xs: 12, sm: 12, xl: 10 } },
     { filename: 'menuB.svg', break: { xs: 12, sm: 12, xl: 10 } },
     { filename: '07.jpg', break: { xs: 12, sm: 12, xl: 10 } },
     { filename: '08.jpg', break: { xs: 12, sm: 12, xl: 10 } }
+  ]
+}
 
-    ]
-  }
-]
-
+// make Pops component
 const Pops = () => (
   <Grid fluid>
-    {projects.map((project) =>
-      <Row>
-        <Col xs={12} md={4} xl={3}>
+    <Row>
+      <Col xs={12} md={4} xl={3}>
+        <div className='py-3 px-1'>
+          <h3>
+            {project.title}
+          </h3>
 
-          <h3> {project.Title} </h3>
-          <h4> {project.Text} </h4>
-          <div className='category'>
-            Event Planning, Reaserching, Booklets. <br />
-            Sharing Solutions about P.O.P.S (Private Owned Public Space) forum, Improving Urban Life quaility though citizen innovation. <br />
+          <h4 className='mb-4'>
+            {project.text}
+          </h4>
 
-          </div>
+          <small>
+            Event Planning, Reaserching, Booklets.
+          </small>
+
+          <p>
+            Sharing Solutions about P.O.P.S (Private Owned Public Space) forum, Improving Urban Life quaility though citizen innovation.
+          </p>
 
           <hr />
 
           <ul>
-            <li> Completion Date - Dec, 2016 </li>
-            <li> Planning - AAAtelier, Urban Society, 00UNIV. </li>
-            <li> Graphic Design - AAAtelier </li>
-            <li> Venue - Gyeongui Railway Park, Seoul </li>
-            <li> Business Planning - AAAtelier, Urban Society </li>
-            <li> Client - Seoul Metropolitan Government </li>
+            <li>Completion Date - Dec, 2016</li>
+            <li>Planning - AAAtelier, Urban Society, 00UNIV.</li>
+            <li>Graphic Design - AAAtelier</li>
+            <li>Venue - Gyeongui Railway Park, Seoul</li>
+            <li>Business Planning - AAAtelier, Urban Society</li>
+            <li>Client - Seoul Metropolitan Government</li>
           </ul>
 
           <hr />
 
-          <h4> SUPPORTING </h4>
-          <a href={'oouniv.org'}>
+          <h4>
+            SUPPORTING
+          </h4>
+
+          <a href='http://oouniv.org' target='_blank'>
             00UNIV
           </a>
-          <br />
-          <a href={project.ProjectLink} >
-            {project.Title}
-          </a>
-          <br /> <br /> <br /> <br />
-        </Col>
+        </div>
+      </Col>
 
-        <Col xs={12} md={8} xl={9} style={{padding: '0', margin: '0'}}>
-          <Row>
-            {project.photos.map((photo) =>
-              <Col style={{padding: '0', margin: '0'}}
-                xs={photo.break.xs}
-                sm={photo.break.sm}
-                xl={photo.break.xl}>
-                <img src={require(`../${project.Folder}/${photo.filename}`)} />
-              </Col>
-            )}
-          </Row>
-        </Col>
-      </Row>
-    )}
+      <Col xs={12} md={8} xl={9} className='no-pm'>
+        <Row>
+          {project.photos.map((photo) => (
+            <Col xs={photo.break.xs} sm={photo.break.sm} xl={photo.break.xl} className='no-pm'>
+              <img src={require(`./images/${photo.filename}`)} />
+            </Col>
+          ))}
+        </Row>
+      </Col>
+    </Row>
   </Grid>
 )
 
+// export Pops component
 export default Pops

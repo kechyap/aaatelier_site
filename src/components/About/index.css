@@ -1,171 +1,30 @@
-.intro {
-  margin:0;
-  padding:0;
-  height: 7rem;
-}
-
-@media (min-width: 576px) {
-  .intro {
-    height: 15rem;
-  }
-}
-
-.introHead {
-  font-family: 'Titillium Web', sans-serif ;
-  margin-top: 1.2rem;
-  weight: 400 ;
-  color: rgba(250,200,200,1);
-}
-
-.introHead h2 {
-  color: whtie ;
-  margin-bottom: 1rem;
-}
-
-.introText {
-  font-family: 'Titillium Web', sans-serif ;
-  text-align: justify;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  weight: 400 ;
-  color: rgba(250,220,220,1);
-}
-
-.About .logo {
-  width: 5.5rem;
-}
-
-
 .About {
-  height: 100rem;
-  background: linear-gradient( rgba(210,110,125,1) 0%, rgba(230,190,180,0.7) 70%, rgba(250,190,195,0) 100%);
-  padding-top: 0rem;
+  background: var(--pink1);
 }
 
-.About h4 {
-  font-family: 'Titillium Web', sans-serif ;
-  margin-bottom: -0.1rem;
-  padding-top: 1.5rem;
-  padding-left: 0rem;
-  color: rgb(230,130,130,1)
+.About .front {
+  background: linear-gradient(
+    rgba(210,110,125,1) 0%,
+    rgba(230,190,180,0.7) 60%,
+    rgba(250,190,195,0) 100%
+  );
 }
 
-.aboutText {
-  font-family: 'Titillium Web', 'Noto Sans KR', sans-serif ;
-  text-align: left;
-  color: var(--pink2);
-  font-size: 0.9rem;
-  padding-top: 2.5rem;
-  padding-left:1.5rem;
+.About .image-bg {
+  background-image: url('./images/stripesRed.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.process {
-  width: 19rem;
-  text-align: center;
-  padding-left:0rem;
-  padding-top: 1rem;
-
+.About .front .top {
+  color: white;
 }
 
-@media (max-width: 576px) {
-  .process {
-    width: 16rem;
-    text-align: center;
-  }
-  .introText {
-    padding-right:2rem;
-    padding-left: 1.5rem;
-  }
-  .introHead {
-    text-align: left;
-    margin-left: 1.5rem;
-    margin-right: 2rem;
-  }
-  .issues {
-    color: var(--pink3) ;
-    font-weight: 300;
-    text-align: justify;
-    font-height: 0.85rem;
-    padding-top: 0rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-
-.diagramIntroText {
-  color: var(--pink3);
-  padding-left:1.5rem;
-  padding-top:2rem;
-  padding-right: 1.5rem;
-  text-align: justify ;
-
-}
-
-.diagramExplanation {
-  color: var(--pink3) ;
-  padding-left: 1.5rem;
-  padding-right:1.5rem;
-  text-align: justify ;
-}
-
-
-.brandIdentityM {
-  text-align: center;
-  display: none;
-  height: 5rem ;
-  margin-top: 1rem ;
-}
-
-.brandIdentityT {
-  height: 6rem ;
-  text-align: center;
-  margin-bottom: 2rem;
-  margin-left: 0rem;
-  display: block;
-}
-
-@media (min-width: 576px) {
-  .brandIdentityM {
-    display: block;
-  }
-  .brandIdentityT {
-    display: none;
-  }
-  .issues {
-    color: var(--pink3) ;
-    margin-top: 2.5rem;
-    font-weight: 300;
-    font-height: 0.85rem;
-    padding-left: 1.5rem;
-    text-align: justify;
-  }
-}
-
-.font-dosis1 {
-  font-family: 'Dosis', sans-serif;
-}
-
-.font-dosis2 {
-  font-family: 'Dosis', sans-serif;
-}
-
-.underline {
-  font-weight: 400 ;
-  height: 0.8rem;
-  color: rgb(230,150,150) ;
+.About .underline {
+  color: rgb(230, 150, 150);
   text-decoration: underline;
 }
 
-.text-grey {
-  color: #EEE;
+.About small {
+  color: rgb(250, 180, 180);
 }
-
-.tag {
-  color: rgb(250,180,180) ;
-  padding-left: 1.5rem;
-  padding-right:1.5rem;
-  padding-top: 2rem;
-  font-size: 0.8rem;
-
- }

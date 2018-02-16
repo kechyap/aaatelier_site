@@ -1,65 +1,73 @@
+// import npm files & components
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
+
+// import local files & components
+import Foot from '../Foot'
+import Grill from '../Grill'
+import Upcycle from '../Upcycle'
+import Pops from '../Pops'
+import Seam from '../Seam'
+import Tego from '../Tego'
 import './index.css'
 
-import Grill from '../Grill/index.js'
-import Upcycle from '../Upcycle/index.js'
-import Pops from '../Pops/index.js'
-import Seam from '../Seam/index.js'
-import Tego from '../Tego/index.js'
-import Foot from '../Foot/index.js'
-
-import logo_pink from '../../images/logo_pink.svg'
-
-import grillImage from '../Grill/00.png'
-
-import iconEmail from '../About/icon_email.svg'
-import iconFacebook from '../About/icon_facebook.svg'
-import iconInsta from '../About/icon_insta.svg'
-
+// make Home component
 const Home = () => (
   <div className='Home'>
-    <div className='Front'>
+    <div className='front py-5'>
+      <div className='py-4'>
+        <Grid>
+          <Row>
+            <Col xs={4} sm={4} md={4} lg={4} xl={4}>
+              <img
+                src={require('./images/logo_pink.svg')}
+                style={{ width: '6rem' }}
+              />
+            </Col>
 
-      <Grid fluid>
-        <Row style={{ paddingTop: '3rem'}}>
-          <Col xs={4} >
-            <img className='logo_pink' src={logo_pink} />
-          </Col>
+            <Col xs={8} sm={8} md={8} lg={8} xl={8}>
+              <h2 className='py-0'>
+                AAAtelier
+              </h2>
 
-          <Col xs={8}>
-            <div>
-              <h2> AAAtelier </h2>
-
-              <div className='subtitle'>
+              <div className='subtitle py-1'>
                 Art and Architecture Atelier
               </div>
 
-              <div className='subsubtitle'>
-                Total Design Solution <br />
+              <div className='subsubtitle py-0'>
+                Total Design Solution
+                <br />
                 Spatial Identity Design
               </div>
-
-            </div>
-          </Col>
-        </Row>
-      </Grid>
+            </Col>
+          </Row>
+        </Grid>
+      </div>
     </div>
 
-    <Grill />
-    <br /> <br /> <br /> <br /> <br />
-    <Upcycle />
-    <br /> <br /> <br /> <br /> <br />
-    <Seam />
-    <br /> <br /> <br /> <br /> <br />
-    <Tego />
-    <br /> <br /> <br /> <br /> <br />
-    <Pops />
-    <br /> <br /> <br /> <br /> <br />
-    <Foot />
-    <br />
+    <div className='py-1'>
+      <Grill />
+    </div>
 
+    <div className='py-1'>
+      <Upcycle />
+    </div>
+
+    <div className='py-1'>
+      <Seam />
+    </div>
+
+    <div className='py-1'>
+      <Tego />
+    </div>
+
+    <div className='py-1'>
+      <Pops />
+    </div>
+
+    <Foot />
   </div>
 )
 
+// export Home component
 export default Home

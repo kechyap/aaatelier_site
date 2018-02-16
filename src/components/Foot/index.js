@@ -1,37 +1,37 @@
+// import npm files & components
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
+
+// import local files & components
 import './index.css'
 
-import iconEmail from '../About/icon_email.svg'
-import iconFacebook from '../About/icon_facebook.svg'
-import iconInsta from '../About/icon_insta.svg'
-
+// make Foot component
 const Foot = () => (
   <div className='ending'>
-    <hr />
 
-    <Grid fluid>
-      <Row>
-        <Col xs={4.1} sm={4} md={3}>
-          <h4 style={{marginLeft: '1.5rem', marginTop: '-1rem'}}>
-               CONTACT
-               AAAtelier
-            </h4>
-
-          <p style={{height: '0.9rem', marginTop: '0.3rem', marginLeft: '1.5rem'}}>
-             aaatelier @ ejay.kim
-          </p>
+    <Grid>
+      <hr />
+      <Row className='py-2'>
+        <Col xs={5} xsOffset={1} md={4} mdOffset={0}>
+          <h4 className='pb-0'>
+            CONTACT AAAtelier
+          </h4>
+          <small>
+            aaatelier @ ejay.kim
+          </small>
         </Col>
 
-        <Col xs={7.9} sm={8} md={7} >
-          <a href='aaatelier@ejay.kim'>
-            <img src={iconEmail} className='icon' />
+        <Col xs={6} md={7} className='pt-2'>
+          <a href='mailto:aaatelier@ejay.kim'>
+            <img src={require('./images/icon_email.svg')} className='icon' />
           </a>
-          <a href='www.facebook.com/kechyap'>
-            <img src={iconFacebook} className='icon' />
+
+          <a href='http://www.facebook.com/kechyap' target='_blank'>
+            <img src={require('./images/icon_facebook.svg')} className='icon' />
           </a>
-          <a href='www.instagram.com/aaatelier_ejay'>
-            <img src={iconInsta} className='icon' />
+
+          <a href='http://www.instagram.com/aaatelier_ejay' target='_blank'>
+            <img src={require('./images/icon_insta.svg')} className='icon' />
           </a>
         </Col>
       </Row>
@@ -39,4 +39,5 @@ const Foot = () => (
   </div>
 )
 
+// export Foot component
 export default Foot

@@ -1,26 +1,14 @@
-/*
-1- rgba(255,200,190,1)
-2- rgba(255,190,180,0.8)
-3- rgba(255,170,160,1)
-*/
-
-
-
 .navbar {
-  font-weight: 400;
   position: fixed;
-  text-align: right;
-  font-size: 0.9rem;
-  text-decoration: overline;
   top: 1rem;
-  left: 0;
-  right: 2rem;
+  right: 1rem;
 }
 
 .navbar a {
-  vertical-align: middle;
-  margin-right: 0.3rem;
+  padding: 0.6rem;
+  font-weight: 400;
+  font-size: 0.9rem;
 
-  text-decoration: none;
+  text-decoration: overline;
   color: rgb(255,170,160);
 }
