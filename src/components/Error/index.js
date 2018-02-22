@@ -7,7 +7,7 @@ import './index.css'
 
 // make Error component
 const Error = () => (
-  <Grid>
+  <Grid fluid>
     <Row>
       <Col xs={12}>
         <h1>Error</h1>

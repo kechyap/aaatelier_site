@@ -3,7 +3,7 @@ import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 
 // import local files & components
-import Foot from '../Foot'
+import Foot2 from '../Foot2'
 import TextIllustration from '../TextIllustration'
 import './index.css'
 
@@ -19,12 +19,12 @@ const About = () => (
         </div>
       </div>
 
-      <Grid>
+      <Grid fluid>
         <hr />
         <Row>
-          <Col xs={10} xsOffset={1} sm={12} smOffset={0}>
+          <Col xs={10} xsOffset={1} sm={10} mdOffset={0}>
             <Row className='py-5'>
-              <Col xs={12} sm={12} md={6} lg={5}>
+              <Col xs={12} sm={12} md={5} lg={5}>
                 <h2 style={{color: 'rgb(230,130,130)'}}>
                   Process for Space Identity Design
                 </h2>
@@ -42,7 +42,7 @@ const About = () => (
                 </Row>
               </Col>
 
-              <Col xs={12} sm={12} md={4} mdOffset={1} lg={5} lgOffset={1}>
+              <Col xs={12} sm={12} md={5} mdOffset={1} lg={5} lgOffset={1}>
                 <div className='diagramExplanation'>
                   <h4>
                     1. BRAND IDENTITY
@@ -66,8 +66,7 @@ const About = () => (
 
                   <div className='underline'>
                     Suggestion1.
-                    <br />
-                     Visual Language에 따른 제안
+                    Visual Language에 따른 제안
                   </div>
 
                   <p className='text-align-justify'>
@@ -75,8 +74,7 @@ const About = () => (
                   </p>
 
                   <div className='underline'>
-                    Suggestion2: <br />
-                    Budget에 따른 제안
+                    Suggestion2: Budget에 따른 제안
                   </div>
 
                   <p className='text-align-justify'>
@@ -98,9 +96,9 @@ const About = () => (
       </Grid>
     </div>
 
-    <Grid>
+    <Grid fluid>
       <Row>
-        <Col xs={10} xsOffset={1} sm={12} smOffset={0}>
+        <Col xs={10} xsOffset={1} sm={10} mdOffset={0}>
           <hr />
           <Row className='pt-3'>
             <Col xs={12}>
@@ -170,7 +168,7 @@ const About = () => (
     </Grid>
 
     <hr />
-    <Foot />
+    <Foot2 />
   </div>
 )
 

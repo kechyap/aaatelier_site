@@ -1,0 +1,7 @@
+.Blog {
+  background: linear-gradient(rgb(130,80,90), rgb(110,90,100));
+}
+
+.Blog h1 {
+  color: var(--pink2);
+}

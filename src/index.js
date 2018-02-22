@@ -12,6 +12,7 @@ import Seam from './components/Seam'
 import Upcycle from './components/Upcycle'
 import Grill from './components/Grill'
 import Pops from './components/Pops'
+import Blog from './components/Blog'
 import Error from './components/Error'
 import './index.css'
 
@@ -24,21 +25,31 @@ const App = () => (
         <Route path='/' exact>
           <Home />
         </Route>
+
         <Route path='/about'>
           <About />
         </Route>
+
         <Route path='/seam'>
           <Seam />
         </Route>
+
         <Route path='/upcycle'>
           <Upcycle />
         </Route>
+
         <Route path='/grill'>
           <Grill />
         </Route>
+
         <Route path='/pops'>
           <Pops />
         </Route>
+
+        <Route path='/blog'>
+          <Blog />
+        </Route>
+
         <Route>
           <Error />
         </Route>

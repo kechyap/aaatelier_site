@@ -16,7 +16,7 @@ const Home = () => (
   <div className='Home'>
     <div className='front py-5'>
       <div className='py-4'>
-        <Grid>
+        <Grid fluid>
           <Row>
             <Col xs={4} sm={4} md={4} lg={4} xl={4}>
               <img
@@ -66,7 +66,9 @@ const Home = () => (
     </div>
 
     <hr />
+
     <Foot />
+
   </div>
 )
 

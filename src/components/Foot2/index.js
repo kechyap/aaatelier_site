@@ -5,22 +5,22 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 // import local files & components
 import './index.css'
 
-// make Foot component
-const Foot = () => (
+// make Foot2 component
+const Foot2 = () => (
   <div className='ending'>
     <Grid fluid>
       <Row>
-        <Col xs={7} className='pl-0 ml-0'>
-          <h4 className='pb-0 pl-0 my-0'>
+        <Col xs={6} xsOffset={1} sm={4} mdOffset={0} md={4}>
+          <h4 className='my-0 mx-0'>
             CONTACT
             AAAtelier
           </h4>
-          <small className='pt-0 pl-0'>
+          <small className='pt-0 mx-0'>
             aaatelier @ ejay.kim
           </small>
         </Col>
 
-        <Col xs={5} className='pt-0 my-0'>
+        <Col xs={5} sm={7} md={8} className='pt-2 my-1'>
           <a href='mailto:aaatelier@ejay.kim'>
             <img src={require('./images/icon_email.svg')} className='icon' />
           </a>
@@ -38,5 +38,5 @@ const Foot = () => (
   </div>
 )
 
-// export Foot component
-export default Foot
+// export Foot2 component
+export default Foot2

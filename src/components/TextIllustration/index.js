@@ -8,9 +8,9 @@ import './index.css'
 // make TextIllustration component
 const TextIllustration = () => (
   <div>
-    <Grid>
+    <Grid fluid>
       <Row>
-        <Col xs={10} xsOffset={1} sm={12} smOffset={0}>
+        <Col xs={10} xsOffset={1} sm={10} smOffset={1}>
           <Row>
             <Col xs={12} md={4} lg={3} lgOffset={1}>
               <h2 style={{ color: 'rgba(250, 200, 200, 1)', marginTop: '0rem'}}>

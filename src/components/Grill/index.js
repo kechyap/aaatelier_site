@@ -40,7 +40,7 @@ const project = {
 const Grill = () => (
   <Grid fluid>
     <Row>
-      <Col xs={12} md={4} xl={3}>
+      <Col xs={12} sm={12} md={4} xl={3}>
         <div className='py-3 px-1 pr-3'>
           <h2>
             {/* <Link to='/grill'> */}
@@ -75,10 +75,6 @@ const Grill = () => (
             SUPPORTING
           </h4>
 
-          <a href='mysc.co.kr' target='_blank'>
-            MYSC
-          </a>
-
           <Link to='http://mysc.co.kr' target='_blank' rel='noopener noreferrer'>
             MYSC
           </Link>
@@ -91,13 +87,13 @@ const Grill = () => (
         </div>
       </Col>
 
-      <Col xs={12} md={8} xl={9} className='no-pm'>
+      <Col xs={12} sm={12} md={8} xl={9} className='no-pm'>
         <Row>
           {project.photos.map((photo) => (
             <Col xs={photo.break.xs} sm={photo.break.sm} xl={photo.break.xl} className='no-pm'>
               {photo.filename === 'notAnImage' ? (
                 <svg viewBox='0 0 1800 994' xmlns='http://www.w3.org/2000/svg'>
-                  <image xlinkHref={require('./images/00.png')} height='994' width='1800' />
+                  <image xlinkHref={require('./images/00.jpg')} height='994' width='1800' />
                   <g transform='translate(1395 382)'>
                     <circle className='st2' r='1' style={{ color: 'rgba(255,255,255,0.1)' }}>
                       <animateTransform attributeType='xml' attributeName='transform' type='scale' from='0'to='60' begin='0s' dur='1s' repeatCount='indefinite' />
