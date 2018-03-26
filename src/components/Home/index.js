@@ -66,7 +66,6 @@ const Home = () => (
     </div>
 
     <hr />
-
     <Foot />
 
   </div>
