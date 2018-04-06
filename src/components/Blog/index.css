@@ -1,7 +1,25 @@
 .Blog {
-  background: linear-gradient(rgb(130,80,90), rgb(110,90,100));
+  background: linear-gradient(rgb(130,75,90), rgb(100,80,105), rgb(110,65,75), rgb(110,70,100), rgb(130,75,90));
 }
 
 .Blog h1 {
+  color: rgb(255,150,160);
+}
+
+.Blog h2, h3 {
+  color: rgb(255,130,140);
+}
+
+.Blog h4 {
   color: var(--pink2);
+}
+
+.Blog hr {
+  border-bottom: 0.5px solid var(--pink4);
+}
+
+.Blog small {
+  line-height: 0rem;
+  margin:0;
+  padding:0;
 }

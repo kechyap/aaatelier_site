@@ -11,6 +11,7 @@ html {
   --pink333: rgb(230,150,150,1);
   --pink4: rgba(190,110,110,1);
   --pink44: rgb(220,150,140);
+  --pink444: rgb(255,150,160);
   --pink5: rgba(215,200,200,1);
 
   --xs: 0;
@@ -27,7 +28,7 @@ body {
   color: var(--pink3);
   background-color: var(--pink5);
   font-family: 'Titillium Web', 'Noto Sans KR', sans-serif;
-  line-height: 2em;
+  line-height: 2.3rem;
 }
 
 img {
@@ -78,7 +79,7 @@ ul {
 }
 
 li {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.3rem;
   color: var(--pink3);
   font-size: 0.9rem;
 }
@@ -90,8 +91,7 @@ p {
 }
 
 b {
-  font-weight: 400;
-  font-size: 0.95rem;
+  font-weight: 500;
 }
 
 
