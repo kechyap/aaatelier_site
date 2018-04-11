@@ -5,6 +5,9 @@
     rgba(255, 200, 190, 0) 100%
   );
 }
+.Home {
+background: rgb(219,200,195);
+}
 
 .Home .front h2 {
   color: rgba(255, 200, 190, 1);
@@ -23,6 +26,5 @@
 
 .st2 {
   opacity:0.6;
-
   fill:#F16C6D;
 }

@@ -23,8 +23,8 @@ const About = () => (
         <hr />
         <Row>
           <Col xs={10} xsOffset={1} sm={10} mdOffset={0}>
-            <Row className='py-5'>
-              <Col xs={12} sm={12} md={5} lg={5}>
+            <Row className='py-5 pl-3'>
+              <Col xs={12} sm={12} md={6} lg={5}>
                 <h2 style={{color: 'rgb(230,130,130)'}}>
                   Process for Space Identity Design
                 </h2>
@@ -34,7 +34,8 @@ const About = () => (
                 </div>
 
                 <Row>
-                  <Col xs={8} xsOffset={2} sm={6} smOffset={3} md={8} mdOffset={2} lg={8} lgOffset={2}>
+                  <Col xs={8} xsOffset={2} sm={6} smOffset={3}
+                    md={10} mdOffset={1}>
                     <div className='diagram my-5' style={{textAlign: 'center'}} >
                       <img src={require('./images/process.svg')} />
                     </div>
@@ -42,7 +43,7 @@ const About = () => (
                 </Row>
               </Col>
 
-              <Col xs={12} sm={12} md={5} mdOffset={1} lg={5} lgOffset={1}>
+              <Col xs={12} sm={12} md={5} mdOffset={1} lg={6} >
                 <div className='diagramExplanation'>
                   <h4>
                     1. BRAND IDENTITY
@@ -101,22 +102,22 @@ const About = () => (
         <Col xs={10} xsOffset={1} sm={10} mdOffset={0}>
           <hr />
           <Row className='pt-3'>
-            <Col xs={12}>
+            <Col xs={12} >
               <h2 style={{ color: 'rgb(250, 150, 150)' }}>
                 Ready for your concern
               </h2>
             </Col>
           </Row>
 
-          <Row className='py-2'>
-            <Col xs={12} sm={3} lg={4}>
+          <Row>
+            <Col xs={12} sm={4} lg={4}>
               <h4>
                 SPACE IDENTITY
               </h4>
             </Col>
 
             <Col xs={12} sm={8} lg={7}>
-              <div className='text-align-justify'>
+              <div className='text-align-justify pt-2'>
                 <p>
                   공간 디자인은 삶을 담아내는 그릇입니다. 유행을 따르기 보다는 우리의 삶을 이해하고 본질적인 문제 추구에서부터 디자인 작업을 시작하여 좋은 그릇을 만드는 것이 목표입니다.
                 </p>
@@ -124,15 +125,15 @@ const About = () => (
             </Col>
           </Row>
 
-          <Row className='py-2'>
-            <Col xs={12} sm={3} lg={4}>
+          <Row>
+            <Col xs={12} sm={4} lg={4}>
               <h4>
                 SOCIAL ISSUE
               </h4>
             </Col>
 
             <Col xs={12} sm={8} lg={7}>
-              <div className='text-align-justify'>
+              <div className='text-align-justify pt-2'>
                 <p>
                   AAAtelier는 급속한 도시화로 인한 문제 및 환경 문제 및 사회 이슈들을 개선하기 위해 고민하고, 그에 따른 합리적인 디자인을 제안드립니다.
                 </p>
@@ -140,15 +141,15 @@ const About = () => (
             </Col>
           </Row>
 
-          <Row className='py-2'>
-            <Col xs={12} sm={3} lg={4}>
+          <Row>
+            <Col xs={12} sm={4} lg={4}>
               <h4>
                 COMMUNITY SPACE
               </h4>
             </Col>
 
             <Col xs={12} sm={8} lg={7}>
-              <div className='text-align-justify'>
+              <div className='text-align-justify pt-2'>
                 <p>
                   크리에이티브한 창작자들을 위한 쉐어 하우스, 코워킹 스페이스, 창작자 마을을 구축하기 위한 커뮤니티 공유 공간을 제안 드립니다.
                 </p>
@@ -156,7 +157,7 @@ const About = () => (
             </Col>
           </Row>
 
-          <Row className='py-2'>
+          <Row className='py-1'>
             <Col xs={12} lg={11}>
               <small>
                 #human #future #lifestyle #common space #community #co living #shared house #residential #co working #office #residence #environment issue #upcycle #urban issue #gentrification #public space #POPS

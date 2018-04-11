@@ -7,7 +7,7 @@ import './index.css'
 
 // make Foot2 component
 const Foot2 = () => (
-  <div className='ending'>
+  <div className='ending2'>
     <Grid fluid>
       <Row>
         <Col xs={6} xsOffset={1} sm={4} mdOffset={0} md={4}>

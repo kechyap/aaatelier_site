@@ -49,7 +49,7 @@ const Seam = () => (
   <Grid fluid>
     <Row>
       <Col xs={12} sm={12} md={4} xl={3}>
-        <div className='py-3 px-1'>
+        <div className='px-1 pr-3 mt-0'>
           <h2>
             {project.title}
           </h2>

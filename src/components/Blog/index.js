@@ -4,8 +4,13 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 import { Link } from 'react-router-dom'
 
 // import local files & components
-import Writing1 from './blogWritings/Writing1'
-import Writing2 from './blogWritings/Writing2'
+import Heyground from './blogWritings/w01_heyground'
+import Punspace from './blogWritings/w02_punspace'
+import Beachub from './blogWritings/w03_beachub'
+import Scoopoint from './blogWritings/w04_scoopoint'
+import Cat from './blogWritings/w05_cat'
+
+import Foot from '../Foot'
 import './index.css'
 
 // make App component
@@ -27,12 +32,15 @@ const Blog = () => (
     </Grid>
 
     <div>
-      <Writing1 />
+      <Heyground />
+      <Punspace />
+      <Beachub />
+      <Scoopoint />
+      <Cat />
+      <hr />
+      <Foot />
     </div>
 
-    <div>
-      <Writing2 />
-    </div>
   </div>
 )
 

@@ -1,6 +1,10 @@
 .ending {
   padding-bottom: 4rem;
   padding-top: 1rem;
+  background: linear-gradient(
+    rgba(210,110,125,0) 10%,
+    rgba(255,195,200,0.5) 100%
+  );
 }
 
 .ending .icon {
