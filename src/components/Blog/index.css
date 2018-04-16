@@ -19,7 +19,13 @@
 }
 
 .Blog small {
+  font-size: 0.88rem;
   line-height: 0rem;
   margin:0;
   padding:0;
+}
+
+.Blog b {
+  font-size: 1.2rem;
+  color: var(--pink4);
 }

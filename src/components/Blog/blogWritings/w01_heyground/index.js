@@ -113,37 +113,32 @@ const Heyground = () => (
         </p>
       </Col>
 
-      <Col xs={12} md={8} lg={7} className='no-pm'>
+      <Col xs={12} md={7} lg={6} className='no-pm'>
         <img src={require('./06.jpg')} />
       </Col>
 
-      <Col xs={12} md={4} lg={3} >
+      <Col xs={12} md={5} lg={4} >
         <div className='show-xs-sm'>
-          <small>
-            <b> FLOOR INFORMATION </b> <br />
-         [ B1F ] Conference hall <br />
-         [ 1F ] Information desk, Cafe and Restaurant<br />
-         [ 2-5F ] Private Office ( L / M ) <br />
-         [ 6-7F ] Private office  ( S ) / Individual Desk <br />
-         [ 8F ] Rooftop Lounge
-         </small>
+          <b> FLOOR INFORMATION </b> <br />
+          B1 F ] &nbsp; Conference Hall <br />
+          1  &nbsp;  &nbsp; F  ] &nbsp; Information, Cafe & Restaurant<br />
+          2-5F ] &nbsp; Private Office - M , L <br />
+          6-7F ] &nbsp; Private office - S / Individual Desk<br />
+          8  &nbsp; &nbsp;  F ] &nbsp; Rooftop Lounge
         </div>
 
         <div className='hide-xs-sm'>
-          <div className='pl-2'>
+          <div className='pl-3'>
             <b> FLOOR INFORMATION </b>
-
             <hr />
-
-            <small>
           B1 F ] &nbsp; Conference Hall <br />
-          1 F &nbsp; &nbsp; ] &nbsp; Information, Cafe & Restaurant<br />
+          1  &nbsp; F &nbsp; ] &nbsp; Information, Cafe & Restaurant<br />
           2-5F ] &nbsp; Private Office - M , L <br />
           6-7F ] &nbsp; Private office - S / Individual Desk<br />
-          8 F &nbsp;&nbsp; ] &nbsp; Rooftop Lounge
-        </small>
+          8  &nbsp; F &nbsp; ] &nbsp; Rooftop Lounge
           </div>
         </div>
+
       </Col>
     </Row>
   </Grid>
