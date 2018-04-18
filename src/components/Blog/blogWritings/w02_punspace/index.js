@@ -117,7 +117,7 @@ const Punspace = () => (
           <Col xs={4} sm={5} md={7} >
             {project.location.map((bar) =>
               <div className='score'>
-                <div className={`skills ${bar.l} `} >
+                <div className={`skills ${bar.l}`} >
                   {`${bar.ll}`}
                 </div>
               </div>
