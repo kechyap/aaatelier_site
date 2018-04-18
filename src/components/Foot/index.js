@@ -29,6 +29,10 @@ const Foot = () => (
             <img src={require('./images/icon_facebook.svg')} className='icon' />
           </a>
 
+          <a href='http://www.linkedin.com/in/ejayk' target='_blank'>
+            <img src={require('./images/icon_linkedin.svg')} className='icon' />
+          </a>
+
           <a href='http://www.instagram.com/aaatelier_ejay' target='_blank'>
             <img src={require('./images/icon_insta.svg')} className='icon' />
           </a>

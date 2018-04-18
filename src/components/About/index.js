@@ -12,6 +12,7 @@ const About = () => (
   <div className='About'>
     <div className='front'>
       <div className='image-bg pt-5'>
+        <br />
         <div className='top'>
           <div className='pt-5 hide-xs' />
           <div className='pt-5 hide-xs-sm' />
@@ -34,7 +35,7 @@ const About = () => (
                 </div>
 
                 <Row>
-                  <Col xs={8} xsOffset={2} sm={6} smOffset={3}
+                  <Col xs={10} xsOffset={1} sm={6} smOffset={3}
                     md={10} mdOffset={1}>
                     <div className='diagram my-5' style={{textAlign: 'center'}} >
                       <img src={require('./images/process.svg')} />

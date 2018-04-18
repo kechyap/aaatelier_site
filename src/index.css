@@ -252,12 +252,23 @@ p4 {
   margin-top: 1rem;
 }
 
+.scoreL {
+  line-height: 0.9rem;
+  font-size: 1.08rem;
+  margin-top: 1rem;
+  color: var(--pink4);
+}
+
 .skills {
   text-align: right;
   padding-right: 0.5rem;
   line-height: 0.7rem;
   font-size: 0.8rem;
   color: rgb(180,90,100);
+}
+
+.bar0{
+ width: 1% ;
 }
 
 .bar1 {

@@ -20,21 +20,21 @@ const project = {
   place: 'Chiangmai, Thailand',
   date: '2018. February',
   location: [
-  { lo: 'SPECIAL ATTRACTION', l: 'bar4', ll: 'HERITAGE SPOT'},
-  { lo: 'CLOSE TO METRO STAION', l: 'bar1', ll: ' . '},
-  { lo: 'WALKABILITY', l: 'bar3', ll: ' . '},
-  { lo: 'PARKING LOT', l: 'bar2', ll: ' . '},
-  { lo: 'QUICK LUNCH', l: 'bar4', ll: ' . '},
-  { lo: 'FUN ACTIVITY AFTER WORK', l: 'bar3', ll: ' . '}
+  { lo: 'SPECIAL ATTRACTION', l: 'bar3', ll: '3'},
+  { lo: 'CLOSE TO METRO STAION', l: 'bar1', ll: ' 1 '},
+  { lo: 'WALKABILITY', l: 'bar3', ll: ' 3 '},
+  { lo: 'PARKING LOT', l: 'bar5', ll: ' 5 '},
+  { lo: 'QUICK LUNCH', l: 'bar3', ll: ' 3 '},
+  { lo: 'FUN ACTIVITY AFTER WORK', l: 'bar4', ll: ' 4'}
   ],
   productivity: [
-  { pr: 'INTERNET SPEED', p: 'bar4', pp: '.' },
-  { pr: 'CHAIR COMFORT', p: 'bar4', pp: '.' },
-  { pr: 'SPACIOUS TABLE', p: 'bar5', pp: '.' },
-  { pr: 'QUIET WORKING AREA', p: 'bar4', pp: '.' },
-  { pr: 'BUSINESS VIDEO CALL', p: 'bar4', pp: '.' },
-  { pr: 'OUTLET ACCESSIBILITY', p: 'bar5', pp: '.' },
-  { pr: '24/7 ACCESSIBILITY', p: 'bar4', pp: '.' }
+  { pr: 'INTERNET SPEED', p: 'bar5', pp: 'BEST' },
+  { pr: 'CHAIR COMFORT', p: 'bar5', pp: 'BEST' },
+  { pr: 'SPACIOUS TABLE', p: 'bar5', pp: 'BEST' },
+  { pr: 'QUIET WORKING AREA', p: 'bar5', pp: 'BEST' },
+  { pr: 'BUSINESS VIDEO CALL', p: 'bar3', pp: 'OKAY' },
+  { pr: 'OUTLET ACCESSIBILITY', p: 'bar4', pp: 'GOOD' },
+  { pr: '24/7 ACCESSIBILITY', p: 'bar4', pp: 'GOOD' }
   ],
   facility: [
   { fa: 'COMFORT MEETING ROOM', f: 'bar4', ff: '.' },
@@ -103,9 +103,7 @@ const Punspace = () => (
           <Col xs={12} className='pt-3'>
             <p4> LOCATION </p4>
             <hr className='no-pm' />
-            <p>
-
-            </p>
+            <p />
           </Col>
 
           <Col xs={8} sm={7} md={5} >
@@ -119,7 +117,7 @@ const Punspace = () => (
           <Col xs={4} sm={5} md={7} >
             {project.location.map((bar) =>
               <div className='score'>
-                <div className={`skills ${bar.l}`}>
+                <div className={`skills ${bar.l} `} >
                   {`${bar.ll}`}
                 </div>
               </div>
@@ -204,7 +202,7 @@ const Punspace = () => (
 
       </Col>
 
-      <Row>
+      <Row className='px-1'>
         <Col xs={12} lg={10} className='no-pm'>
           <br />
           <img src={require('./01.jpg')} />
@@ -215,7 +213,7 @@ const Punspace = () => (
           <br />
         </Col>
 
-        <Col xs={12} md={6} lg={5} className='no-pm'>
+        <Col xs={12} sm={6} lg={5} className='no-pm'>
           <img src={require('./02.jpg')} />
           <p>
         ▲
@@ -224,7 +222,7 @@ const Punspace = () => (
           <br />
         </Col>
 
-        <Col xs={12} md={6} lg={5} className='no-pm'>
+        <Col xs={12} sm={6} lg={5} className='no-pm'>
           <img src={require('./03.jpg')} />
           <p>
         ▲
