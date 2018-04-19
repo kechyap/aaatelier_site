@@ -81,7 +81,7 @@ const Grill = () => (
 
           <br />
 
-          <a href='www.instagram.com/grillbag' target='_blank'>
+          <a href='www.instagram.com/grillbag' target='_blank' rel='noopener noreferrer'>
             Grill Bag
           </a>
         </div>
@@ -101,7 +101,7 @@ const Grill = () => (
                   </g>
                 </svg>
               ) : (
-                <img src={require(`./images/${photo.filename}`)} />
+                <img alt='' src={require(`./images/${photo.filename}`)} />
               )}
             </Col>
           ))}

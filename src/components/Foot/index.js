@@ -22,19 +22,19 @@ const Foot = () => (
 
         <Col xs={5} className='pt-0 my-0'>
           <a href='mailto:aaatelier@ejay.kim'>
-            <img src={require('./images/icon_email.svg')} className='icon' />
+            <img alt='' src={require('./images/icon_email.svg')} className='icon' />
           </a>
 
-          <a href='http://www.facebook.com/kechyap' target='_blank'>
-            <img src={require('./images/icon_facebook.svg')} className='icon' />
+          <a href='http://www.facebook.com/kechyap' target='_blank' rel='noopener noreferrer'>
+            <img alt='' src={require('./images/icon_facebook.svg')} className='icon' />
           </a>
 
-          <a href='http://www.linkedin.com/in/ejayk' target='_blank'>
-            <img src={require('./images/icon_linkedin.svg')} className='icon' />
+          <a href='http://www.linkedin.com/in/ejayk' target='_blank' rel='noopener noreferrer'>
+            <img alt='' src={require('./images/icon_linkedin.svg')} className='icon' />
           </a>
 
-          <a href='http://www.instagram.com/aaatelier_ejay' target='_blank'>
-            <img src={require('./images/icon_insta.svg')} className='icon' />
+          <a href='http://www.instagram.com/aaatelier_ejay' target='_blank' rel='noopener noreferrer'>
+            <img alt='' src={require('./images/icon_insta.svg')} className='icon' />
           </a>
         </Col>
       </Row>

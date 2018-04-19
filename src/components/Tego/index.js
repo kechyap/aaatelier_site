@@ -1,7 +1,6 @@
 // import npm files & components
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
-import { Link } from 'react-router-dom'
 
 // import local files & components
 import './index.css'
@@ -74,7 +73,7 @@ const Tego = () => (
             SUPPORTING
           </h4>
 
-          <a href='www.tegoscience.com' target='_blank'>
+          <a href='www.tegoscience.com' target='_blank' rel='noopener noreferrer'>
             Tego science
           </a>
         </div>
@@ -84,7 +83,7 @@ const Tego = () => (
         <Row>
           {project.photos.map((photo) => (
             <Col xs={photo.break.xs} sm={photo.break.sm} md={photo.break.md} lg={photo.break.lg} xl={photo.break.xl} className='no-pm'>
-              <img src={require(`./images/${photo.filename}`)} />
+              <img alt='' src={require(`./images/${photo.filename}`)} />
             </Col>
           ))}
         </Row>

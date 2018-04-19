@@ -20,6 +20,7 @@ const Home = () => (
           <Row>
             <Col xs={4} sm={4} md={4} lg={4} xl={4}>
               <img
+                alt=''
                 src={require('./images/logo_pink.svg')}
                 style={{ width: '6.8rem', paddingTop: '1rem' }}
               />

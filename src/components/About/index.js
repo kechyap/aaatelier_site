@@ -38,7 +38,7 @@ const About = () => (
                   <Col xs={10} xsOffset={1} sm={6} smOffset={3}
                     md={10} mdOffset={1}>
                     <div className='diagram my-5' style={{textAlign: 'center'}} >
-                      <img src={require('./images/process.svg')} />
+                      <img alt='' src={require('./images/process.svg')} />
                     </div>
                   </Col>
                 </Row>

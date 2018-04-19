@@ -1,7 +1,7 @@
 // import npm files & components
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
-import { Link } from 'react-router-dom'
+
 
 // import local files & components
 import Heyground from './blogWritings/w01_heyground'

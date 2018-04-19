@@ -1,7 +1,6 @@
 // import npm files & components
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
-import { Link } from 'react-router-dom'
 
 // import local files & components
 import './index.css'
@@ -86,13 +85,13 @@ const Seam = () => (
             SUPPORTING
           </h4>
 
-          <a href='seam.center' target='_blank'>
+          <a href='seam.center' target='_blank' rel='noopener noreferrer'>
             SEAM CENTER
           </a>
 
           <br />
 
-          <a href='www.impactsquare.com' target='_blank'>
+          <a href='www.impactsquare.com' target='_blank' rel='noopener noreferrer'>
             Impact Square
           </a>
         </div>
@@ -113,7 +112,7 @@ const Seam = () => (
                   </g>
                 </svg>
               ) : (
-                <img src={require(`./images/${photo.filename}`)} />
+                <img alt='' src={require(`./images/${photo.filename}`)} />
               )}
             </Col>
           ))}

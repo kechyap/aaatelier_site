@@ -1,7 +1,6 @@
 // import npm components & files
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
-import { Link } from 'react-router-dom'
 
 // import local components & files
 import './index.css'
@@ -71,7 +70,7 @@ const Pops = () => (
             SUPPORTING
           </h4>
 
-          <a href='http://oouniv.org' target='_blank'>
+          <a href='http://oouniv.org' target='_blank' rel='noopener noreferrer'>
             00UNIV
           </a>
         </div>
@@ -81,7 +80,7 @@ const Pops = () => (
         <Row>
           {project.photos.map((photo) => (
             <Col xs={photo.break.xs} sm={photo.break.sm} xl={photo.break.xl} className='no-pm'>
-              <img src={require(`./images/${photo.filename}`)} />
+              <img alt='' src={require(`./images/${photo.filename}`)} />
             </Col>
           ))}
         </Row>

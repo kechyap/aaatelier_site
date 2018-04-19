@@ -1,7 +1,6 @@
 // import npm files & components
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
-import { Link } from 'react-router-dom'
 
 // import local files & components
 import './index.css'
@@ -62,7 +61,7 @@ const Upcycle = () => (
             SUPPORTING
           </h4>
 
-          <a href='http://www.touch4good.com' target='_blank'>
+          <a href='http://www.touch4good.com' target='_blank' rel='noopener noreferrer'>
             Touch4good
           </a>
         </div>
@@ -72,7 +71,7 @@ const Upcycle = () => (
         <Row>
           {project.photos.map((photo) => (
             <Col xs={photo.break.xs} sm={photo.break.sm} md={photo.break.md} lg={photo.break.lg} xl={photo.break.xl} className='no-pm'>
-              <img src={require(`./images/${photo.filename}`)} />
+              <img alt='' src={require(`./images/${photo.filename}`)} />
             </Col>
           ))}
         </Row>

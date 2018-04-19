@@ -31,7 +31,7 @@ const TextIllustration = () => (
         <Row>
           <Col xs={12}>
             <div className='show-xs-sm'>
-              <img src={require('./images/logo_white.svg')} style={{ maxWidth: '7rem' }} />
+              <img alt='' src={require('./images/logo_white.svg')} style={{ maxWidth: '7rem' }} />
             </div>
             <br />
           </Col>
@@ -74,7 +74,7 @@ const TextIllustration = () => (
 
           <Col xs={12} md={4} lg={4}>
             <div className='hide-xs-sm'>
-              <img src={require('./images/logo_white.svg')} style={{ maxWidth: '7rem', paddingTop: '2rem' }} />
+              <img alt='' src={require('./images/logo_white.svg')} style={{ maxWidth: '7rem', paddingTop: '2rem' }} />
 
               <div style={{ letterSpacing: '0.4em', paddingLeft: '0.4em' }}>
                 BRAND
@@ -120,7 +120,7 @@ const TextIllustration = () => (
         <Row>
           <Col xs={12} md={12} lg={9} lgOffset={1}>
             <div className='hide-xs-sm text-align-center'>
-              <img src={require('./images/aboutFA.svg')} />
+              <img alt='' src={require('./images/aboutFA.svg')} />
             </div>
           </Col>
         </Row>

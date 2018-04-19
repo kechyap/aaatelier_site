@@ -68,7 +68,7 @@ const Heyground = () => (
       <Col xs={12} lg={10} className='no-pm' />
 
       <Col xs={12} sm={12} md={6} lg={5} className='no-pm'>
-        <img src={require('./01.jpg')} />
+        <img alt='' src={require('./01.jpg')} />
         <p>
           ▲ Space information : 'Young Chun' Cafe and Bar
          <br /><br />
@@ -79,7 +79,7 @@ const Heyground = () => (
       </Col>
 
       <Col xs={12} sm={12} md={6} lg={5} className='no-pm'>
-        <img src={require('./02.jpg')} />
+        <img alt='' src={require('./02.jpg')} />
         <p>
           ▲ The flexiable zoning between Cafe and Restaurant. <br /> <br />
           레스토랑과 카페를 구분짓는 낮은 소파가 공간을 구획하면서도 공간 규모가 확장되어야 할 상황까지 함께 아우른다. 공간을 좀 더 구분지어야 할 때엔 커튼을 이용한다.
@@ -88,7 +88,7 @@ const Heyground = () => (
       </Col>
 
       <Col xs={12} sm={12} md={12} lg={10} className='no-pm'>
-        <img src={require('./03.jpg')} />
+        <img alt='' src={require('./03.jpg')} />
         <p>
           ▲ Space information : 'Health Club' Organic Restaurant.
           <br /><br />
@@ -96,7 +96,7 @@ const Heyground = () => (
       </Col>
 
       <Col xs={12} sm={12} md={12} lg={10} className='no-pm'>
-        <img src={require('./04.jpg')} />
+        <img alt='' src={require('./04.jpg')} />
         <p>
           ▲ Space information : 'Health Club' Organic Restaurant.
           <br /><br />
@@ -104,7 +104,7 @@ const Heyground = () => (
       </Col>
 
       <Col xs={12} sm={12} md={12} lg={10} className='no-pm'>
-        <img src={require('./05.jpg')} />
+        <img alt='' src={require('./05.jpg')} />
         <p>
           ▲ Space information : 1F Lobby - Entrance + media wall
          <br /> <br />
@@ -114,7 +114,7 @@ const Heyground = () => (
       </Col>
 
       <Col xs={12} md={7} lg={6} className='no-pm'>
-        <img src={require('./06.jpg')} />
+        <img alt='' src={require('./06.jpg')} />
       </Col>
 
       <Col xs={12} md={5} lg={4} >
