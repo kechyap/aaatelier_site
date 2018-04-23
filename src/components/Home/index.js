@@ -22,7 +22,7 @@ const Home = () => (
               <img
                 alt=''
                 src={require('./images/logo_pink.svg')}
-                style={{ width: '6.8rem', paddingTop: '1rem' }}
+                style={{ width: '6.5rem', paddingTop: '0.5rem' }}
               />
             </Col>
 
@@ -31,14 +31,12 @@ const Home = () => (
                 AAAtelier
               </h2>
 
-              <div className='subtitle py-1'>
-                Art and Architecture Atelier
+              <div className='subtitle'>
+                Art & Architecture Atelier
               </div>
 
-              <div className='subsubtitle py-0'>
+              <div className='subsubtitle'>
                 Total Design Solution
-                <br />
-                Spatial Identity Design
               </div>
             </Col>
           </Row>

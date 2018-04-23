@@ -6,7 +6,13 @@
   );
 }
 .Home {
-background: rgb(219,200,195);
+background: linear-gradient(
+  rgb(215,200,195)
+  rgb(200,175,180)
+  rgb(219,200,195)
+  rgb(230,205,200)
+  rgb(210,170,165)
+  );
 }
 
 .Home .front h2 {
@@ -15,13 +21,15 @@ background: rgb(219,200,195);
 
 .Home .front .subtitle {
   color: rgba(255, 190, 180, 0.8);
-  font-size: 1.1rem;
+  font-size: 1rem;
+  padding-top: -1rem;
 }
 
 .Home .front .subsubtitle {
   color: rgb(250, 190, 180);
   font-weight: 300 ;
   font-size: 0.9rem;
+  margin-top: -0.5rem;
 }
 
 .st2 {

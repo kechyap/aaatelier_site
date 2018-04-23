@@ -10,17 +10,17 @@ const Foot2 = () => (
   <div className='ending2'>
     <Grid fluid>
       <Row>
-        <Col xs={6} xsOffset={1} sm={4} mdOffset={0} md={4}>
+        <Col xs={6} xsOffset={1} sm={4} mdOffset={1} md={4}>
           <h4 className='my-0 mx-0'>
-            CONTACT
-            AAAtelier
+            C O N T A C T <br/>
+            A A A t e l i e r
           </h4>
           <small className='pt-0 mx-0'>
-            aaatelier @ ejay.kim
+            aaatelier@ejay.kim
           </small>
         </Col>
 
-        <Col xs={5} sm={7} md={8} className='pt-2 my-1'>
+        <Col xs={5} sm={7} className= 'pl-0 pr-0'>
           <a href='mailto:aaatelier@ejay.kim'>
             <img alt='' src={require('./images/icon_email.svg')} className='icon' />
           </a>

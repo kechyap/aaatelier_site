@@ -7,10 +7,12 @@ import './index.css'
 
 // make Navigation component
 export const Navigation = () => (
-  <div className='navbar'>
+  <div className='navbar text-align-right'>
+    
     <Link to='/about'> ABOUT </Link>
     <Link to='/'> PROJECT </Link>
     <Link to='/Blog'> BLOG </Link>
+
   </div>
 )
 

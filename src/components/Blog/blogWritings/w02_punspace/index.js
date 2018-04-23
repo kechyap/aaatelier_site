@@ -19,45 +19,128 @@ const project = {
   sub: 'The best Co-working space in Chiangmai, Thailand',
   place: 'Chiangmai, Thailand',
   date: '2018. February',
-  location: [
-    { lo: 'SPECIAL ATTRACTION', l: 'bar3', ll: '3' },
-    { lo: 'CLOSE TO METRO STAION', l: 'bar1', ll: ' 1 ' },
-    { lo: 'WALKABILITY', l: 'bar3', ll: ' 3 ' },
-    { lo: 'PARKING LOT', l: 'bar5', ll: ' 5 ' },
-    { lo: 'QUICK LUNCH', l: 'bar3', ll: ' 3 ' },
-    { lo: 'FUN ACTIVITY AFTER WORK', l: 'bar4', ll: ' 4' }
-  ],
-  productivity: [
-    { pr: 'INTERNET SPEED', p: 'bar5', pp: 'BEST' },
-    { pr: 'CHAIR COMFORT', p: 'bar5', pp: 'BEST' },
-    { pr: 'SPACIOUS TABLE', p: 'bar5', pp: 'BEST' },
-    { pr: 'QUIET WORKING AREA', p: 'bar5', pp: 'BEST' },
-    { pr: 'BUSINESS VIDEO CALL', p: 'bar3', pp: 'OKAY' },
-    { pr: 'OUTLET ACCESSIBILITY', p: 'bar4', pp: 'GOOD' },
-    { pr: '24/7 ACCESSIBILITY', p: 'bar4', pp: 'GOOD' }
-  ],
-  facility: [
-    { fa: 'COMFORT MEETING ROOM', f: 'bar4', ff: '.' },
-    { fa: 'RELAXED AREA', f: 'bar3', ff: '.' },
-    { fa: 'FREE COFFEE/SNACK', f: 'bar5', ff: '.' },
-    { fa: 'MONITOR RENTAL', f: 'bar1', ff: '.' },
-    { fa: 'LOCKER RENTAL', f: 'bar5', ff: '.' },
-    { fa: 'MAIL HANDLING', f: 'bar4', ff: '.' },
-    { fa: 'PRINT/FAX', f: 'bar5', ff: '.' },
-    { fa: 'SHOWER ROOM', f: 'bar5', ff: '.' },
-    { fa: 'OFFICE CLEANING', f: 'bar3', ff: '.' },
-    { fa: 'BATHROOM CLEANING', f: 'bar4', ff: '.' },
-    { fa: 'BATHROOM PRIVACY', f: 'bar5', ff: '.' },
-    { fa: 'WELL DESIGNED SPACE', f: 'bar3', ff: '.' }
-  ],
-  community: [
-    { co: 'COMMUNITY ORGANIZING', c: 'bar2', cc: '.' },
-    { co: 'LECTURES / PROGRAMS', c: 'bar3', cc: '.' },
-    { co: 'SUPPORTING START-UP', c: 'bar4', cc: '.' },
-    { co: 'HELPFUL STAFF', c: 'bar4', cc: '.' },
-    { co: 'CHAT-ABLE WORKING AREA', c: 'bar4', cc: '.' }
-  ]
-}
+  chart: [
+  {
+     name: 'location',
+     datas: [
+    { category: 'SPECIAL ATTRACTION', button: 'sc1',
+       comment: 'It is okay' },
+    { category: 'CLOSE TO METRO STAION', button: 'sc1',
+       comment: ' 1 ' },
+    { category: 'WALKABILITY', button: 'sc3',
+       comment: ' 3 ' },
+    { category: 'PARKING LOT', button: 'sc5',
+       comment: ' 5 ' },
+    { category: 'QUICK LUNCH', button: 'sc3',
+       comment: ' 3 ' },
+    { category: 'FUN ACTIVITY AFTER WORK', button: 'sc4',
+       comment: ' 4' }
+    ]
+  },
+
+  {
+    name: 'productivity',
+    datas: [
+      { category: 'INTERNET SPEED', button: 'bar5',
+         comment: 'BEST' },
+      { category: 'CHAIR COMFORT', button: 'bar5',
+         comment: 'BEST' },
+      { category: 'SPACIOUS TABLE', button: 'bar5',
+         comment: 'BEST' },
+      { category: 'QUIET WORKING AREA', button: 'bar5',
+         comment: 'BEST' },
+      { category: 'BUSINESS VIDEO CALL', button: 'bar3',
+         comment: 'OKAY' },
+      { category: 'OUTLET ACCESSIBILITY', button: 'bar4',
+         comment: 'GOOD' },
+      { category: '24/7 ACCESSIBILITY', button: 'bar4',
+         comment: 'GOOD' }
+    ]
+  },
+
+  {
+    name: 'SPACE CONDITION and FACILITY',
+    datas: [
+      { category: 'COMFORT MEETING ROOM', button: 'bar4',
+         comment: '.' },
+      { category: 'RELAXED AREA', button: 'bar3',
+         comment: '.' },
+      { category: 'FREE COFFEE/SNACK', button: 'bar5',
+         comment: '.' },
+      { category: 'MONITOR RENTAL', button: 'bar1',
+         comment: '.' },
+      { category: 'LOCKER RENTAL', button: 'bar5',
+         comment: '.' },
+      { category: 'MAIL HANDLING', button: 'bar4',
+         comment: '.' },
+      { category: 'PRINT/FAX', button: 'bar5',
+         comment: '.' },
+      { category: 'SHOWER ROOM', button: 'bar5',
+         comment: '.' },
+      { category: 'OFFICE CLEANING', button: 'bar3',
+         comment: '.' },
+      { category: 'BATHROOM CLEANING', button: 'bar4',
+         comment: '.' },
+      { category: 'BATHROOM PRIVACY', button: 'bar5',
+         comment: '.' },
+      { category: 'WELL DESIGNED SPACE', button: 'bar3',
+         comment: '.' }
+    ]
+  },
+
+  {
+    name: 'LIVING COMMUNITY',
+    datas: [
+      { category: 'COMMUNITY ORGANIZING', button: 'bar2',
+         comment: '.' },
+      { category: 'LECTURES / PROGRAMS', button: 'bar3',
+         comment: '.' },
+      { category: 'SUPPORTING START-UP', button: 'bar4',
+         comment: '.' },
+      { category: 'HELPFUL STAFF', button: 'bar4',
+         comment: '.' },
+      { category: 'CHAT-ABLE WORKING AREA', button: 'bar4',
+         comment: '.' }
+    ]
+  }
+]
+
+const myScore = ( y ) => (
+  y.chart.map (( x ) =>
+   <div>
+     <div className= 'pt-3'>
+       <h4 className='mb-0'> { x.name } </h4>
+       <hr className='no-pm'/>
+     </div>
+   </div>
+
+  { x.datas.map ((datas) =>
+    <Row>
+      <Col xs={2} md={1}>
+        <div className= {`button ${}`}>
+          { datas.button }
+        </div>
+      </Col>
+
+      <Col xs={10} md={4}>
+        <div className='scoreT'>
+          { datas.category }
+        </div>
+      </Col>
+
+      <Col xs={12} md={7}>
+        <small>
+          { datas.comment }
+        </small>
+      </Col>
+    </Row>
+   )}
+  )
+)
+
+
+
+
 
 // make Upcycle component
 const Punspace = () => (
@@ -98,108 +181,6 @@ const Punspace = () => (
             Writing : EJay Kim
           </small>
         </div>
-
-        <Row>
-          <Col xs={12} className='pt-3'>
-            <p4> LOCATION </p4>
-            <hr className='no-pm' />
-            <p />
-          </Col>
-
-          <Col xs={8} sm={7} md={5} >
-            {project.location.map((text) =>
-              <div className='scoreT'>
-                {`${text.lo}`}
-              </div>
-            )}
-          </Col>
-
-          <Col xs={4} sm={5} md={7} >
-            {project.location.map((bar) =>
-              <div className='score'>
-                <div className={`skills ${bar.l}`} >
-                  {`${bar.ll}`}
-                </div>
-              </div>
-            )}
-          </Col>
-        </Row>
-
-        <Row>
-          <Col xs={12} className='pt-3'>
-            <p4>  PRODUCTIVITY </p4>
-            <hr className='no-pm' />
-          </Col>
-
-          <Col xs={8} sm={7} md={5} >
-            {project.productivity.map((text) =>
-              <div className='scoreT'>
-                {`${text.pr}`}
-              </div>
-            )}
-          </Col>
-
-          <Col xs={4} sm={5} md={7} >
-            {project.productivity.map((bar) =>
-              <div className='score'>
-                <div className={`skills ${bar.p}`}>
-                  {`${bar.pp}`}
-                </div>
-              </div>
-            )}
-          </Col>
-        </Row>
-
-        <Row>
-          <Col xs={12} className='pt-3'>
-            <p4> SPACE CONDITION and FACILITY </p4>
-            <hr className='no-pm' />
-          </Col>
-
-          <Col xs={8} sm={7} md={5} >
-            {project.facility.map((text) =>
-              <div className='scoreT'>
-                {`${text.fa}`}
-              </div>
-            )}
-          </Col>
-
-          <Col xs={4} sm={5} md={7} >
-            {project.facility.map((bar) =>
-              <div className='score'>
-                <div className={`skills ${bar.f}`}>
-                  {`${bar.ff}`}
-                </div>
-              </div>
-            )}
-          </Col>
-        </Row>
-
-        <Row>
-          <Col xs={12} className='pt-3'>
-            <p4> LIVING COMMUNITY </p4>
-            <hr className='no-pm' />
-          </Col>
-
-          <Col xs={8} sm={7} md={5} >
-            {project.community.map((text) =>
-              <div className='scoreT'>
-                {`${text.co}`}
-              </div>
-            )}
-          </Col>
-
-          <Col xs={4} sm={5} md={7} >
-            {project.community.map((bar) =>
-              <div className='score'>
-                <div className={`skills ${bar.c}`}>
-                  {`${bar.cc}`}
-                </div>
-              </div>
-            )}
-          </Col>
-        </Row>
-
       </Col>
 
       <Row className='px-1'>
@@ -208,23 +189,23 @@ const Punspace = () => (
           <img alt='' src={require('./01.jpg')} />
           <p>
             ▲
-            The Exterior of Punspace. It is dividied by three building structures.
+            The Exterior of Punspace. Main Three volumes are dividied by function of the space.
           </p>
           <br />
         </Col>
 
         <Col xs={12} sm={6} lg={5} className='no-pm'>
           <img alt='' src={require('./02.jpg')} />
-          <p>
+          <p className='pr-2'>
             ▲
-            The Exterior of Punspace. It is dividied by three building structures.
+            Most of coworker's favorite spot is this small garden. You can be relaxed at the small garden after hard working and this voild space is
           </p>
           <br />
         </Col>
 
         <Col xs={12} sm={6} lg={5} className='no-pm'>
           <img alt='' src={require('./03.jpg')} />
-          <p>
+          <p className='pr-2'>
             ▲
             The Exterior of Punspace. It is dividied by three building structures.
           </p>
@@ -233,7 +214,7 @@ const Punspace = () => (
 
         <Col xs={12} lg={10} className='no-pm'>
           <img alt='' src={require('./04.jpg')} />
-          <p>
+          <p className='pr-2'>
             ▲
             The Exterior of Punspace. It is dividied by three building structures.
           </p>

@@ -28,7 +28,7 @@ body {
   color: var(--pink3);
   background-color: rgb(215,200,200);
   font-family: 'Titillium Web', 'Noto Sans KR', sans-serif;
-  line-height: 2.3rem;
+  line-height: 2.2rem;
 }
 
 img {
@@ -82,19 +82,20 @@ li {
   padding-bottom: 0.3rem;
   color: var(--pink3);
   font-size: 0.9rem;
+  line-height: 1.7rem;
 }
 
 p {
   font-weight: 300;
   font-size: 0.9rem;
-  line-height: 1.8;
+  line-height: 1.7rem;
+  text-align: justify;
 }
 
 b {
   font-weight: 400;
   font-size: 1.05rem;
 }
-
 
 /* styles for classes in all pages  */
 .hide-xs { display: none; }
@@ -112,6 +113,7 @@ b {
   .hide-xs-sm { display: block; }
   .show-xs-sm { display: none; }
 }
+
 
 .text-align-justify { text-align: justify; }
 .text-align-centered { text-align: center; }
@@ -293,5 +295,31 @@ p4 {
 
 .bar5 {
   width: 100%;
+  background-color: rgba(255,190,200,1);
+}
+
+
+
+.buttonBox {
+  border-radius: 3px;
+}
+
+.sc0 {
+  background-color: rgba(200,100,110,0.3);
+}
+
+.sc1 {
+  background-color: rgba(210,110,120,0.4);
+}
+
+.sc2 {
+  background-color: rgba(220,130,140,0.5);
+}
+
+.sc3 {
+  background-color: rgba(230,150,160,0.8);
+}
+
+.sc4 {
   background-color: rgba(255,190,200,1);
 }
