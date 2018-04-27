@@ -19,126 +19,130 @@ const project = {
   sub: 'The best Co-working space in Chiangmai, Thailand',
   place: 'Chiangmai, Thailand',
   date: '2018. February',
-  chart: [
-  {
-     name: 'location',
-     datas: [
-    { category: 'SPECIAL ATTRACTION', button: 'sc1',
-       comment: 'It is okay' },
-    { category: 'CLOSE TO METRO STAION', button: 'sc1',
-       comment: ' 1 ' },
-    { category: 'WALKABILITY', button: 'sc3',
-       comment: ' 3 ' },
-    { category: 'PARKING LOT', button: 'sc5',
-       comment: ' 5 ' },
-    { category: 'QUICK LUNCH', button: 'sc3',
-       comment: ' 3 ' },
-    { category: 'FUN ACTIVITY AFTER WORK', button: 'sc4',
-       comment: ' 4' }
-    ]
-  },
+  charts: [
+    {
+       name: 'Location',
+       datas: [
+      { category: 'SPECIAL ATTRACTION', button: ['sc5' , 'BEST'],
+         comment: 'It is okay' },
+      { category: 'CLOSE TO METRO STAION', button: ['sc1' , 'BAD'],
+         comment: ' 1 ' },
+      { category: 'WALKABILITY', button: ['sc3', 'OKAY'],
+         comment: ' 3 ' },
+      { category: 'PARKING LOT', button: ['sc5' , 'BEST'],
+         comment: ' 5 ' },
+      { category: 'QUICK LUNCH', button: ['sc3', 'OKAY'],
+         comment: ' 3 ' },
+      { category: 'FUN ACTIVITY AFTER WORK', button: [ 'sc4', 'GOOD'],
+         comment: ' 4' }
+      ]
+    },
 
-  {
-    name: 'productivity',
-    datas: [
-      { category: 'INTERNET SPEED', button: 'bar5',
-         comment: 'BEST' },
-      { category: 'CHAIR COMFORT', button: 'bar5',
-         comment: 'BEST' },
-      { category: 'SPACIOUS TABLE', button: 'bar5',
-         comment: 'BEST' },
-      { category: 'QUIET WORKING AREA', button: 'bar5',
-         comment: 'BEST' },
-      { category: 'BUSINESS VIDEO CALL', button: 'bar3',
-         comment: 'OKAY' },
-      { category: 'OUTLET ACCESSIBILITY', button: 'bar4',
-         comment: 'GOOD' },
-      { category: '24/7 ACCESSIBILITY', button: 'bar4',
-         comment: 'GOOD' }
-    ]
-  },
+    {
+      name: 'Productivity',
+      datas: [
+        { category: 'INTERNET SPEED', button: 'bar5',
+           comment: 'BEST' },
+        { category: 'CHAIR COMFORT', button: 'bar5',
+           comment: 'BEST' },
+        { category: 'SPACIOUS TABLE', button: 'bar5',
+           comment: 'BEST' },
+        { category: 'QUIET WORKING AREA', button: 'bar5',
+           comment: 'BEST' },
+        { category: 'BUSINESS VIDEO CALL', button: 'bar3',
+           comment: 'OKAY' },
+        { category: 'OUTLET ACCESSIBILITY', button: 'bar4',
+           comment: 'GOOD' },
+        { category: '24/7 ACCESSIBILITY', button: 'bar4',
+           comment: 'GOOD' }
+      ]
+    },
 
-  {
-    name: 'SPACE CONDITION and FACILITY',
-    datas: [
-      { category: 'COMFORT MEETING ROOM', button: 'bar4',
-         comment: '.' },
-      { category: 'RELAXED AREA', button: 'bar3',
-         comment: '.' },
-      { category: 'FREE COFFEE/SNACK', button: 'bar5',
-         comment: '.' },
-      { category: 'MONITOR RENTAL', button: 'bar1',
-         comment: '.' },
-      { category: 'LOCKER RENTAL', button: 'bar5',
-         comment: '.' },
-      { category: 'MAIL HANDLING', button: 'bar4',
-         comment: '.' },
-      { category: 'PRINT/FAX', button: 'bar5',
-         comment: '.' },
-      { category: 'SHOWER ROOM', button: 'bar5',
-         comment: '.' },
-      { category: 'OFFICE CLEANING', button: 'bar3',
-         comment: '.' },
-      { category: 'BATHROOM CLEANING', button: 'bar4',
-         comment: '.' },
-      { category: 'BATHROOM PRIVACY', button: 'bar5',
-         comment: '.' },
-      { category: 'WELL DESIGNED SPACE', button: 'bar3',
-         comment: '.' }
-    ]
-  },
+    {
+      name: 'SPACE CONDITION and FACILITY',
+      datas: [
+        { category: 'COMFORT MEETING ROOM', button: 'bar4',
+           comment: '.' },
+        { category: 'RELAXED AREA', button: 'bar3',
+           comment: '.' },
+        { category: 'FREE COFFEE/SNACK', button: 'bar5',
+           comment: '.' },
+        { category: 'MONITOR RENTAL', button: 'bar1',
+           comment: '.' },
+        { category: 'LOCKER RENTAL', button: 'bar5',
+           comment: '.' },
+        { category: 'MAIL HANDLING', button: 'bar4',
+           comment: '.' },
+        { category: 'PRINT/FAX', button: 'bar5',
+           comment: '.' },
+        { category: 'SHOWER ROOM', button: 'bar5',
+           comment: '.' },
+        { category: 'OFFICE CLEANING', button: 'bar3',
+           comment: '.' },
+        { category: 'BATHROOM CLEANING', button: 'bar4',
+           comment: '.' },
+        { category: 'BATHROOM PRIVACY', button: 'bar5',
+           comment: '.' },
+        { category: 'WELL DESIGNED SPACE', button: 'bar3',
+           comment: '.' }
+      ]
+    },
+    {
+      name: 'LIVING COMMUNITY',
+      datas: [
+        { category: 'COMMUNITY ORGANIZING', button: 'bar2',
+           comment: '.' },
+        { category: 'LECTURES / PROGRAMS', button: 'bar3',
+           comment: '.' },
+        { category: 'SUPPORTING START-UP', button: 'bar4',
+           comment: '.' },
+        { category: 'HELPFUL STAFF', button: 'bar4',
+           comment: '.' },
+        { category: 'CHAT-ABLE WORKING AREA', button: 'bar4',
+           comment: '.' }
+      ]
+    }
+  ]
+}
 
-  {
-    name: 'LIVING COMMUNITY',
-    datas: [
-      { category: 'COMMUNITY ORGANIZING', button: 'bar2',
-         comment: '.' },
-      { category: 'LECTURES / PROGRAMS', button: 'bar3',
-         comment: '.' },
-      { category: 'SUPPORTING START-UP', button: 'bar4',
-         comment: '.' },
-      { category: 'HELPFUL STAFF', button: 'bar4',
-         comment: '.' },
-      { category: 'CHAT-ABLE WORKING AREA', button: 'bar4',
-         comment: '.' }
-    ]
-  }
-]
-
-const myScore = ( y ) => (
-  y.chart.map (( x ) =>
-   <div>
-     <div className= 'pt-3'>
-       <h4 className='mb-0'> { x.name } </h4>
-       <hr className='no-pm'/>
-     </div>
-   </div>
-
-  { x.datas.map ((datas) =>
-    <Row>
-      <Col xs={2} md={1}>
-        <div className= {`button ${}`}>
-          { datas.button }
-        </div>
-      </Col>
-
-      <Col xs={10} md={4}>
-        <div className='scoreT'>
-          { datas.category }
-        </div>
-      </Col>
-
-      <Col xs={12} md={7}>
-        <small>
-          { datas.comment }
-        </small>
-      </Col>
-    </Row>
-   )}
-  )
-)
-
-
+// const MyScore = () =>
+//   <div>
+//     {project.charts.map((chart) =>
+//       <div>
+//         <div>
+//           <div className= 'pt-3'>
+//             <h4 className='mb-0'> { chart.name } </h4>
+//             <hr className='no-pm'/>
+//           </div>
+//         </div>
+//
+//         {chart.datas.map((data) =>
+//           <Grid>
+//             <Row>
+//               <Col xs={2} md={1}>
+//                 <div className= { `box ${ data.button[0] }`} >
+//                   <span> { data.button[1] } </span>
+//                 </div>
+//               </Col>
+//
+//               <Col xs={10} md={4}>
+//                 <div className='scoreT'>
+//                   { data.category }
+//                 </div>
+//               </Col>
+//
+//               <Col xs={12} md={7}>
+//                 <small>
+//                   { data.comment }
+//                 </small>
+//                 <hr />
+//               </Col>
+//             </Row>
+//           </Grid>
+//         )}
+//       </div>
+//     )}
+//   </div>
 
 
 
@@ -174,7 +178,7 @@ const Punspace = () => (
         <div className='text-align-justify'>
           <h4>The old Soda factory was changed into co-working space</h4>
           <p>
-            2017년 늦 가을, 서울 성수동에 새로 문을 연 HEY GROUND ! 지하 1층 부터 ROOF TOP FLOOR인 8층까지 공유 사무실인 이 곳은, 작은 1인 기업부터 큰 기업까지 아우르는 체인지 메이커들을 위한 코워킹 공간이다. 코워킹 스페이스에서 가장 중요한 부분은 각 객체들이 우연하게 마주칠 수 있는 common area가 가장 중요하다. 그 중에서도 물리적인 위치 때문에 가장 활발한 활동이 일어나는 1F Lobby공간과 이와 자연스럽게 얽혀있는 카페, 레스토랑, shop등의 Service program의 기획과 배치를 살펴보자.
+            수 많은 코워커들이 방문하는 치앙마이에서 가장 많은 회원을 보유하고 있는  Punspace ! 현재까지 총 3개의 지점을 가지고 있는데 이 중에서 최근에 오픈한 (2018년 1월) Wing-keaw road 지점을 살펴보자.
           </p>
           <small>
             Photographer : EJay Kim  /

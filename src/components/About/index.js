@@ -162,7 +162,7 @@ const About = () => (
             </Col>
           </Row>
 
-          <Row className='py-1'>
+          <Row>
             <Col xs={12} lg={11}>
               <small>
                 #human #future #lifestyle #common space #community #co living #shared house #residential #co working #office #residence #environment issue #upcycle #urban issue #gentrification #public space #POPS <br/><br/>

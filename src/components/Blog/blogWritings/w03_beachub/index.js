@@ -85,11 +85,11 @@ const Beachub = () => (
         <div className='text-align-justify'>
           <h4>Have you ever imagine working on the beach? Sounds like a dream ! </h4>
           <p>
-           dlfsusduehddks duftlagl dlf gkrh
-           <br />
+            dlfsusduehddks duftlagl dlf gkrh
+            <br />
             <small>
-                Photographer : EJay Kim  /
-                Writing : EJay Kim
+              Photographer : EJay Kim  /
+              Writing : EJay Kim
             </small>
           </p>
         </div>
@@ -99,13 +99,13 @@ const Beachub = () => (
             <p4> LOCATION </p4>
             <hr className='no-pm' />
           </Col>
-
+          
           <Col xs={8} sm={7} md={5} >
             {project.location.map((text) =>
               <div className='scoreT'>
                 {`${text.lo}`}
               </div>
-           )}
+            )}
           </Col>
 
           <Col xs={4} sm={5} md={7} >

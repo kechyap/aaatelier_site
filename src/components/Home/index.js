@@ -14,10 +14,10 @@ import './index.css'
 // make Home component
 const Home = () => (
   <div className='Home'>
-    <div className='front py-5'>
-      <div className='py-4'>
+    <div className='front'>
+      <div className='pt-5'>
         <Grid fluid>
-          <Row>
+          <Row className='pt-2'>
             <Col xs={4} sm={4} md={4} lg={4} xl={4}>
               <img
                 alt=''
@@ -44,7 +44,7 @@ const Home = () => (
       </div>
     </div>
 
-    <div className='py-1'>
+    <div className='pb-1'>
       <Grill />
     </div>
 

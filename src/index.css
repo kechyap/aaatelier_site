@@ -20,7 +20,7 @@ html {
   --lg: 992;
   --xl: 1200;
 
-  font-size: 15px;
+  font-size: 16px;
 }
 
 body {
@@ -28,7 +28,7 @@ body {
   color: var(--pink3);
   background-color: rgb(215,200,200);
   font-family: 'Titillium Web', 'Noto Sans KR', sans-serif;
-  line-height: 2.2rem;
+  line-height: 2.3rem;
 }
 
 img {
@@ -73,6 +73,14 @@ hr {
   border-bottom: 1px solid var(--pink3);
 }
 
+.underline {
+  text-decoration: underline;
+  color: var(--pink4);
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+  padding-top:2rem;
+}
+
 ul {
   padding-left: 1.3rem;
   line-height: 1.3rem;
@@ -87,8 +95,8 @@ li {
 
 p {
   font-weight: 300;
-  font-size: 0.9rem;
-  line-height: 1.7rem;
+  font-size: 0.95rem;
+  line-height: 1.9rem;
   text-align: justify;
 }
 
@@ -299,9 +307,10 @@ p4 {
 }
 
 
-
-.buttonBox {
+.box {
   border-radius: 3px;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .sc0 {

@@ -1,12 +1,12 @@
 .About {
-  background: var(--pink1);
+  background:rgb(255,245,240);
 }
 
 .About .front {
   background: linear-gradient(
-    rgba(210,110,125,1) 0%,
-    rgba(230,190,180,0.7) 60%,
-    rgba(250,190,195,0) 100%
+    rgba(200,90,105,1) 5%,
+    rgba(240,190,180,0.5) 56%,
+    rgba(255,255,255,0) 100%
   );
 }
 
