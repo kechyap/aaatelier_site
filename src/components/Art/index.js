@@ -86,7 +86,7 @@ const Art = () => (
     </Grid>
 
 
-    
+
     <Foot />
 
   </div>
