@@ -80,13 +80,13 @@ const Art = () => (
           <img alt='cat, drawing, illustration, aaatelier, ejay, eunjin' src={require('./01.png')} />
 
           <img alt='cake, drawing, illustration, aaatelier, ejay, eunjin' src={require('./02.png')} />
-          </Col>
-        </Row>
+        </Col>
+      </Row>
 
     </Grid>
 
 
-    <hr />
+    
     <Foot />
 
   </div>

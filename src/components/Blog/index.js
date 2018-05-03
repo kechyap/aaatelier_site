@@ -36,7 +36,8 @@ const Blog = () => (
       <br/><br/>
       <Punspace />
       <br/><br/>
-      
+
+      <hr/ >
       <Foot />
     </div>
 
