@@ -32,13 +32,13 @@ const Art = () => (
               1. Lower chance to loose Ideas<br/>
               2. To develop prototypes quickly<br/>
               3. Color Skills Up<br/>
-              4. Real freedom in your world
+              4. To train your imaginations
             </p>
           </div>
 
           <div className='hide-xs'>
-            <hr className='mr-2 my-3'/>
-            <div className='sub py-2'>
+            <hr className='mr-2 my-4'/>
+            <div className='sub py-3'>
               ACHIEVABLE SKILLS &nbsp;
               <br/>
               by DRAWINGS
