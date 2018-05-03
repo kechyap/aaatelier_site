@@ -53,7 +53,7 @@ const Heyground = () => (
         <div className='text-align-justify'>
           <h4>The Space planning and program for the 1st floor in Creative office building.</h4>
           <p>
-            2017년 늦 가을, 서울 성수동에 새로 문을 연 HEY GROUND ! 지하 1층 부터 ROOF TOP FLOOR인 8층까지 공유 사무실인 이 곳은, 작은 1인 기업부터 큰 기업까지 아우르는 체인지 메이커들을 위한 코워킹 공간이다. 코워킹 스페이스에서 가장 중요한 부분은 각 객체들이 우연하게 마주칠 수 있는 common area가 가장 중요하다. 그 중에서도 물리적인 위치 때문에 가장 활발한 활동이 일어나는 1F Lobby공간과 이와 자연스럽게 얽혀있는 카페, 레스토랑, shop등의 Service program의 기획과 배치를 살펴보자. <br />
+            2017년 늦 가을, 서울 성수동에 새로 문을 연 HEY GROUND ! 지하 1층 부터 ROOF TOP FLOOR인 8층까지 공유 사무실인 이 곳은, 작은 1인 기업부터 큰 기업까지 아우르는 체인지 메이커들을 위한 코워킹 공간이다. 코워킹 스페이스에서 가장 중요한 부분은 각 객체들이 우연하게 마주칠 수 있는 공유 공간이 가장 중요한데, 그 중에서도 물리적인 위치 때문에 가장 활발한 활동이 일어나는 1F Lobby공간과 이와 자연스럽게 얽혀있는 카페, 레스토랑, shop등의 Service program의 기획과 배치를 살펴보자. <br />
             <small>
               Photographer : EJay Kim  /
               Writing : EJay Kim
@@ -72,7 +72,7 @@ const Heyground = () => (
         <p className='pr-3'>
           ▲ Space information : 'Young Chun' Cafe and Bar
           <br /><br />
-          ☀︎ : 가로변에서 카페와 바로 이어진 입구로 멤버쉽과 비멤버쉽을 한꺼번에 유입하는 attraction 공간. 헤이 그라운드 오피스 공간은 입주자에게만 열려있는 공간으로, 대부분의 간단한 미팅은 1층 로비의 카페 '영춘'에서 자연스럽게 이루어진다. <br />
+          ☀︎ : 가로변에서 카페와 바로 이어진 입구로 멤버쉽과 비멤버쉽을 한꺼번에 유입하는 attraction 공간. 헤이 그라운드 오피스 공간은 입주자에게만 열려있는 공간으로 대부분의 간단한 미팅은 1층 로비의 카페 '영춘'에서 자연스럽게 이루어진다. <br />
           ☂︎ : 그러나 건물 규모와 인원에 비해 카페볼륨이 크지 않아 점심 이전 - 이후로 붐빌때엔 전체 볼륨을 종종 수용하지 못한다.
         </p>
         <br />
@@ -82,7 +82,7 @@ const Heyground = () => (
         <img alt='' src={require('./02.jpg')} />
         <p>
           ▲ The flexiable zoning between Cafe and Restaurant. <br /> <br />
-          레스토랑과 카페를 구분짓는 낮은 소파가 공간을 구획하면서도 공간 규모가 확장되어야 할 상황까지 함께 아우른다. 공간을 좀 더 구분지어야 할 때엔 커튼을 이용한다.
+          레스토랑과 카페를 구분짓는 낮은 소파가 공간을 구획하면서도 공간 규모가 확장되어야 할 상황까지 함께 아우른다. 공간을 좀 더 구분지어야 할 때엔 커튼을 이용.
         </p>
         <br />
       </Col>

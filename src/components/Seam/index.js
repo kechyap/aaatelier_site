@@ -103,7 +103,7 @@ const Seam = () => (
             <Col xs={photo.break.xs} sm={photo.break.sm} md={photo.break.md} lg={photo.break.lg} xl={photo.break.xl} className='no-pm'>
               {photo.filename === 'notAnImage' ? (
                 <svg viewBox='0 0 1500 1385' xmlns='http://www.w3.org/2000/svg'>
-                  <image xlinkHref={require('./images/00.png')} width='1500' height='1385' />
+                  <image xlinkHref={require('./images/00.jpg')} width='1500' height='1385' />
 
                   <g transform='translate(1095 735)'>
                     <circle className='st2' r='1' style={{ color: 'rgba(255,255,255,0.1)' }}>

@@ -33,11 +33,10 @@ const Blog = () => (
 
     <div>
       <Heyground />
+      <br/><br/>
       <Punspace />
-      <Beachub />
-      <Scoopoint />
-      <Cat />
-      <hr />
+      <br/><br/>
+      
       <Foot />
     </div>
 

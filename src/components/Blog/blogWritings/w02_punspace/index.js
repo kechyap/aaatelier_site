@@ -178,7 +178,7 @@ const Punspace = () => (
         <div className='text-align-justify'>
           <h4>The old Soda factory was changed into co-working space</h4>
           <p>
-            수 많은 코워커들이 방문하는 치앙마이에서 가장 많은 회원을 보유하고 있는  Punspace ! 현재까지 총 3개의 지점을 가지고 있는데 이 중에서 최근에 오픈한 (2018년 1월) Wing-keaw road 지점을 살펴보자.
+            수 많은 코워커들이 방문하는 치앙마이에서 가장 많은 회원을 보유하고 있는 Punspace ! 현재까지 총 3개의 지점을 가지고 있는데 이 중에서 최근에 오픈한 (2018년 2월) Wiang-keaw road 지점을 살펴보자. 필자는 공사 시점에서부터 현 지점을 방문하기 시작하여서 공사 마무리 현장을 지켜보았는데, 기존에 소다 유리병을 제조하는 공장이였기에 높은 박공 천정이 인상적인데, 별도의 인공조명 없이도 환히 공간을 밝히는 천정 구조와 심플하고 군더더기 없는 디자인이 공간을 경쾌하게 만든다.
           </p>
           <small>
             Photographer : EJay Kim  /
@@ -200,9 +200,9 @@ const Punspace = () => (
 
         <Col xs={12} sm={6} lg={5} className='no-pm'>
           <img alt='' src={require('./02.jpg')} />
-          <p className='pr-2'>
+          <p className='pr-3'>
             ▲
-            Most of coworker's favorite spot is this small garden. You can be relaxed at the small garden after hard working and this voild space is
+            Most of coworker's favorite spot is this small garden. You can relax at the small nature after hard working.
           </p>
           <br />
         </Col>
@@ -211,7 +211,7 @@ const Punspace = () => (
           <img alt='' src={require('./03.jpg')} />
           <p className='pr-2'>
             ▲
-            The Exterior of Punspace. It is dividied by three building structures.
+            Various events can be happened in this small garden.
           </p>
           <br />
         </Col>
