@@ -100,7 +100,7 @@ const Seam = () => (
       <Col xs={12} md={8} xl={9} className='no-pm'>
         <Row>
           {project.photos.map((photo) => (
-            <Col xs={photo.break.xs} sm={photo.break.sm} md={photo.break.md} lg={photo.break.lg} xl={photo.break.xl} className='no-pm'>
+            <Col key={photo.filename} xs={photo.break.xs} sm={photo.break.sm} md={photo.break.md} lg={photo.break.lg} xl={photo.break.xl} className='no-pm'>
               {photo.filename === 'notAnImage' ? (
                 <svg viewBox='0 0 1500 1385' xmlns='http://www.w3.org/2000/svg'>
                   <image xlinkHref={require('./images/00.jpg')} width='1500' height='1385' />

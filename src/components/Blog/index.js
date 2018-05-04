@@ -2,13 +2,12 @@
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 
-
 // import local files & components
 import Heyground from './blogWritings/w01_heyground'
 import Punspace from './blogWritings/w02_punspace'
-import Beachub from './blogWritings/w03_beachub'
-import Scoopoint from './blogWritings/w04_scoopoint'
-import Cat from './blogWritings/w05_cat'
+// import Beachub from './blogWritings/w03_beachub'
+// import Scoopoint from './blogWritings/w04_scoopoint'
+// import Cat from './blogWritings/w05_cat'
 
 import Foot from '../Foot'
 import './index.css'
@@ -33,14 +32,13 @@ const Blog = () => (
 
     <div>
       <Heyground />
-      <br/><br/>
+      <br /><br />
       <Punspace />
-      <br/><br/>
+      <br /><br />
 
-      <hr/ >
+      <hr />
       <Foot />
     </div>
-
   </div>
 )
 

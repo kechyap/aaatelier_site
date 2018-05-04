@@ -90,7 +90,7 @@ const Grill = () => (
       <Col xs={12} sm={12} md={8} xl={9} className='no-pm'>
         <Row>
           {project.photos.map((photo) => (
-            <Col xs={photo.break.xs} sm={photo.break.sm} xl={photo.break.xl} className='no-pm'>
+            <Col key={photo.filename} xs={photo.break.xs} sm={photo.break.sm} xl={photo.break.xl} className='no-pm'>
               {photo.filename === 'notAnImage' ? (
                 <svg viewBox='0 0 1800 994' xmlns='http://www.w3.org/2000/svg'>
                   <image xlinkHref={require('./images/00.jpg')} height='994' width='1800' />

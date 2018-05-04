@@ -70,7 +70,7 @@ const Upcycle = () => (
       <Col xs={12} md={8} xl={9} className='no-pm'>
         <Row>
           {project.photos.map((photo) => (
-            <Col xs={photo.break.xs} sm={photo.break.sm} md={photo.break.md} lg={photo.break.lg} xl={photo.break.xl} className='no-pm'>
+            <Col key={photo.filename} xs={photo.break.xs} sm={photo.break.sm} md={photo.break.md} lg={photo.break.lg} xl={photo.break.xl} className='no-pm'>
               <img alt='' src={require(`./images/${photo.filename}`)} />
             </Col>
           ))}
