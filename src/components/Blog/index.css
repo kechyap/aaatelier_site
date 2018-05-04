@@ -11,11 +11,11 @@
 }
 
 .Blog h4 {
-  color: var(--pink2);
+  color: rgba(255,190,180,0.8);
 }
 
 .Blog hr {
-  border-bottom: 0.5px solid var(--pink4);
+  border-bottom: 0.5px solid rgba(190,110,110,1);
 }
 
 .Blog small {
@@ -27,5 +27,5 @@
 
 .Blog b {
   font-size: 1.2rem;
-  color: var(--pink4);
+  color: rgba(190,110,110,1);
 }

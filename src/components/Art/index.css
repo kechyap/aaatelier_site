@@ -18,12 +18,12 @@
 }
 
 .Art hr {
-  border-bottom: 0.5px solid var(--pink4);
+  border-bottom: 0.5px solid rgba(190,110,110,1);
 }
 
 .Art b {
   font-size: 1.1rem;
-  color: var(--pink444);
+  color: rgba(255,150,160,1);
   padding-bottom: 0;
   margin-top: 0rem;
 }
@@ -35,5 +35,5 @@
 
 .Art sub {
   font-weight: 400;
-  color: var(--pink4);
+  color: rgba(190,110,110,1);
 }
