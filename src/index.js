@@ -55,6 +55,10 @@ const App = () => (
           <Blog />
         </Route>
 
+        <Route path='/dickie'>
+          <div>Dickie</div>
+        </Route>
+
         <Route>
           <Error />
         </Route>
