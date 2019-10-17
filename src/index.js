@@ -15,6 +15,7 @@ import Pops from './components/Pops'
 import Art from './components/Art'
 import Blog from './components/Blog'
 import Error from './components/Error'
+import MaterialBank from './components/MaterialBank'
 import './index.css'
 
 // make App component
@@ -47,16 +48,16 @@ const App = () => (
           <Pops />
         </Route>
 
+        <Route path='/MaterialBank'>
+          <MaterialBank />
+        </Route>
+
         <Route path='/Art'>
           <Art />
         </Route>
 
         <Route path='/blog'>
           <Blog />
-        </Route>
-
-        <Route path='/dickie'>
-          <div>Dickie</div>
         </Route>
 
         <Route>

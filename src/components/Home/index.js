@@ -5,10 +5,11 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 // import local files & components
 import Foot from '../Foot'
 import Grill from '../Grill'
-import Upcycle from '../Upcycle'
 import Pops from '../Pops'
 import Seam from '../Seam'
 import Tego from '../Tego'
+import Upcycle from '../Upcycle'
+import MaterialBank from '../MaterialBank'
 import './index.css'
 
 // make Home component
@@ -27,17 +28,11 @@ const Home = () => (
             </Col>
 
             <Col xs={8} sm={8} md={8} lg={8} xl={8}>
-              <h2 className='no-pm'>
-                AAAtelier
-              </h2>
+              <h2 className='no-pm'>AAAtelier</h2>
 
-              <div className='subtitle'>
-                Art & Architecture Atelier
-              </div>
+              <div className='subtitle'>Art & Architecture Atelier</div>
 
-              <div className='subsubtitle'>
-                Total Design Solution
-              </div>
+              <div className='subsubtitle'>Total Design Solution</div>
             </Col>
           </Row>
         </Grid>
@@ -46,10 +41,6 @@ const Home = () => (
 
     <div className='pb-1'>
       <Grill />
-    </div>
-
-    <div className='py-1'>
-      <Upcycle />
     </div>
 
     <div className='py-1'>
@@ -64,9 +55,16 @@ const Home = () => (
       <Pops />
     </div>
 
-    <hr />
-    <Foot />
+    <div className='py-1'>
+      <Upcycle />
+    </div>
 
+    <div className='py-1'>
+      <MaterialBank />
+    </div>
+    <hr />
+
+    <Foot />
   </div>
 )
 
