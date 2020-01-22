@@ -60,11 +60,11 @@ let Upcycle = () => (
             </a>
           </div>
         </div>
-        <div className="col-xs-12 col-md-8 col-xl-9 no-pm">
+        <div className="col-xs-12 col-md-8 col-xl-9">
           <div className="row">
             {project.photos.map(photo => (
               <div
-                className={`col-xs-${photo.break.xs} col-sm-${photo.break.sm} col-md-${photo.break.md} col-lg-${photo.break.lg} col-xl-${photo.break.xl} no-pm`}
+                className={`col-xs-${photo.break.xs} col-sm-${photo.break.sm} col-md-${photo.break.md} col-lg-${photo.break.lg} col-xl-${photo.break.xl}`}
               >
                 <img alt="" src={`/images/upcycle/${photo.filename}`} />
               </div>

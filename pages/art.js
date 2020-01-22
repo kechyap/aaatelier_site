@@ -76,7 +76,7 @@ let Art = () => (
           </div>
         </div>
         <div className="row">
-          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-10 no-pm">
+          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-10">
             <img
               alt="cat, drawing, illustration, aaatelier, ejay, eunjin"
               src="/art/01.png"

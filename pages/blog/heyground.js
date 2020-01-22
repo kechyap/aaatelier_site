@@ -58,8 +58,8 @@ let HeyGround = () => (
         </div>
       </div>
       <div className="row">
-        <div className="col-xs-12 col-lg-10 no-pm" />
-        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-5 no-pm">
+        <div className="col-xs-12 col-lg-10" />
+        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-5">
           <img alt="" src="/images/heyground/01.jpg" />
           <p className="pr-3">
             ▲ Space information : 'Young Chun' Cafe and Bar
@@ -75,7 +75,7 @@ let HeyGround = () => (
           </p>
           <br />
         </div>
-        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-5 no-pm">
+        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-5">
           <img alt="" src="/images/heyground/02.jpg" />
           <p>
             ▲ The flexiable zoning between Cafe and Restaurant.
@@ -87,7 +87,7 @@ let HeyGround = () => (
           </p>
           <br />
         </div>
-        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-10 no-pm">
+        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-10">
           <img alt="" src="/images/heyground/03.jpg" />
           <p>
             ▲ Space information : 'Health Club' Organic food Restaurant.
@@ -95,7 +95,7 @@ let HeyGround = () => (
             <br />
           </p>
         </div>
-        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-10 no-pm">
+        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-10">
           <img alt="" src="/images/heyground/04.jpg" />
           <p>
             ▲ Space information : 'Health Club' Organic food Restaurant.
@@ -103,7 +103,7 @@ let HeyGround = () => (
             <br />
           </p>
         </div>
-        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-10 no-pm">
+        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-10">
           <img alt="" src="/images/heyground/05.jpg" />
           <p>
             ▲ Space information : 1F Lobby - Entrance + media wall
@@ -135,7 +135,7 @@ let HeyGround = () => (
             </small>
           </div>
         </div>
-        <div className="col-xs-12 col-md-8 col-lg-6 no-pm">
+        <div className="col-xs-12 col-md-8 col-lg-6">
           <img alt="" src="/images/heyground/06.jpg" />
         </div>
         <div className="col-xs-12">

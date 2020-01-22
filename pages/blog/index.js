@@ -7,38 +7,44 @@ let Blog = () => (
   <>
     <div className="blog">
       <Navigation />
-      <h1>
-        Creative Spaces
-        <br />
-        over the world
-      </h1>
-      <ul>
-        <li>
-          <Link href="/blog/punspace">
-            <a>punspace</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/blog/beachub">
-            <a>beachub</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/blog/cat">
-            <a>cat</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/blog/heyground">
-            <a>heyground</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/blog/scoopoint">
-            <a>scoopoint</a>
-          </Link>
-        </li>
-      </ul>
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-xs-12">
+            <h1>
+              Creative Spaces
+              <br />
+              over the world
+            </h1>
+            <ul>
+              <li>
+                <Link href="/blog/punspace">
+                  <a>punspace</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/beachub">
+                  <a>beachub</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/cat">
+                  <a>cat</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/heyground">
+                  <a>heyground</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/scoopoint">
+                  <a>scoopoint</a>
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <Foot />
     </div>
 

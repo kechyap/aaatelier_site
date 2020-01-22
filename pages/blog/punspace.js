@@ -116,7 +116,7 @@ let Punspace = () => (
           </div>
         </div>
         <div className="row px-1">
-          <div className="col-xs-12 col-lg-10 no-pm">
+          <div className="col-xs-12 col-lg-10">
             <br />
             <img alt="" src="/images/punspace/01.jpg" />
             <p>
@@ -125,7 +125,7 @@ let Punspace = () => (
             </p>
             <br />
           </div>
-          <div className="col-xs-12 col-sm-6 col-lg-5 no-pm">
+          <div className="col-xs-12 col-sm-6 col-lg-5">
             <img alt="" src="/images/punspace/02.jpg" />
             <p className="pr-3">
               ▲ Most of coworker's favorite spot is this small garden. You can
@@ -133,14 +133,14 @@ let Punspace = () => (
             </p>
             <br />
           </div>
-          <div className="col-xs-12 col-sm-6 col-lg-5 no-pm">
+          <div className="col-xs-12 col-sm-6 col-lg-5">
             <img alt="" src="/images/punspace/03.jpg" />
             <p className="pr-2">
               ▲ Various events can be happened in this small garden.
             </p>
             <br />
           </div>
-          <div className="col-xs-12 col-lg-10 no-pm">
+          <div className="col-xs-12 col-lg-10">
             <img alt="" src="/images/punspace/04.jpg" />
             <p className="pr-2">
               ▲ The Exterior of Punspace. It is dividied by three building

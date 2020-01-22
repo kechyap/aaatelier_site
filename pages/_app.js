@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Head from "next/head";
 
 let App = ({ Component, pageProps }) => (
@@ -50,6 +50,12 @@ let App = ({ Component, pageProps }) => (
         --xl: 1200;
 
         font-size: 16px;
+      }
+
+      html,
+      body,
+      #__next {
+        height: 100%;
       }
 
       body {
@@ -209,7 +215,7 @@ let App = ({ Component, pageProps }) => (
         margin: 0 auto;
       }
 
-      .p-1 {
+      .p-0 {
         padding-top: 0rem;
         padding-right: 0rem;
         padding-bottom: 0rem;
@@ -366,7 +372,7 @@ let App = ({ Component, pageProps }) => (
         padding-left: 5rem;
       }
 
-      .m-1 {
+      .m-0 {
         margin-top: 0rem;
         margin-right: 0rem;
         margin-bottom: 0rem;
@@ -523,24 +529,10 @@ let App = ({ Component, pageProps }) => (
         margin-left: 5rem;
       }
 
-      .no-pm {
-        margin-top: 0 !important;
-        margin-right: 0 !important;
-        margin-bottom: 0 !important;
-        margin-left: 0 !important;
-        padding-top: 0 !important;
-        padding-right: 0 !important;
-        padding-bottom: 0 !important;
-        padding-left: 0 !important;
-      }
-
       * {
         box-sizing: border-box;
       }
-      p4 {
-        color: var(--pink4);
-        font-size: 1.1rem;
-      }
+
       .score {
         width: 100%;
         background-color: rgba(120, 75, 105, 1);

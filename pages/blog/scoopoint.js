@@ -90,7 +90,7 @@ let Scoopoint = () => (
           <div className="row">
             <div className="col-xs-12 pt-3">
               <h4>LOCATION</h4>
-              <hr className="no-pm" />
+              <hr />
             </div>
             <div className="col-xs-8 col-sm-7 col-md-5">
               {project.location.map(text => (
@@ -108,7 +108,7 @@ let Scoopoint = () => (
           <div className="row">
             <div className="col-xs-12 pt-3">
               <h4>PRODUCTIVITY</h4>
-              <hr className="no-pm" />
+              <hr />
             </div>
             <div className="col-xs-8 col-sm-7 col-md-5">
               {project.productivity.map(text => (
@@ -126,7 +126,7 @@ let Scoopoint = () => (
           <div className="row">
             <div className="col-xs-12 pt-3">
               <h4>SPACE CONDITION and FACILITY</h4>
-              <hr className="no-pm" />
+              <hr />
             </div>
             <div className="col-xs-8 col-sm-7 col-md-5">
               {project.facility.map(text => (
@@ -144,7 +144,7 @@ let Scoopoint = () => (
           <div className="row">
             <div className="col-xs-12 pt-3">
               <h4>LIVING COMMUNITY</h4>
-              <hr className="no-pm" />
+              <hr />
             </div>
             <div className="col-xs-8 col-sm-7 col-md-5">
               {project.community.map(text => (
