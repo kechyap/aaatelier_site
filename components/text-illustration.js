@@ -4,16 +4,15 @@ let TextIllustration = () => (
   <div>
     <div className="container-fluid">
       <div className="row">
-        <div className="col-xs-10 offset-xs-1 col-sm-10 offset-sm-1">
+        <div className="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1">
           <div className="row">
-            <div className="col-xs-12 col-md-4 col-lg-3 offset-lg-1">
+            <div className="col-xs-12 col-md-4 col-lg-3 col-lg-offset-1">
               <h2
                 style={{ color: "rgba(250, 200, 200, 1)", marginTop: "0rem" }}
               >
                 TOTAL DESIGN SOLUTION
               </h2>
             </div>
-
             <div className="col-xs-12 col-md-8 col-lg-7">
               <div className="text-align-justify">
                 도시, 건축, 인테리어, 가구, 소품, 사인, 그래픽 디자인을 통합하여
@@ -24,7 +23,6 @@ let TextIllustration = () => (
           </div>
         </div>
       </div>
-
       <div className="font-dosis text-align-centered pt-5 pb-2">
         <div className="row">
           <div className="col-xs-12">
@@ -38,17 +36,14 @@ let TextIllustration = () => (
             <br />
           </div>
         </div>
-
         <div className="row">
-          <div className="col-xs-12 col-md-4 col-lg-3 offset-lg-1">
+          <div className="col-xs-12 col-md-4 col-lg-3 col-lg-offset-1">
             <div style={{ letterSpacing: "0.4em", paddingLeft: "0.4em" }}>
               ARCHITECTURE
             </div>
-
             <div style={{ letterSpacing: "0.17em", paddingLeft: "0.17em" }}>
               & URBAN PLANNING
             </div>
-
             <div
               style={{
                 letterSpacing: "0.062em",
@@ -58,7 +53,6 @@ let TextIllustration = () => (
             >
               urban issue, social issue
             </div>
-
             <div
               style={{
                 letterSpacing: "0.062em",
@@ -68,17 +62,13 @@ let TextIllustration = () => (
             >
               community, remodeling
             </div>
-
             <br />
-
             <div style={{ letterSpacing: "0.95em", paddingLeft: "0.95em" }}>
               INTERIOR
             </div>
-
             <div style={{ letterSpacing: "1.46em", paddingLeft: "1.46em" }}>
               DESIGN
             </div>
-
             <div
               style={{
                 letterSpacing: "0.001em",
@@ -88,10 +78,8 @@ let TextIllustration = () => (
             >
               exhibition, furniture, display
             </div>
-
             <br />
           </div>
-
           <div className="col-xs-12 col-md-4 col-lg-4">
             <div className="hide-col-xs-sm">
               <img
@@ -99,26 +87,21 @@ let TextIllustration = () => (
                 src="/images/logo_white.svg"
                 style={{ maxWidth: "7rem", paddingTop: "2rem" }}
               />
-
               <div style={{ letterSpacing: "0.4em", paddingLeft: "0.4em" }}>
                 BRAND
               </div>
-
               <div style={{ letterSpacing: "0.11em", paddingLeft: "0.11em" }}>
                 IDENTITY
               </div>
             </div>
           </div>
-
           <div className="col-xs-12 col-md-4 col-lg-3">
             <div style={{ letterSpacing: "0.95em", paddingLeft: "0.95em" }}>
               ARTISTIC
             </div>
-
             <div style={{ letterSpacing: "0.55em", paddingLeft: "0.55em" }}>
               INSPIRATION
             </div>
-
             <div
               style={{
                 letterSpacing: "0.07em",
@@ -128,17 +111,13 @@ let TextIllustration = () => (
             >
               illustration, photograph
             </div>
-
             <br />
-
             <div style={{ letterSpacing: "1.5em", paddingLeft: "1.5em" }}>
               VISUAL
             </div>
-
             <div style={{ letterSpacing: "1.5em", paddingLeft: "1.5em" }}>
               DESIGN
             </div>
-
             <div
               style={{
                 letterSpacing: "0.02em",
@@ -148,13 +127,11 @@ let TextIllustration = () => (
             >
               signage, poster, publishing
             </div>
-
             <br />
           </div>
         </div>
-
         <div className="row">
-          <div className="col-xs-12 col-md-12 col-lg-9 offset-lg-1">
+          <div className="col-xs-12 col-md-12 col-lg-9 col-lg-offset-1">
             <div className="hide-col-xs-sm text-align-center">
               <img alt="" src="/images/aboutFA.svg" />
             </div>

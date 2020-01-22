@@ -77,42 +77,6 @@ let project = {
   ]
 };
 
-// let MyScore = () =>
-//   <div>
-//     {project.charts.map((chart) =>
-//       <div>
-//         <div>
-//           <div className= 'pt-3'>
-//             <h4 className='mb-0'> { chart.name } </h4>
-//             <hr className='no-pm'/>
-//           </div>
-//         </div>
-//         {chart.datas.map((data) =>
-//           <Grid>
-//             <div className="row">
-//               <div className="col-xs-2 col-md-1">
-//                 <div className= { `box ${ data.button[0] }`} >
-//                   <span> { data.button[1] } </span>
-//                 </div>
-//               </div>
-//               <div className="col-xs-10 col-md-4">
-//                 <div className='scoreT'>
-//                   { data.category }
-//                 </div>
-//               </div>
-//               <div className="col-xs-12 col-md-7">
-//                 <small>
-//                   { data.comment }
-//                 </small>
-//                 <hr />
-//               </div>
-//             </div>
-//           </div>
-//         )}
-//       </div>
-//     )}
-//   </div>
-
 let Punspace = () => (
   <div className="blog">
     <Navigation />

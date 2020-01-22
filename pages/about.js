@@ -18,7 +18,7 @@ let About = () => (
         </div>
         <div className="container-fluid">
           <div className="row">
-            <div className="col-xs-10 offset-xs-1 col-sm-10 offset-md-1">
+            <div className="col-xs-10 col-xs-offset-1 col-sm-10 col-md-offset-1">
               <hr />
               <div className="row py-3">
                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-5">
@@ -40,7 +40,7 @@ let About = () => (
                     디자인합니다.
                   </div>
                   <div className="row">
-                    <div className="col-xs-10 offset-xs-1 col-sm-6 offset-sm-3 col-md-10 offset-md-1">
+                    <div className="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-10 col-md-offset-1">
                       <div
                         className="diagram my-3"
                         style={{ textAlign: "center" }}
@@ -50,7 +50,7 @@ let About = () => (
                     </div>
                   </div>
                 </div>
-                <div className="col-xs-12 col-sm-12 col-md-5 offset-md-1 col-lg-6">
+                <div className="col-xs-12 col-sm-12 col-md-5 col-md-offset-1 col-lg-6">
                   <div>
                     <h4>1. BRAND IDENTITY</h4>
                     <p className="text-align-justify">
@@ -106,7 +106,7 @@ let About = () => (
       </div>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-xs-10 offset-xs-1 col-sm-10 offset-md-1">
+          <div className="col-xs-10 col-xs-offset-1 col-sm-10 col-md-offset-1">
             <hr />
             <div className="row pt-1">
               <div className="col-xs-12">
