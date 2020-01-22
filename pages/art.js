@@ -88,6 +88,7 @@ let Art = () => (
           </div>
         </div>
       </div>
+      <h1>x</h1>
       <Footer />
     </div>
 
