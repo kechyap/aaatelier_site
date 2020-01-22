@@ -1,23 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Head from "next/head";
-import Navigation from "../components/navigation";
-import Foot from "../components/foot";
 
 let App = ({ Component, pageProps }) => (
   <>
     <Head>
-      <title>Home</title>
+      <title>Aaatelier</title>
       <link rel="icon" href="/favicon.ico" />
+
+      {/* Flexbox Grid */}
       <link
+        href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
-        type="text/css"
+      />
+
+      {/* Google Fonts */}
+      <link
+        href="//fonts.googleapis.com/css?family=Dosis:300,400,500|Titillium+Web:300,400,700"
+        rel="stylesheet"
+      />
+      <link
+        href="//fonts.googleapis.com/earlyaccess/notosanskr.css"
+        rel="stylesheet"
       />
     </Head>
 
-    <Navigation />
     <Component {...pageProps} />
-    <Foot />
 
     <style jsx global>{`
       /* styles for html tags in all pages */

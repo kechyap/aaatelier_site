@@ -1,4 +1,6 @@
 import React from "react";
+import Navigation from "../../components/navigation";
+import Foot from "../../components/foot";
 
 let project = {
   folder: "w03_punspace",
@@ -85,7 +87,6 @@ let project = {
 //             <hr className='no-pm'/>
 //           </div>
 //         </div>
-//
 //         {chart.datas.map((data) =>
 //           <Grid>
 //             <div className="row">
@@ -94,13 +95,11 @@ let project = {
 //                   <span> { data.button[1] } </span>
 //                 </div>
 //               </div>
-//
 //               <div className="col-xs-10 col-md-4">
 //                 <div className='scoreT'>
 //                   { data.category }
 //                 </div>
 //               </div>
-//
 //               <div className="col-xs-12 col-md-7">
 //                 <small>
 //                   { data.comment }
@@ -116,6 +115,7 @@ let project = {
 
 let Punspace = () => (
   <div className="blog">
+    <Navigation />
     <div className="container-fluid">
       <br />
       <br />
@@ -125,9 +125,7 @@ let Punspace = () => (
           <h2>{project.title}</h2>
           <hr />
           <h3 className="mb-2">{project.sub}</h3>
-
           <hr />
-
           <small>
             {project.date}
             <br />
@@ -137,9 +135,7 @@ let Punspace = () => (
           </small>
           <hr />
         </div>
-
-        <div className="col-sm-1 col-md-1 col-lg-1">
-
+        <div className="col-sm-1 col-md-1 col-lg-1" />
         <div className="col-xs-12 col-sm-7 col-md-8 col-lg-6">
           <div className="text-align-justify">
             <h4>The old Soda factory was changed into co-working space</h4>
@@ -152,40 +148,36 @@ let Punspace = () => (
               천정이 인상적인데, 별도의 인공조명 없이도 환히 공간을 밝히는 천정
               구조와 심플하고 군더더기 없는 디자인이 공간을 경쾌하게 만든다.
             </p>
-            <small>Photographer : EJay Kim / Writing : EJay Kim</small>
+            <small>Photographer: EJay Kim / Writing: EJay Kim</small>
           </div>
         </div>
-
         <div className="row px-1">
           <div className="col-xs-12 col-lg-10 no-pm">
             <br />
-            <img alt="" src={require("./01.jpg")} />
+            <img alt="" src="/images/punspace/01.jpg" />
             <p>
               ▲ The Exterior of Punspace. Main Three volumes are dividied by
               function of the space.
             </p>
             <br />
           </div>
-
           <div className="col-xs-12 col-sm-6 col-lg-5 no-pm">
-            <img alt="" src={require("./02.jpg")} />
+            <img alt="" src="/images/punspace/02.jpg" />
             <p className="pr-3">
               ▲ Most of coworker's favorite spot is this small garden. You can
               relax at the small nature after hard working.
             </p>
             <br />
           </div>
-
           <div className="col-xs-12 col-sm-6 col-lg-5 no-pm">
-            <img alt="" src={require("./03.jpg")} />
+            <img alt="" src="/images/punspace/03.jpg" />
             <p className="pr-2">
               ▲ Various events can be happened in this small garden.
             </p>
             <br />
           </div>
-
           <div className="col-xs-12 col-lg-10 no-pm">
-            <img alt="" src={require("./04.jpg")} />
+            <img alt="" src="/images/punspace/04.jpg" />
             <p className="pr-2">
               ▲ The Exterior of Punspace. It is dividied by three building
               structures.
@@ -195,6 +187,7 @@ let Punspace = () => (
         </div>
       </div>
     </div>
+    <Foot />
   </div>
 );
 

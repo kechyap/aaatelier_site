@@ -1,9 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import Navigation from "../components/navigation";
+import Foot from "../components/foot";
 
 let Home = () => (
   <>
     <div className="home">
+      <Navigation />
       <div className="front">
         <div className="pt-5">
           <div className="container-fluid">
@@ -56,6 +59,7 @@ let Home = () => (
           </Link>
         </li>
       </ul>
+      <Foot />
     </div>
 
     <style jsx>{`

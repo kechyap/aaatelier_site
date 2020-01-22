@@ -1,4 +1,6 @@
 import React from "react";
+import Navigation from "../../components/navigation";
+import Foot from "../../components/foot";
 
 let project = {
   folder: "Pops",
@@ -26,61 +28,53 @@ let project = {
 };
 
 let Pops = () => (
-  <div className="container-fluid">
-    <div className="row">
-      <div className="col-xs-12 col-sm-12 col-md-4 col-xl-3">
-        <div className="px-1 pr-3 mt-0">
-          <h2>{project.title}</h2>
-
-          <h4 className="mb-4">{project.text}</h4>
-
-          <small>Event Planning, Reaserching, Booklets.</small>
-
-          <p>
-            Sharing Solutions about P.O.P.S (Private Owned Public Space) forum,
-            Improving Urban Life quaility though citizen innovation.
-          </p>
-
-          <hr />
-
-          <ul>
-            <li>Completion Date - Dec, 2016</li>
-            <li>Planning - AAAtelier, Urban Society, 00UNIV.</li>
-            <li>Graphic Design - AAAtelier</li>
-            <li>Venue - Gyeongui Railway Park, Seoul</li>
-            <li>Business Planning - AAAtelier, Urban Society</li>
-            <li>Client - Seoul Metropolitan Government</li>
-          </ul>
-
-          <hr />
-
-          <h4>SUPPORTING</h4>
-
-          <a href="http://oouniv.org" target="_blank" rel="noopener noreferrer">
-            00UNIV
-          </a>
-        </div>
-      </div>
-
-      <div className="col-xs-12 col-md-8 col-xl-9 no-pm">
-        <div className="row">
-          {project.photos.map(photo => (
-            <div
-              className={`
-                col-xs-${photo.break.xs}
-                col-sm-${photo.break.sm}
-                col-md-${photo.break.md}
-                col-lg-${photo.break.lg}
-                col-xl-${photo.break.xl}
-                no-pm
-              `}
+  <div>
+    <Navigation />
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-xs-12 col-sm-12 col-md-4 col-xl-3">
+          <div className="px-1 pr-3 mt-0">
+            <h2>{project.title}</h2>
+            <h4 className="mb-4">{project.text}</h4>
+            <small>Event Planning, Reaserching, Booklets.</small>
+            <p>
+              Sharing Solutions about P.O.P.S (Private Owned Public Space)
+              forum, Improving Urban Life quaility though citizen innovation.
+            </p>
+            <hr />
+            <ul>
+              <li>Completion Date - Dec, 2016</li>
+              <li>Planning - AAAtelier, Urban Society, 00UNIV.</li>
+              <li>Graphic Design - AAAtelier</li>
+              <li>Venue - Gyeongui Railway Park, Seoul</li>
+              <li>Business Planning - AAAtelier, Urban Society</li>
+              <li>Client - Seoul Metropolitan Government</li>
+            </ul>
+            <hr />
+            <h4>SUPPORTING</h4>
+            <a
+              href="http://oouniv.org"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <img alt="" src={`/images/${photo.filename}`} />
-            </div>
-          ))}
+              00UNIV
+            </a>
+          </div>
+        </div>
+        <div className="col-xs-12 col-md-8 col-xl-9 no-pm">
+          <div className="row">
+            {project.photos.map(photo => (
+              <div
+                className={`col-xs-${photo.break.xs} col-sm-${photo.break.sm} col-md-${photo.break.md} col-lg-${photo.break.lg} col-xl-${photo.break.xl} no-pm`}
+              >
+                <img alt="" src={`/images/pops/${photo.filename}`} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
+    <Foot />
   </div>
 );
 

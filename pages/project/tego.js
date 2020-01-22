@@ -1,4 +1,6 @@
 import React from "react";
+import Navigation from "../../components/navigation";
+import Foot from "../../components/foot";
 
 let project = {
   folder: "Tego",
@@ -49,60 +51,51 @@ let project = {
 };
 
 let Tego = () => (
-  <div className="container-fluid">
-    <div className="row">
-      <div className="col-xs-12 col-md-4 col-xl-3">
-        <div className="px-1 pr-3 mt-0">
-          <h2>{project.title}</h2>
-
-          <h4 className="mb-4">{project.text}</h4>
-
-          <small>
-            Interior design, Planning, Specifications, Furniture design
-          </small>
-
-          <hr />
-
-          <ul>
-            <li>Schematic Design - OCT, 2016</li>
-            <li>Design Development - MAR, 2017</li>
-            <li>Construction Documents - JUNE, 2017</li>
-            <li>Design Planning - AAAtelier, Urban society </li>
-            <li>Venue - Makok R&D Innovative district, Seoul</li>
-            <li>Client - Tego Science</li>
-          </ul>
-
-          <hr />
-
-          <h4>SUPPORTING</h4>
-
-          <a
-            href="www.tegoscience.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tego science
-          </a>
-        </div>
-      </div>
-
-      <div className="col-xs-12 col-md-8 col-xl-9 no-pm">
-        <div className="row">
-          {project.photos.map(photo => (
-            <Col
-              col-xs-photo.break.xs}
-              col-sm-photo.break.sm}
-              col-md-photo.break.md}
-              col-lg-photo.break.lg}
-              col-xl-photo.break.xl}
-              className="no-pm"
+  <div>
+    <Navigation />
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-xs-12 col-md-4 col-xl-3">
+          <div className="px-1 pr-3 mt-0">
+            <h2>{project.title}</h2>
+            <h4 className="mb-4">{project.text}</h4>
+            <small>
+              Interior design, Planning, Specifications, Furniture design
+            </small>
+            <hr />
+            <ul>
+              <li>Schematic Design - OCT, 2016</li>
+              <li>Design Development - MAR, 2017</li>
+              <li>Construction Documents - JUNE, 2017</li>
+              <li>Design Planning - AAAtelier, Urban society </li>
+              <li>Venue - Makok R&D Innovative district, Seoul</li>
+              <li>Client - Tego Science</li>
+            </ul>
+            <hr />
+            <h4>SUPPORTING</h4>
+            <a
+              href="www.tegoscience.com"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <img alt="" src={`/images/${photo.filename}`} />
-            </div>
-          ))}
+              Tego science
+            </a>
+          </div>
+        </div>
+        <div className="col-xs-12 col-md-8 col-xl-9 no-pm">
+          <div className="row">
+            {project.photos.map(photo => (
+              <div
+                className={`col-xs-${photo.break.xs} col-sm-${photo.break.sm} col-md-${photo.break.md} col-lg-${photo.break.lg} col-xl-${photo.break.xl} no-pm`}
+              >
+                <img alt="" src={`/images/tego/${photo.filename}`} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
+    <Foot />
   </div>
 );
 

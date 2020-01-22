@@ -1,9 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import Navigation from "../../components/navigation";
+import Foot from "../../components/foot";
 
 let Blog = () => (
   <>
     <div className="blog">
+      <Navigation />
       <h1>
         Creative Spaces
         <br />
@@ -36,6 +39,7 @@ let Blog = () => (
           </Link>
         </li>
       </ul>
+      <Foot />
     </div>
 
     <style jsx global>{`
