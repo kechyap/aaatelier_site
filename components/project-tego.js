@@ -82,7 +82,7 @@ let ProjectTego = () => (
         <div className="row">
           {project.photos.map(photo => (
             <div
-              className={`col-xs-${photo.break.xs} col-sm-${photo.break.sm} col-md-${photo.break.md} col-lg-${photo.break.lg} col-xl-${photo.break.xl}`}
+              className={`col-xs-${photo.break.xs} col-sm-${photo.break.sm} col-md-${photo.break.md} col-lg-${photo.break.lg} col-xl-${photo.break.xl} no-pm`}
             >
               <img alt="" src={`/images/tego/${photo.filename}`} />
             </div>

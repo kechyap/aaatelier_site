@@ -79,11 +79,11 @@ let Art = () => (
           <div className="col-xs-12 col-sm-12 col-md-12 col-lg-10">
             <img
               alt="cat, drawing, illustration, aaatelier, ejay, eunjin"
-              src="/art/01.png"
+              src="/images/art/01.png"
             />
             <img
               alt="cake, drawing, illustration, aaatelier, ejay, eunjin"
-              src="/art/02.png"
+              src="/images/art/02.png"
             />
           </div>
         </div>

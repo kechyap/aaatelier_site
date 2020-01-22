@@ -31,11 +31,11 @@ let Home = () => (
         </div>
       </div>
       <ProjectGrill />
-      <ProjectMaterialBank />
-      <ProjectPops />
       <ProjectSeam />
       <ProjectTego />
+      <ProjectPops />
       <ProjectUpCycle />
+      <ProjectMaterialBank />
       <Footer />
     </div>
 

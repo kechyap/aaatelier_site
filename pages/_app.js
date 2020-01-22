@@ -8,10 +8,7 @@ let App = ({ Component, pageProps }) => (
       <link rel="icon" href="/favicon.ico" />
 
       {/* Flexbox Grid */}
-      <link
-        href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
-        rel="stylesheet"
-      />
+      <link href="/flexboxgrid2.css" rel="stylesheet" />
 
       {/* Google Fonts */}
       <link
@@ -28,6 +25,10 @@ let App = ({ Component, pageProps }) => (
 
     <style jsx global>{`
       /* styles for html tags in all pages */
+      * {
+        box-sizing: border-box;
+      }
+
       html {
         --main-yellow: rgb(250, 189, 52);
         --brown: rgba(128, 107, 80, 0.8);
@@ -140,6 +141,47 @@ let App = ({ Component, pageProps }) => (
       b {
         font-weight: 400;
         font-size: 1.05rem;
+      }
+
+      .blog {
+        background: linear-gradient(
+          rgb(130, 75, 90),
+          rgb(100, 80, 105),
+          rgb(110, 65, 75),
+          rgb(110, 70, 100),
+          rgb(130, 70, 90),
+          rgb(100, 80, 110),
+          rgb(110, 65, 75)
+        );
+      }
+
+      .blog h1 {
+        color: rgb(255, 150, 160);
+      }
+
+      .blog h2,
+      .blog h3 {
+        color: rgb(255, 130, 140);
+      }
+
+      .blog h4 {
+        color: var(--pink2);
+      }
+
+      .blog hr {
+        border-bottom: 0.5px solid var(--pink4);
+      }
+
+      .blog small {
+        font-size: 0.88rem;
+        line-height: 0rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      .blog b {
+        font-size: 1.2rem;
+        color: var(--pink4);
       }
 
       /* styles for classes in all pages  */
@@ -529,8 +571,9 @@ let App = ({ Component, pageProps }) => (
         margin-left: 5rem;
       }
 
-      * {
-        box-sizing: border-box;
+      .no-pm {
+        margin: 0px;
+        padding: 0px;
       }
 
       .score {
