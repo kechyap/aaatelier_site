@@ -1,19 +1,12 @@
 import React from "react";
+import Link from "next/link";
 import Navigation from "../../components/navigation";
 import Foot from "../../components/foot";
-// import PostBeachHub from "../../components/post-beachub";
-// import PostCat from "../../components/post-cat";
-import PostHeyGround from "../../components/post-heyground";
-import PostPunSpace from "../../components/post-punspace";
-// import PostScooPoint from "../../components/post-scoopoint";
 
 let Blog = () => (
   <>
     <div className="blog">
       <Navigation />
-      <br />
-      <br />
-      <br />
       <div className="container-fluid">
         <div className="row">
           <div className="col-xs-12">
@@ -22,14 +15,36 @@ let Blog = () => (
               <br />
               over the world
             </h1>
+            <ul>
+              <li>
+                <Link href="/blog/punspace">
+                  <a>punspace</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/beachub">
+                  <a>beachub</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/cat">
+                  <a>cat</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/heyground">
+                  <a>heyground</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/scoopoint">
+                  <a>scoopoint</a>
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      {/* <PostScooPoint /> */}
-      <PostHeyGround />
-      {/* <PostCat /> */}
-      {/* <PostBeachHub /> */}
-      <PostPunSpace />
       <Foot />
     </div>
 
