@@ -1,5 +1,4 @@
 import React from "react";
-import { Grid, Row, Col } from "react-flexbox-grid";
 
 let project = {
   folder: "w03_beachub",
@@ -50,12 +49,12 @@ let project = {
 
 let Beachub = () => (
   <div className="blog">
-    <Grid fluid>
+    <div className="container-fluid">
       <br />
       <br />
       <br />
-      <Row>
-        <Col xs={12} sm={4} md={3} lg={3}>
+      <div className="row">
+        <div className="col-xs-12 col-sm-4 col-md-3 col-lg-3">
           <h2>{project.title}</h2>
           <hr />
           <h3 className="mb-2">{project.sub}</h3>
@@ -70,10 +69,10 @@ let Beachub = () => (
             {project.icon}
           </small>
           <hr />
-        </Col>
-        <Col sm={1} md={1} lg={1} />
+        </div>
+        <div className="col-sm-1 col-md-1 col-lg-1 /">
 
-        <Col xs={12} sm={7} md={8} lg={6}>
+        <div className="col-xs-12 col-sm-7 col-md-8 col-lg-6">
           <div className="text-align-justify">
             <h4>
               Have you ever imagine working on the beach? Sounds like a dream !{" "}
@@ -85,92 +84,92 @@ let Beachub = () => (
             </p>
           </div>
 
-          <Row>
-            <Col xs={12} className="pt-3">
+          <div className="row">
+            <div className="col-xs-12 className="pt-3"">
               <p4> LOCATION </p4>
               <hr className="no-pm" />
-            </Col>
+            </div>
 
-            <Col xs={8} sm={7} md={5}>
+            <div className="col-xs-8 col-sm-7 col-md-5">
               {project.location.map(text => (
                 <div className="scoreT">{`${text.lo}`}</div>
               ))}
-            </Col>
+            </div>
 
-            <Col xs={4} sm={5} md={7}>
+            <div className="col-xs-4 col-sm-5 col-md-7">
               {project.location.map(bar => (
                 <div className="score">
                   <div className={`skills ${bar.l}`}>{`${bar.ll}`}</div>
                 </div>
               ))}
-            </Col>
-          </Row>
+            </div>
+          </div>
 
-          <Row>
-            <Col xs={12} className="pt-3">
+          <div className="row">
+            <div className="col-xs-12 className="pt-3"">
               <p4> PRODUCTIVITY </p4>
               <hr className="no-pm" />
-            </Col>
+            </div>
 
-            <Col xs={8} sm={7} md={5}>
+            <div className="col-xs-8 col-sm-7 col-md-5">
               {project.productivity.map(text => (
                 <div className="scoreT">{`${text.pr}`}</div>
               ))}
-            </Col>
+            </div>
 
-            <Col xs={4} sm={5} md={7}>
+            <div className="col-xs-4 col-sm-5 col-md-7">
               {project.productivity.map(bar => (
                 <div className="score">
                   <div className={`skills ${bar.p}`}>{`${bar.pp}`}</div>
                 </div>
               ))}
-            </Col>
-          </Row>
+            </div>
+          </div>
 
-          <Row>
-            <Col xs={12} className="pt-3">
+          <div className="row">
+            <div className="col-xs-12 className="pt-3"">
               <p4> SPACE CONDITION and FACILITY </p4>
               <hr className="no-pm" />
-            </Col>
+            </div>
 
-            <Col xs={8} sm={7} md={5}>
+            <div className="col-xs-8 col-sm-7 col-md-5">
               {project.facility.map(text => (
                 <div className="scoreT">{`${text.fa}`}</div>
               ))}
-            </Col>
+            </div>
 
-            <Col xs={4} sm={5} md={7}>
+            <div className="col-xs-4 col-sm-5 col-md-7">
               {project.facility.map(bar => (
                 <div className="score">
                   <div className={`skills ${bar.f}`}>{`${bar.ff}`}</div>
                 </div>
               ))}
-            </Col>
-          </Row>
+            </div>
+          </div>
 
-          <Row>
-            <Col xs={12} className="pt-3">
+          <div className="row">
+            <div className="col-xs-12 className="pt-3"">
               <p4> LIVING COMMUNITY </p4>
               <hr className="no-pm" />
-            </Col>
+            </div>
 
-            <Col xs={8} sm={7} md={5}>
+            <div className="col-xs-8 col-sm-7 col-md-5">
               {project.community.map(text => (
                 <div className="scoreT">{`${text.co}`}</div>
               ))}
-            </Col>
+            </div>
 
-            <Col xs={4} sm={5} md={7}>
+            <div className="col-xs-4 col-sm-5 col-md-7">
               {project.community.map(bar => (
                 <div className="score">
                   <div className={`skills ${bar.c}`}>{`${bar.cc}`}</div>
                 </div>
               ))}
-            </Col>
-          </Row>
-        </Col>
-      </Row>
-    </Grid>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 );
 

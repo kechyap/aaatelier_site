@@ -4,10 +4,18 @@ import Link from "next/link";
 let Navigation = () => (
   <>
     <div className="navbar text-align-right">
-      <Link to="/about"> ABOUT </Link>
-      <Link to="/"> PROJECT </Link>
-      <Link to="/Art"> ART </Link>
-      <Link to="/Blog"> BLOG </Link>
+      <Link href="/about">
+        <a>ABOUT</a>
+      </Link>
+      <Link href="/">
+        <a>PROJECT</a>
+      </Link>
+      <Link href="/art">
+        <a>ART</a>
+      </Link>
+      <Link href="/blog">
+        <a>BLOG</a>
+      </Link>
     </div>
 
     <style jsx>{`

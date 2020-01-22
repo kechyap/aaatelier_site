@@ -1,5 +1,4 @@
 import React from "react";
-import { Grid, Row, Col } from "react-flexbox-grid";
 
 let project = {
   folder: "Tego",
@@ -50,9 +49,9 @@ let project = {
 };
 
 let Tego = () => (
-  <Grid fluid>
-    <Row>
-      <Col xs={12} md={4} xl={3}>
+  <div className="container-fluid">
+    <div className="row">
+      <div className="col-xs-12 col-md-4 col-xl-3">
         <div className="px-1 pr-3 mt-0">
           <h2>{project.title}</h2>
 
@@ -85,26 +84,26 @@ let Tego = () => (
             Tego science
           </a>
         </div>
-      </Col>
+      </div>
 
-      <Col xs={12} md={8} xl={9} className="no-pm">
-        <Row>
+      <div className="col-xs-12 col-md-8 col-xl-9 no-pm">
+        <div className="row">
           {project.photos.map(photo => (
             <Col
-              xs={photo.break.xs}
-              sm={photo.break.sm}
-              md={photo.break.md}
-              lg={photo.break.lg}
-              xl={photo.break.xl}
+              col-xs-photo.break.xs}
+              col-sm-photo.break.sm}
+              col-md-photo.break.md}
+              col-lg-photo.break.lg}
+              col-xl-photo.break.xl}
               className="no-pm"
             >
-              <img alt="" src={require(`./images/${photo.filename}`)} />
-            </Col>
+              <img alt="" src={`/images/${photo.filename}`} />
+            </div>
           ))}
-        </Row>
-      </Col>
-    </Row>
-  </Grid>
+        </div>
+      </div>
+    </div>
+  </div>
 );
 
 export default Tego;

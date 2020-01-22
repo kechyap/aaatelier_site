@@ -1,19 +1,18 @@
 import React from "react";
-import { Grid, Row, Col } from "react-flexbox-grid";
 
 let Foot = () => (
   <>
     <div className="ending">
-      <Grid fluid>
-        <Row>
-          <Col xs={6} sm={5} md={4} className="pl-1 ml-0">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-xs-6 col-sm-5 col-md-4 pl-1 ml-0">
             <h4 className="pb-0 my-0">
               C O N T A C T <br />A A A t e l i e r
             </h4>
             <small>aaatelier@ejay.kim</small>
-          </Col>
+          </div>
 
-          <Col xs={6} sm={7} md={8} className="pt-0 my-0">
+          <div className="col-xs-6 col-sm-7 col-md-8 pt-0 my-0">
             <a href="mailto:aaatelier@ejay.kim">
               <img alt="" src="/images/icon_email.svg" className="icon" />
             </a>
@@ -46,9 +45,9 @@ let Foot = () => (
               <br style={{ lineHeight: "3rem" }} />
               Web Design & Development by AAAtelier
             </small>
-          </Col>
-        </Row>
-      </Grid>
+          </div>
+        </div>
+      </div>
     </div>
 
     <style jsx>{`

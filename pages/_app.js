@@ -1,10 +1,23 @@
 import React from "react";
-import Navigation from "../components/Navigation";
-import Foot from "../src/components/Foot";
+import Head from "next/head";
+import Navigation from "../components/navigation";
+import Foot from "../components/foot";
 
-let App = () => (
+let App = ({ Component, pageProps }) => (
   <>
-    <Component />
+    <Head>
+      <title>Home</title>
+      <link rel="icon" href="/favicon.ico" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+        type="text/css"
+      />
+    </Head>
+
+    <Navigation />
+    <Component {...pageProps} />
+    <Foot />
 
     <style jsx global>{`
       /* styles for html tags in all pages */
@@ -133,18 +146,18 @@ let App = () => (
         }
       }
 
-      .hide-xs-sm {
+      .hide-col-xs-sm {
         display: none;
       }
-      .show-xs-sm {
+      .show-col-xs-sm {
         display: block;
       }
 
       @media (min-width: 768px) {
-        .hide-xs-sm {
+        .hide-col-xs-sm {
           display: block;
         }
-        .show-xs-sm {
+        .show-col-xs-sm {
           display: none;
         }
       }

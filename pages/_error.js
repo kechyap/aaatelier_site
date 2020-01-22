@@ -1,14 +1,13 @@
 import React from "react";
-import { Grid, Row, Col } from "react-flexbox-grid";
 
 let Error = () => (
-  <Grid fluid>
-    <Row>
-      <Col xs={12}>
+  <div className="container-fluid">
+    <div className="row">
+      <div className="col-xs-12">
         <h1>Error</h1>
-      </Col>
-    </Row>
-  </Grid>
+      </div>
+    </div>
+  </div>
 );
 
 export default Error;

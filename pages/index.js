@@ -1,5 +1,4 @@
 import React from "react";
-import { Grid, Row, Col } from "react-flexbox-grid";
 import Link from "next/link";
 
 let Home = () => (
@@ -7,51 +6,56 @@ let Home = () => (
     <div className="home">
       <div className="front">
         <div className="pt-5">
-          <Grid fluid>
-            <Row className="pt-2">
-              <Col xs={4} sm={4} md={4} lg={4} xl={4}>
+          <div className="container-fluid">
+            <div className="row pt-2">
+              <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                 <img
                   alt=""
-                  src={require("./images/logo_pink.svg")}
+                  src="/images/logo_pink.svg"
                   style={{ width: "6.5rem", paddingTop: "0.5rem" }}
                 />
-              </Col>
-
-              <Col xs={8} sm={8} md={8} lg={8} xl={8}>
+              </div>
+              <div className="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
                 <h2 className="no-pm">AAAtelier</h2>
-
                 <div className="subtitle">Art & Architecture Atelier</div>
-
                 <div className="subsubtitle">Total Design Solution</div>
-              </Col>
-            </Row>
-          </Grid>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <Link href="/grill">
-        <a>Grill</a>
-      </Link>
-
-      <Link href="/seam">
-        <a>Seam</a>
-      </Link>
-
-      <Link href="/tego">
-        <a>Tego</a>
-      </Link>
-
-      <Link href="/pops">
-        <a>Pops</a>
-      </Link>
-
-      <Link href="/upcycle">
-        <a>Upcycle</a>
-      </Link>
-
-      <Link href="/material-bank">
-        <a>MaterialBank</a>
-      </Link>
+      <ul>
+        <li>
+          <Link href="/project/grill">
+            <a>Grill</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/project/seam">
+            <a>Seam</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/project/tego">
+            <a>Tego</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/project/pops">
+            <a>Pops</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/project/upcycle">
+            <a>Upcycle</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/project/material-bank">
+            <a>MaterialBank</a>
+          </Link>
+        </li>
+      </ul>
     </div>
 
     <style jsx>{`

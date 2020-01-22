@@ -1,5 +1,4 @@
 import React from "react";
-import { Grid, Row, Col } from "react-flexbox-grid";
 
 let project = {
   folder: "w01_heyground",
@@ -13,9 +12,9 @@ let project = {
 
 let HeyGround = () => (
   <div className="blog">
-    <Grid fluid>
-      <Row>
-        <Col xs={12} sm={4} md={3} lg={3}>
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-xs-12 col-sm-4 col-md-3 col-lg-3">
           <h2>{project.title}</h2>
           <hr />
           <h3 className="mb-2">{project.sub}</h3>
@@ -30,10 +29,10 @@ let HeyGround = () => (
             {project.icon}
           </small>
           <hr />
-        </Col>
-        <Col sm={1} md={1} lg={1} />
+        </div>
+        <div className="col-sm-1 col-md-1 col-lg-1 /">
 
-        <Col xs={12} sm={7} md={8} lg={6}>
+        <div className="col-xs-12 col-sm-7 col-md-8 col-lg-6">
           <div className="text-align-justify">
             <h4>
               The Space planning and program for the 1st floor in Creative
@@ -55,13 +54,13 @@ let HeyGround = () => (
               </small>
             </p>
           </div>
-        </Col>
-      </Row>
+        </div>
+      </div>
 
-      <Row>
-        <Col xs={12} lg={10} className="no-pm" />
+      <div className="row">
+        <div className="col-xs-12 col-lg-10 className="no-pm" /">
 
-        <Col xs={12} sm={12} md={6} lg={5} className="no-pm">
+        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-5 className="no-pm"">
           <img alt="" src={require("./01.jpg")} />
           <p className="pr-3">
             ▲ Space information : 'Young Chun' Cafe and Bar
@@ -75,9 +74,9 @@ let HeyGround = () => (
             이후로 붐빌때엔 전체 볼륨을 종종 수용하지 못한다.
           </p>
           <br />
-        </Col>
+        </div>
 
-        <Col xs={12} sm={12} md={6} lg={5} className="no-pm">
+        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-5 className="no-pm"">
           <img alt="" src={require("./02.jpg")} />
           <p>
             ▲ The flexiable zoning between Cafe and Restaurant. <br /> <br />
@@ -86,27 +85,27 @@ let HeyGround = () => (
             할 때엔 커튼을 이용.
           </p>
           <br />
-        </Col>
+        </div>
 
-        <Col xs={12} sm={12} md={12} lg={10} className="no-pm">
+        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-10 className="no-pm"">
           <img alt="" src={require("./03.jpg")} />
           <p>
             ▲ Space information : 'Health Club' Organic food Restaurant.
             <br />
             <br />
           </p>
-        </Col>
+        </div>
 
-        <Col xs={12} sm={12} md={12} lg={10} className="no-pm">
+        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-10 className="no-pm"">
           <img alt="" src={require("./04.jpg")} />
           <p>
             ▲ Space information : 'Health Club' Organic food Restaurant.
             <br />
             <br />
           </p>
-        </Col>
+        </div>
 
-        <Col xs={12} sm={12} md={12} lg={10} className="no-pm">
+        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-10 className="no-pm"">
           <img alt="" src={require("./05.jpg")} />
           <p>
             ▲ Space information : 1F Lobby - Entrance + media wall
@@ -119,9 +118,9 @@ let HeyGround = () => (
             수직동선이 필요할 듯. <br />
             <br />
           </p>
-        </Col>
+        </div>
 
-        <Col md={4} lg={4} className="hide-xs-sm">
+        <div className="col-md-4 col-lg-4 className="hide-col-xs-sm"">
           <div className="pr-2 pt-5">
             <div className="underline">FLOOR INFORMATION</div>
             <small>
@@ -133,13 +132,13 @@ let HeyGround = () => (
               <br />8 &nbsp; F &nbsp; ] &nbsp; Rooftop Lounge
             </small>
           </div>
-        </Col>
+        </div>
 
-        <Col xs={12} md={8} lg={6} className="no-pm">
+        <div className="col-xs-12 col-md-8 col-lg-6 className="no-pm"">
           <img alt="" src={require("./06.jpg")} />
-        </Col>
+        </div>
 
-        <Col xs={12} className="show-xs-sm">
+        <div className="col-xs-12 className="show-col-xs-sm"">
           <div className="underline">FLOOR INFORMATION</div>
           <small>
             B1 F ] &nbsp; Conference Hall <br />
@@ -149,9 +148,9 @@ let HeyGround = () => (
             6-7F ] &nbsp; Private office - S / Individual Desk
             <br />8 &nbsp; &nbsp; F ] &nbsp; Rooftop Lounge
           </small>
-        </Col>
-      </Row>
-    </Grid>
+        </div>
+      </div>
+    </div>
   </div>
 );
 

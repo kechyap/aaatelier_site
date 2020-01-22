@@ -1,5 +1,4 @@
 import React from "react";
-import { Grid, Row, Col } from "react-flexbox-grid";
 
 let project = {
   folder: "w03_punspace",
@@ -89,27 +88,27 @@ let project = {
 //
 //         {chart.datas.map((data) =>
 //           <Grid>
-//             <Row>
-//               <Col xs={2} md={1}>
+//             <div className="row">
+//               <div className="col-xs-2 col-md-1">
 //                 <div className= { `box ${ data.button[0] }`} >
 //                   <span> { data.button[1] } </span>
 //                 </div>
-//               </Col>
+//               </div>
 //
-//               <Col xs={10} md={4}>
+//               <div className="col-xs-10 col-md-4">
 //                 <div className='scoreT'>
 //                   { data.category }
 //                 </div>
-//               </Col>
+//               </div>
 //
-//               <Col xs={12} md={7}>
+//               <div className="col-xs-12 col-md-7">
 //                 <small>
 //                   { data.comment }
 //                 </small>
 //                 <hr />
-//               </Col>
-//             </Row>
-//           </Grid>
+//               </div>
+//             </div>
+//           </div>
 //         )}
 //       </div>
 //     )}
@@ -117,12 +116,12 @@ let project = {
 
 let Punspace = () => (
   <div className="blog">
-    <Grid fluid>
+    <div className="container-fluid">
       <br />
       <br />
       <br />
-      <Row>
-        <Col xs={12} sm={4} md={3} lg={3}>
+      <div className="row">
+        <div className="col-xs-12 col-sm-4 col-md-3 col-lg-3">
           <h2>{project.title}</h2>
           <hr />
           <h3 className="mb-2">{project.sub}</h3>
@@ -137,11 +136,11 @@ let Punspace = () => (
             {project.icon}
           </small>
           <hr />
-        </Col>
+        </div>
 
-        <Col sm={1} md={1} lg={1} />
+        <div className="col-sm-1 col-md-1 col-lg-1">
 
-        <Col xs={12} sm={7} md={8} lg={6}>
+        <div className="col-xs-12 col-sm-7 col-md-8 col-lg-6">
           <div className="text-align-justify">
             <h4>The old Soda factory was changed into co-working space</h4>
             <p>
@@ -155,10 +154,10 @@ let Punspace = () => (
             </p>
             <small>Photographer : EJay Kim / Writing : EJay Kim</small>
           </div>
-        </Col>
+        </div>
 
-        <Row className="px-1">
-          <Col xs={12} lg={10} className="no-pm">
+        <div className="row px-1">
+          <div className="col-xs-12 col-lg-10 no-pm">
             <br />
             <img alt="" src={require("./01.jpg")} />
             <p>
@@ -166,36 +165,36 @@ let Punspace = () => (
               function of the space.
             </p>
             <br />
-          </Col>
+          </div>
 
-          <Col xs={12} sm={6} lg={5} className="no-pm">
+          <div className="col-xs-12 col-sm-6 col-lg-5 no-pm">
             <img alt="" src={require("./02.jpg")} />
             <p className="pr-3">
               ▲ Most of coworker's favorite spot is this small garden. You can
               relax at the small nature after hard working.
             </p>
             <br />
-          </Col>
+          </div>
 
-          <Col xs={12} sm={6} lg={5} className="no-pm">
+          <div className="col-xs-12 col-sm-6 col-lg-5 no-pm">
             <img alt="" src={require("./03.jpg")} />
             <p className="pr-2">
               ▲ Various events can be happened in this small garden.
             </p>
             <br />
-          </Col>
+          </div>
 
-          <Col xs={12} lg={10} className="no-pm">
+          <div className="col-xs-12 col-lg-10 no-pm">
             <img alt="" src={require("./04.jpg")} />
             <p className="pr-2">
               ▲ The Exterior of Punspace. It is dividied by three building
               structures.
             </p>
             <br />
-          </Col>
-        </Row>
-      </Row>
-    </Grid>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 );
 

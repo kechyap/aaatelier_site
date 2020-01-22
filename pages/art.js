@@ -1,19 +1,18 @@
 import React from "react";
-import { Grid, Row, Col } from "react-flexbox-grid";
 
 let Art = () => (
   <>
     <div className="art">
-      <Grid fluid>
-        <Row>
-          <Col xs={12}>
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-xs-12">
             <br />
             <br />
             <br />
             <h1 className="pb-0">Art Gallery</h1>
-          </Col>
+          </div>
 
-          <Col xs={12} sm={5} md={4} lg={3} className="pr-3">
+          <div className="col-xs-12 col-sm-5 col-md-4 col-lg-3 pr-3">
             <h2>Illustrations and Hand Drawings</h2>
 
             <div className="show-xs">
@@ -49,9 +48,9 @@ let Art = () => (
                 <br />
               </small>
             </div>
-          </Col>
+          </div>
 
-          <Col xs={12} sm={7} md={8} lg={7} style={{ paddingTop: "1.3rem" }}>
+          <div className="col-xs-12 col-sm-7 col-md-8 col-lg-7 pt-1">
             <b>Between Logic and Art</b>
             <p>
               Good architecture and Good user experienced design should be based
@@ -77,13 +76,13 @@ let Art = () => (
               <br />
               <br />
             </p>
-          </Col>
-        </Row>
-      </Grid>
+          </div>
+        </div>
+      </div>
 
-      <Grid fluid className="no-pm">
-        <Row>
-          <Col xs={12} sm={12} md={12} lg={10} className="no-pm">
+      <div className="container-fluid no-pm">
+        <div className="row">
+          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-10 no-pm">
             <img
               alt="cat, drawing, illustration, aaatelier, ejay, eunjin"
               src="/art/01.png"
@@ -93,9 +92,9 @@ let Art = () => (
               alt="cake, drawing, illustration, aaatelier, ejay, eunjin"
               src="/art/02.png"
             />
-          </Col>
-        </Row>
-      </Grid>
+          </div>
+        </div>
+      </div>
     </div>
     <style jsx>{`
       .art {

@@ -1,6 +1,4 @@
 import React from "react";
-import { Grid, Row, Col } from "react-flexbox-grid";
-import { Link } from "react-router-dom";
 
 let project = {
   folder: "Grill",
@@ -32,15 +30,11 @@ let project = {
 };
 
 let Grill = () => (
-  <Grid fluid>
-    <Row>
-      <Col xs={12} sm={12} md={4} xl={3}>
+  <div className="container-fluid">
+    <div className="row">
+      <div className="col-xs-12 col-sm-12 col-md-4 col-xl-3">
         <div className="px-1 pr-3 mt-0">
-          <h2>
-            {/* <Link to='/grill'> */}
-            {project.title}
-            {/* </Link> */}
-          </h2>
+          <h2>{project.title}</h2>
 
           <h4 className="mb-4">{project.text}</h4>
 
@@ -63,13 +57,9 @@ let Grill = () => (
 
           <h4>SUPPORTING</h4>
 
-          <Link
-            to="http://mysc.co.kr"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="http://mysc.co.kr" target="_blank" rel="noopener noreferrer">
             MYSC
-          </Link>
+          </a>
 
           <br />
 
@@ -81,24 +71,24 @@ let Grill = () => (
             Grill Bag
           </a>
         </div>
-      </Col>
+      </div>
 
-      <Col xs={12} sm={12} md={8} xl={9} className="no-pm">
-        <Row>
+      <div className="col-xs-12 col-sm-12 col-md-8 col-xl-9 no-pm">
+        <div className="row">
           {project.photos.map(photo => (
-            <Col
-              xs={photo.break.xs}
-              sm={photo.break.sm}
-              xl={photo.break.xl}
-              className="no-pm"
+            <div
+              className={`
+                col-xs-${photo.break.xs}
+                col-sm-${photo.break.sm}
+                col-md-${photo.break.md}
+                col-lg-${photo.break.lg}
+                col-xl-${photo.break.xl}
+                no-pm
+              `}
             >
               {photo.filename === "notAnImage" ? (
                 <svg viewBox="0 0 1800 994" xmlns="http://www.w3.org/2000/svg">
-                  <image
-                    xlinkHref={require("./images/00.jpg")}
-                    height="994"
-                    width="1800"
-                  />
+                  <image xlinkHref="/images/00.jpg" height="994" width="1800" />
                   <g transform="translate(1395 382)">
                     <circle
                       className="st2"
@@ -119,14 +109,14 @@ let Grill = () => (
                   </g>
                 </svg>
               ) : (
-                <img alt="" src={require(`./images/${photo.filename}`)} />
+                <img alt="" src={`/images/${photo.filename}`} />
               )}
-            </Col>
+            </div>
           ))}
-        </Row>
-      </Col>
-    </Row>
-  </Grid>
+        </div>
+      </div>
+    </div>
+  </div>
 );
 
 export default Grill;

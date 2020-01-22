@@ -1,6 +1,5 @@
 import React from "react";
-import { Grid, Row, Col } from "react-flexbox-grid";
-import TextIllustration from "../src/components/TextIllustration";
+import TextIllustration from "../components/text-illustration";
 
 let About = () => (
   <>
@@ -10,20 +9,20 @@ let About = () => (
           <br />
           <div className="top">
             <div className="pt-5 hide-xs" />
-            <div className="pt-5 hide-xs-sm" />
+            <div className="pt-5 hide-col-xs-sm" />
             <TextIllustration />
           </div>
         </div>
 
-        <Grid fluid>
-          <Row>
-            <Col xs={10} xsOffset={1} sm={10} mdOffset={1}>
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-xs-10 offset-xs-1 col-sm-10 offset-md-1">
               <hr />
-              <Row className="py-3">
-                <Col xs={12} sm={12} md={6} lg={5}>
+              <div className="row py-3">
+                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-5">
                   <h2 style={{ color: "rgb(230,130,130)" }}>
                     Process for
-                    <br className="show-xs-sm" />
+                    <br className="show-col-xs-sm" />
                     Space Identity Design
                   </h2>
 
@@ -40,26 +39,19 @@ let About = () => (
                     디자인합니다.
                   </div>
 
-                  <Row>
-                    <Col
-                      xs={10}
-                      xsOffset={1}
-                      sm={6}
-                      smOffset={3}
-                      md={10}
-                      mdOffset={1}
-                    >
+                  <div className="row">
+                    <div className="col-xs-10 offset-xs-1 col-sm-6 offset-sm-3 col-md-10 offset-md-1">
                       <div
                         className="diagram my-3"
                         style={{ textAlign: "center" }}
                       >
                         <img alt="" src="/images/process.svg" />
                       </div>
-                    </Col>
-                  </Row>
-                </Col>
+                    </div>
+                  </div>
+                </div>
 
-                <Col xs={12} sm={12} md={5} mdOffset={1} lg={6}>
+                <div className="col-xs-12 col-sm-12 col-md-5 offset-md-1 col-lg-6">
                   <div>
                     <h4>1. BRAND IDENTITY</h4>
 
@@ -112,31 +104,31 @@ let About = () => (
                       booklet등의 Visual Graphic 작업이 이루어집니다.
                     </p>
                   </div>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </Grid>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <Grid fluid>
-        <Row>
-          <Col xs={10} xsOffset={1} sm={10} mdOffset={1}>
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-xs-10 offset-xs-1 col-sm-10 offset-md-1">
             <hr />
-            <Row className="pt-1">
-              <Col xs={12}>
+            <div className="row pt-1">
+              <div className="col-xs-12">
                 <h2 style={{ color: "rgb(250, 150, 150)" }}>
                   Ready for your concern
                 </h2>
-              </Col>
-            </Row>
+              </div>
+            </div>
 
-            <Row>
-              <Col xs={12} sm={4} lg={4}>
+            <div className="row">
+              <div className="col-xs-12 col-sm-4 col-lg-4">
                 <h4>SPACE IDENTITY</h4>
-              </Col>
+              </div>
 
-              <Col xs={12} sm={8} lg={7}>
+              <div className="col-xs-12 col-sm-8 col-lg-7">
                 <div className="text-align-justify pb-2">
                   <p>
                     공간 디자인은 삶을 담아내는 그릇입니다. 유행을 따르기 보다는
@@ -144,15 +136,15 @@ let About = () => (
                     작업을 시작하여 좋은 그릇을 만드는 것이 목표입니다.
                   </p>
                 </div>
-              </Col>
-            </Row>
+              </div>
+            </div>
 
-            <Row>
-              <Col xs={12} sm={4} lg={4}>
+            <div className="row">
+              <div className="col-xs-12 col-sm-4 col-lg-4">
                 <h4>SOCIAL ISSUE</h4>
-              </Col>
+              </div>
 
-              <Col xs={12} sm={8} lg={7}>
+              <div className="col-xs-12 col-sm-8 col-lg-7">
                 <div className="text-align-justify pb-2">
                   <p>
                     AAAtelier는 급속한 도시화로 인한 문제 및 환경 문제 및 사회
@@ -160,15 +152,15 @@ let About = () => (
                     제안드립니다.
                   </p>
                 </div>
-              </Col>
-            </Row>
+              </div>
+            </div>
 
-            <Row>
-              <Col xs={12} sm={4} lg={4}>
+            <div className="row">
+              <div className="col-xs-12 col-sm-4 col-lg-4">
                 <h4>COMMUNITY SPACE</h4>
-              </Col>
+              </div>
 
-              <Col xs={12} sm={8} lg={7}>
+              <div className="col-xs-12 col-sm-8 col-lg-7">
                 <div className="text-align-justify pb-2">
                   <p>
                     크리에이티브한 창작자들을 위한 쉐어 하우스, 코워킹 스페이스,
@@ -176,11 +168,11 @@ let About = () => (
                     드립니다.
                   </p>
                 </div>
-              </Col>
-            </Row>
+              </div>
+            </div>
 
-            <Row>
-              <Col xs={12} lg={11}>
+            <div className="row">
+              <div className="col-xs-12 col-lg-11">
                 <small>
                   #human #future #lifestyle #common space #community #co living
                   #shared house #residential #co working #office #residence
@@ -188,11 +180,11 @@ let About = () => (
                   #public space #POPS <br />
                   <br />
                 </small>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-      </Grid>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <style jsx>{`
       .about {

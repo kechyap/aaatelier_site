@@ -1,47 +1,46 @@
 import React from "react";
-import { Grid, Row, Col } from "react-flexbox-grid";
 
 let TextIllustration = () => (
   <div>
-    <Grid fluid>
-      <Row>
-        <Col xs={10} xsOffset={1} sm={10} smOffset={1}>
-          <Row>
-            <Col xs={12} md={4} lg={3} lgOffset={1}>
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-xs-10 offset-xs-1 col-sm-10 offset-sm-1">
+          <div className="row">
+            <div className="col-xs-12 col-md-4 col-lg-3 offset-lg-1">
               <h2
                 style={{ color: "rgba(250, 200, 200, 1)", marginTop: "0rem" }}
               >
                 TOTAL DESIGN SOLUTION
               </h2>
-            </Col>
+            </div>
 
-            <Col xs={12} md={8} lg={7}>
+            <div className="col-xs-12 col-md-8 col-lg-7">
               <div className="text-align-justify">
                 도시, 건축, 인테리어, 가구, 소품, 사인, 그래픽 디자인을 통합하여
                 다양한 스케일에서 일관된 해결책을 찾고자 하는 Art and
                 Architecture Atelier 입니다.
               </div>
-            </Col>
-          </Row>
-        </Col>
-      </Row>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className="font-dosis text-align-centered pt-5 pb-2">
-        <Row>
-          <Col xs={12}>
-            <div className="show-xs-sm">
+        <div className="row">
+          <div className="col-xs-12">
+            <div className="show-col-xs-sm">
               <img
                 alt=""
-                src={require("./images/logo_white.svg")}
+                src="/images/logo_white.svg"
                 style={{ maxWidth: "7rem" }}
               />
             </div>
             <br />
-          </Col>
-        </Row>
+          </div>
+        </div>
 
-        <Row>
-          <Col xs={12} md={4} lg={3} lgOffset={1}>
+        <div className="row">
+          <div className="col-xs-12 col-md-4 col-lg-3 offset-lg-1">
             <div style={{ letterSpacing: "0.4em", paddingLeft: "0.4em" }}>
               ARCHITECTURE
             </div>
@@ -91,13 +90,13 @@ let TextIllustration = () => (
             </div>
 
             <br />
-          </Col>
+          </div>
 
-          <Col xs={12} md={4} lg={4}>
-            <div className="hide-xs-sm">
+          <div className="col-xs-12 col-md-4 col-lg-4">
+            <div className="hide-col-xs-sm">
               <img
                 alt=""
-                src={require("./images/logo_white.svg")}
+                src="/images/logo_white.svg"
                 style={{ maxWidth: "7rem", paddingTop: "2rem" }}
               />
 
@@ -109,9 +108,9 @@ let TextIllustration = () => (
                 IDENTITY
               </div>
             </div>
-          </Col>
+          </div>
 
-          <Col xs={12} md={4} lg={3}>
+          <div className="col-xs-12 col-md-4 col-lg-3">
             <div style={{ letterSpacing: "0.95em", paddingLeft: "0.95em" }}>
               ARTISTIC
             </div>
@@ -151,18 +150,18 @@ let TextIllustration = () => (
             </div>
 
             <br />
-          </Col>
-        </Row>
+          </div>
+        </div>
 
-        <Row>
-          <Col xs={12} md={12} lg={9} lgOffset={1}>
-            <div className="hide-xs-sm text-align-center">
-              <img alt="" src={require("./images/aboutFA.svg")} />
+        <div className="row">
+          <div className="col-xs-12 col-md-12 col-lg-9 offset-lg-1">
+            <div className="hide-col-xs-sm text-align-center">
+              <img alt="" src="/images/aboutFA.svg" />
             </div>
-          </Col>
-        </Row>
+          </div>
+        </div>
       </div>
-    </Grid>
+    </div>
   </div>
 );
 
