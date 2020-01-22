@@ -1,6 +1,4 @@
 import React from "react";
-import Navigation from "../../components/navigation";
-import Footer from "../../components/footer";
 
 let project = {
   folder: "Tego",
@@ -50,53 +48,49 @@ let project = {
   ]
 };
 
-let Tego = () => (
-  <div>
-    <Navigation />
-    <div className="container-fluid">
-      <div className="row">
-        <div className="col-xs-12 col-md-4 col-xl-3">
-          <div className="px-1 pr-3 mt-0">
-            <h2>{project.title}</h2>
-            <h4 className="mb-4">{project.text}</h4>
-            <small>
-              Interior design, Planning, Specifications, Furniture design
-            </small>
-            <hr />
-            <ul>
-              <li>Schematic Design - OCT, 2016</li>
-              <li>Design Development - MAR, 2017</li>
-              <li>Construction Documents - JUNE, 2017</li>
-              <li>Design Planning - AAAtelier, Urban society </li>
-              <li>Venue - Makok R&D Innovative district, Seoul</li>
-              <li>Client - Tego Science</li>
-            </ul>
-            <hr />
-            <h4>SUPPORTING</h4>
-            <a
-              href="www.tegoscience.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Tego science
-            </a>
-          </div>
+let ProjectTego = () => (
+  <div className="container-fluid">
+    <div className="row">
+      <div className="col-xs-12 col-md-4 col-xl-3">
+        <div className="px-1 pr-3 mt-0">
+          <h2>{project.title}</h2>
+          <h4 className="mb-4">{project.text}</h4>
+          <small>
+            Interior design, Planning, Specifications, Furniture design
+          </small>
+          <hr />
+          <ul>
+            <li>Schematic Design - OCT, 2016</li>
+            <li>Design Development - MAR, 2017</li>
+            <li>Construction Documents - JUNE, 2017</li>
+            <li>Design Planning - AAAtelier, Urban society </li>
+            <li>Venue - Makok R&D Innovative district, Seoul</li>
+            <li>Client - Tego Science</li>
+          </ul>
+          <hr />
+          <h4>SUPPORTING</h4>
+          <a
+            href="www.tegoscience.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Tego science
+          </a>
         </div>
-        <div className="col-xs-12 col-md-8 col-xl-9">
-          <div className="row">
-            {project.photos.map(photo => (
-              <div
-                className={`col-xs-${photo.break.xs} col-sm-${photo.break.sm} col-md-${photo.break.md} col-lg-${photo.break.lg} col-xl-${photo.break.xl}`}
-              >
-                <img alt="" src={`/images/tego/${photo.filename}`} />
-              </div>
-            ))}
-          </div>
+      </div>
+      <div className="col-xs-12 col-md-8 col-xl-9">
+        <div className="row">
+          {project.photos.map(photo => (
+            <div
+              className={`col-xs-${photo.break.xs} col-sm-${photo.break.sm} col-md-${photo.break.md} col-lg-${photo.break.lg} col-xl-${photo.break.xl}`}
+            >
+              <img alt="" src={`/images/tego/${photo.filename}`} />
+            </div>
+          ))}
         </div>
       </div>
     </div>
-    <Footer />
   </div>
 );
 
-export default Tego;
+export default ProjectTego;

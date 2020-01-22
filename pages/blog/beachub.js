@@ -1,13 +1,13 @@
 import React from "react";
 import Navigation from "../../components/navigation";
-import Foot from "../../components/foot";
+import Footer from "../../components/footer";
 import PostBeachHub from "../../components/post-beachub";
 
 let Beachub = () => (
   <div className="blog">
     <Navigation />
     <PostBeachHub />
-    <Foot />
+    <Footer />
   </div>
 );
 

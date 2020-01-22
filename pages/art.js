@@ -1,6 +1,6 @@
 import React from "react";
 import Navigation from "../components/navigation";
-import Foot from "../components/foot";
+import Footer from "../components/footer";
 
 let Art = () => (
   <>
@@ -88,7 +88,7 @@ let Art = () => (
           </div>
         </div>
       </div>
-      <Foot />
+      <Footer />
     </div>
 
     <style jsx>{`

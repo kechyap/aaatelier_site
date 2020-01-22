@@ -1,6 +1,6 @@
 import React from "react";
 import Navigation from "../../components/navigation";
-import Foot from "../../components/foot";
+import Footer from "../../components/footer";
 
 let project = {
   folder: "Pops",
@@ -74,7 +74,7 @@ let Pops = () => (
         </div>
       </div>
     </div>
-    <Foot />
+    <Footer />
   </div>
 );
 

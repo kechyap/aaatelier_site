@@ -1,13 +1,13 @@
 import React from "react";
 import Navigation from "../../components/navigation";
-import Foot from "../../components/foot";
+import Footer from "../../components/footer";
 import PostScooPoint from "../../components/post-scoopoint";
 
 let Scoopoint = () => (
   <div className="blog">
     <Navigation />
     <PostScooPoint />
-    <Foot />
+    <Footer />
   </div>
 );
 

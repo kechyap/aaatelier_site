@@ -1,6 +1,6 @@
 import React from "react";
 import Navigation from "../../components/navigation";
-import Foot from "../../components/foot";
+import Footer from "../../components/footer";
 
 let project = {
   folder: "Grill",
@@ -114,7 +114,7 @@ let Grill = () => (
         </div>
       </div>
     </div>
-    <Foot />
+    <Footer />
   </div>
 );
 

@@ -1,13 +1,13 @@
 import React from "react";
 import Navigation from "../../components/navigation";
-import Foot from "../../components/foot";
+import Footer from "../../components/footer";
 import PostCat from "../../components/post-cat";
 
 let Cat = () => (
   <div className="blog">
     <Navigation />
     <PostCat />
-    <Foot />
+    <Footer />
   </div>
 );
 

@@ -1,7 +1,12 @@
 import React from "react";
-import Link from "next/link";
 import Navigation from "../components/navigation";
-import Foot from "../components/foot";
+import Footer from "../components/footer";
+import ProjectGrill from "../components/project-grill";
+import ProjectMaterialBank from "../components/project-material-bank";
+import ProjectPops from "../components/project-pops";
+import ProjectSeam from "../components/project-seam";
+import ProjectTego from "../components/project-tego";
+import ProjectUpCycle from "../components/project-upcycle";
 
 let Home = () => (
   <>
@@ -23,43 +28,15 @@ let Home = () => (
               <div className="subsubtitle">Total Design Solution</div>
             </div>
           </div>
-          <div className="row">
-            <ul>
-              <li>
-                <Link href="/project/grill">
-                  <a>Grill</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/project/seam">
-                  <a>Seam</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/project/tego">
-                  <a>Tego</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/project/pops">
-                  <a>Pops</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/project/upcycle">
-                  <a>Upcycle</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/project/material-bank">
-                  <a>MaterialBank</a>
-                </Link>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
-      <Foot />
+      <ProjectGrill />
+      <ProjectMaterialBank />
+      <ProjectPops />
+      <ProjectSeam />
+      <ProjectTego />
+      <ProjectUpCycle />
+      <Footer />
     </div>
 
     <style jsx>{`

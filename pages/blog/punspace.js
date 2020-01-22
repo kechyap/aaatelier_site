@@ -1,13 +1,13 @@
 import React from "react";
 import Navigation from "../../components/navigation";
-import Foot from "../../components/foot";
+import Footer from "../../components/footer";
 import PostPunSpace from "../../components/post-punspace";
 
 let Punspace = () => (
   <div className="blog">
     <Navigation />
     <PostPunSpace />
-    <Foot />
+    <Footer />
   </div>
 );
 

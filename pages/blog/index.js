@@ -1,6 +1,6 @@
 import React from "react";
 import Navigation from "../../components/navigation";
-import Foot from "../../components/foot";
+import Footer from "../../components/footer";
 // import PostBeachHub from "../../components/post-beachub";
 // import PostCat from "../../components/post-cat";
 import PostHeyGround from "../../components/post-heyground";
@@ -30,7 +30,7 @@ let Blog = () => (
       {/* <PostCat /> */}
       {/* <PostBeachHub /> */}
       <PostPunSpace />
-      <Foot />
+      <Footer />
     </div>
 
     <style jsx global>{`

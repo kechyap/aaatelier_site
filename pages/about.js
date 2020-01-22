@@ -1,6 +1,6 @@
 import React from "react";
 import Navigation from "../components/navigation";
-import Foot from "../components/foot";
+import Footer from "../components/footer";
 import TextIllustration from "../components/text-illustration";
 
 let About = () => (
@@ -170,7 +170,7 @@ let About = () => (
           </div>
         </div>
       </div>
-      <Foot />
+      <Footer />
     </div>
 
     <style jsx>{`

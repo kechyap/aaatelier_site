@@ -1,6 +1,6 @@
 import React from "react";
 
-let Foot = () => (
+let Footer = () => (
   <>
     <br />
     <br />
@@ -73,4 +73,4 @@ let Foot = () => (
   </>
 );
 
-export default Foot;
+export default Footer;
