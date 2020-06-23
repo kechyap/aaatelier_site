@@ -48,7 +48,7 @@ let TextIllustration = () => (
               style={{
                 letterSpacing: "0.062em",
                 paddingLeft: "0.062em",
-                color: "#EEE"
+                color: "#EEE",
               }}
             >
               urban issue, social issue
@@ -57,7 +57,7 @@ let TextIllustration = () => (
               style={{
                 letterSpacing: "0.062em",
                 paddingLeft: "0.062em",
-                color: "#EEE"
+                color: "#EEE",
               }}
             >
               community, remodeling
@@ -73,7 +73,7 @@ let TextIllustration = () => (
               style={{
                 letterSpacing: "0.001em",
                 paddingLeft: "0.001em",
-                color: "#EEE"
+                color: "#EEE",
               }}
             >
               exhibition, furniture, display
@@ -106,7 +106,7 @@ let TextIllustration = () => (
               style={{
                 letterSpacing: "0.07em",
                 paddingLeft: "0.07em",
-                color: "#EEE"
+                color: "#EEE",
               }}
             >
               illustration, photograph
@@ -122,7 +122,7 @@ let TextIllustration = () => (
               style={{
                 letterSpacing: "0.02em",
                 paddingLeft: "0.02em",
-                color: "#EEE"
+                color: "#EEE",
               }}
             >
               signage, poster, publishing

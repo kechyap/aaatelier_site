@@ -31,7 +31,7 @@ let About = () => (
                     style={{
                       color: "var(--pink3)",
                       textAlign: "justify",
-                      lineHeight: "2rem"
+                      lineHeight: "2rem",
                     }}
                   >
                     Brand Identity는 디자인 표면에서만 드러나는것이 아닙니다.

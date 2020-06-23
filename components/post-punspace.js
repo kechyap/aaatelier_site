@@ -14,12 +14,12 @@ let project = {
         {
           category: "SPECIAL ATTRACTION",
           button: ["sc5", "BEST"],
-          comment: "It is okay"
+          comment: "It is okay",
         },
         {
           category: "CLOSE TO METRO STAION",
           button: ["sc1", "BAD"],
-          comment: " 1 "
+          comment: " 1 ",
         },
         { category: "WALKABILITY", button: ["sc3", "OKAY"], comment: " 3 " },
         { category: "PARKING LOT", button: ["sc5", "BEST"], comment: " 5 " },
@@ -27,9 +27,9 @@ let project = {
         {
           category: "FUN ACTIVITY AFTER WORK",
           button: ["sc4", "GOOD"],
-          comment: " 4"
-        }
-      ]
+          comment: " 4",
+        },
+      ],
     },
 
     {
@@ -41,8 +41,8 @@ let project = {
         { category: "QUIET WORKING AREA", button: "bar5", comment: "BEST" },
         { category: "BUSINESS VIDEO CALL", button: "bar3", comment: "OKAY" },
         { category: "OUTLET ACCESSIBILITY", button: "bar4", comment: "GOOD" },
-        { category: "24/7 ACCESSIBILITY", button: "bar4", comment: "GOOD" }
-      ]
+        { category: "24/7 ACCESSIBILITY", button: "bar4", comment: "GOOD" },
+      ],
     },
 
     {
@@ -59,8 +59,8 @@ let project = {
         { category: "OFFICE CLEANING", button: "bar3", comment: "." },
         { category: "BATHROOM CLEANING", button: "bar4", comment: "." },
         { category: "BATHROOM PRIVACY", button: "bar5", comment: "." },
-        { category: "WELL DESIGNED SPACE", button: "bar3", comment: "." }
-      ]
+        { category: "WELL DESIGNED SPACE", button: "bar3", comment: "." },
+      ],
     },
     {
       name: "LIVING COMMUNITY",
@@ -69,10 +69,10 @@ let project = {
         { category: "LECTURES / PROGRAMS", button: "bar3", comment: "." },
         { category: "SUPPORTING START-UP", button: "bar4", comment: "." },
         { category: "HELPFUL STAFF", button: "bar4", comment: "." },
-        { category: "CHAT-ABLE WORKING AREA", button: "bar4", comment: "." }
-      ]
-    }
-  ]
+        { category: "CHAT-ABLE WORKING AREA", button: "bar4", comment: "." },
+      ],
+    },
+  ],
 };
 
 let PostPunSpace = () => (

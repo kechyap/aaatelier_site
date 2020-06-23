@@ -13,7 +13,7 @@ let project = {
     { lo: "WALKABILITY", l: "bar3", ll: " . " },
     { lo: "PARKING LOT", l: "bar2", ll: " . " },
     { lo: "QUICK LUNCH", l: "bar4", ll: " . " },
-    { lo: "FUN ACTIVITY AFTER WORK", l: "bar3", ll: " . " }
+    { lo: "FUN ACTIVITY AFTER WORK", l: "bar3", ll: " . " },
   ],
   productivity: [
     { pr: "INTERNET SPEED", p: "bar4", pp: "." },
@@ -22,7 +22,7 @@ let project = {
     { pr: "QUIET WORKING AREA", p: "bar4", pp: "." },
     { pr: "BUSINESS VIDEO CALL", p: "bar4", pp: "." },
     { pr: "OUTLET ACCESSIBILITY", p: "bar5", pp: "." },
-    { pr: "24/7 ACCESSIBILITY", p: "bar4", pp: "." }
+    { pr: "24/7 ACCESSIBILITY", p: "bar4", pp: "." },
   ],
   facility: [
     { fa: "COMFORT MEETING ROOM", f: "bar4", ff: "." },
@@ -36,15 +36,15 @@ let project = {
     { fa: "OFFICE CLEANING", f: "bar3", ff: "." },
     { fa: "BATHROOM CLEANING", f: "bar4", ff: "." },
     { fa: "BATHROOM PRIVACY", f: "bar5", ff: "." },
-    { fa: "WELL DESIGNED SPACE", f: "bar3", ff: "." }
+    { fa: "WELL DESIGNED SPACE", f: "bar3", ff: "." },
   ],
   community: [
     { co: "COMMUNITY ORGANIZING", c: "bar2", cc: "." },
     { co: "LECTURES / PROGRAMS", c: "bar3", cc: "." },
     { co: "SUPPORTING START-UP", c: "bar4", cc: "." },
     { co: "HELPFUL STAFF", c: "bar4", cc: "." },
-    { co: "CHAT-ABLE WORKING AREA", c: "bar4", cc: "." }
-  ]
+    { co: "CHAT-ABLE WORKING AREA", c: "bar4", cc: "." },
+  ],
 };
 
 let PostScooPoint = () => (
@@ -89,12 +89,12 @@ let PostScooPoint = () => (
             <hr />
           </div>
           <div className="col-xs-8 col-sm-7 col-md-5">
-            {project.location.map(text => (
+            {project.location.map((text) => (
               <div className="scoreT">{`${text.lo}`}</div>
             ))}
           </div>
           <div className="col-xs-4 col-sm-5 col-md-7">
-            {project.location.map(bar => (
+            {project.location.map((bar) => (
               <div className="score">
                 <div className={`skills ${bar.l}`}>{`${bar.ll}`}</div>
               </div>
@@ -107,12 +107,12 @@ let PostScooPoint = () => (
             <hr />
           </div>
           <div className="col-xs-8 col-sm-7 col-md-5">
-            {project.productivity.map(text => (
+            {project.productivity.map((text) => (
               <div className="scoreT">{`${text.pr}`}</div>
             ))}
           </div>
           <div className="col-xs-4 col-sm-5 col-md-7">
-            {project.productivity.map(bar => (
+            {project.productivity.map((bar) => (
               <div className="score">
                 <div className={`skills ${bar.p}`}>{`${bar.pp}`}</div>
               </div>
@@ -125,12 +125,12 @@ let PostScooPoint = () => (
             <hr />
           </div>
           <div className="col-xs-8 col-sm-7 col-md-5">
-            {project.facility.map(text => (
+            {project.facility.map((text) => (
               <div className="scoreT">{`${text.fa}`}</div>
             ))}
           </div>
           <div className="col-xs-4 col-sm-5 col-md-7">
-            {project.facility.map(bar => (
+            {project.facility.map((bar) => (
               <div className="score">
                 <div className={`skills ${bar.f}`}>{`${bar.ff}`}</div>
               </div>
@@ -143,12 +143,12 @@ let PostScooPoint = () => (
             <hr />
           </div>
           <div className="col-xs-8 col-sm-7 col-md-5">
-            {project.community.map(text => (
+            {project.community.map((text) => (
               <div className="scoreT">{`${text.co}`}</div>
             ))}
           </div>
           <div className="col-xs-4 col-sm-5 col-md-7">
-            {project.community.map(bar => (
+            {project.community.map((bar) => (
               <div className="score">
                 <div className={`skills ${bar.c}`}>{`${bar.cc}`}</div>
               </div>

@@ -7,15 +7,15 @@ let project = {
   photos: [
     {
       filename: "menuU.svg",
-      break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 }
+      break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 },
     },
     {
       filename: "notAnImage",
-      break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 }
+      break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 },
     },
     {
       filename: "menuA.svg",
-      break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 }
+      break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 },
     },
     { filename: "01.jpg", break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
     { filename: "02.jpg", break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
@@ -26,7 +26,7 @@ let project = {
     { filename: "06.jpg", break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
     {
       filename: "menuI.svg",
-      break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 }
+      break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 },
     },
     { filename: "07.jpg", break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
     { filename: "08.jpg", break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
@@ -36,7 +36,7 @@ let project = {
     { filename: "12.jpg", break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
     {
       filename: "menuD.svg",
-      break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 }
+      break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 },
     },
     { filename: "1F.jpg", break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
     { filename: "2F.jpg", break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
@@ -46,12 +46,12 @@ let project = {
     { filename: "13.jpg", break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
     {
       filename: "menuS.svg",
-      break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 }
+      break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 },
     },
     { filename: "15.jpg", break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
     { filename: "17.jpg", break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
-    { filename: "16.jpg", break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } }
-  ]
+    { filename: "16.jpg", break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
+  ],
 };
 
 let ProjectSeam = () => (
@@ -113,7 +113,7 @@ let ProjectSeam = () => (
       </div>
       <div className="col-xs-12 col-md-8 col-xl-9">
         <div className="row">
-          {project.photos.map(photo => (
+          {project.photos.map((photo) => (
             <div
               className={`col-xs-${photo.break.xs} col-sm-${photo.break.sm} col-md-${photo.break.md} col-lg-${photo.break.lg} col-xl-${photo.break.xl} no-pm`}
             >

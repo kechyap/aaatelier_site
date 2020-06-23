@@ -7,25 +7,25 @@ let project = {
   photos: [
     {
       filename: "menuC.svg",
-      break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 }
+      break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 },
     },
     { filename: "00.png", break: { xs: 12, sm: 6, md: 6, lg: 6, xl: 5 } },
     { filename: "10.png", break: { xs: 12, sm: 6, md: 6, lg: 6, xl: 5 } },
     {
       filename: "menuD.svg",
-      break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 }
+      break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 },
     },
     { filename: "01.jpg", break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
     { filename: "02.jpg", break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
     { filename: "03.png", break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
     {
       filename: "menuS.svg",
-      break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 }
+      break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 },
     },
     { filename: "06.png", break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
     { filename: "07.png", break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
-    { filename: "08.png", break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } }
-  ]
+    { filename: "08.png", break: { xs: 12, sm: 12, md: 12, lg: 12, xl: 10 } },
+  ],
 };
 
 let ProjectUpcycle = () => (
@@ -58,7 +58,7 @@ let ProjectUpcycle = () => (
       </div>
       <div className="col-xs-12 col-md-8 col-xl-9">
         <div className="row">
-          {project.photos.map(photo => (
+          {project.photos.map((photo) => (
             <div
               className={`col-xs-${photo.break.xs} col-sm-${photo.break.sm} col-md-${photo.break.md} col-lg-${photo.break.lg} col-xl-${photo.break.xl} no-pm`}
             >

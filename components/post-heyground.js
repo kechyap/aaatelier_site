@@ -7,7 +7,7 @@ let project = {
   sub:
     "Co-working space for Social entrepreneurs and Change makers in Seoul, South Korea",
   place: "Seong-Su, Seoul",
-  date: "2017. Octorber"
+  date: "2017. Octorber",
 };
 
 let PostHeyGround = () => (

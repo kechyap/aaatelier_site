@@ -24,8 +24,8 @@ let project = {
     { filename: "menuS.svg", break: { xs: 12, sm: 12, xl: 10 } },
     { filename: "131.png", break: { xs: 12, sm: 12, xl: 9 } },
     { filename: "13.png", break: { xs: 12, sm: 12, xl: 5 } },
-    { filename: "14.png", break: { xs: 12, sm: 12, xl: 5 } }
-  ]
+    { filename: "14.png", break: { xs: 12, sm: 12, xl: 5 } },
+  ],
 };
 
 let ProjectGrill = () => (
@@ -64,7 +64,7 @@ let ProjectGrill = () => (
       </div>
       <div className="col-xs-12 col-sm-12 col-md-8 col-xl-9">
         <div className="row">
-          {project.photos.map(photo => (
+          {project.photos.map((photo) => (
             <div
               className={`col-xs-${photo.break.xs} col-sm-${photo.break.sm} col-md-${photo.break.md} col-lg-${photo.break.lg} col-xl-${photo.break.xl} no-pm`}
             >

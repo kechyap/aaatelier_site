@@ -13,12 +13,12 @@ let project = {
     { filename: "06.jpg", break: { xs: 12, sm: 12, md: 12, lg: 10, xl: 10 } },
     { filename: "07.jpg", break: { xs: 12, sm: 12, md: 12, lg: 10, xl: 10 } },
     { filename: "09.png", break: { xs: 12, sm: 12, md: 12, lg: 10, xl: 10 } },
-    { filename: "10.png", break: { xs: 12, sm: 12, md: 12, lg: 10, xl: 10 } },
+    { filename: "10.jpg", break: { xs: 12, sm: 12, md: 12, lg: 10, xl: 10 } },
     { filename: "12.jpg", break: { xs: 12, sm: 12, md: 12, lg: 10, xl: 10 } },
-    { filename: "13.png", break: { xs: 12, sm: 12, md: 12, lg: 10, xl: 10 } },
+    { filename: "13.jpg", break: { xs: 12, sm: 12, md: 12, lg: 10, xl: 10 } },
     { filename: "14.png", break: { xs: 12, sm: 12, md: 12, lg: 10, xl: 10 } },
-    { filename: "15.png", break: { xs: 12, sm: 12, md: 12, lg: 10, xl: 10 } }
-  ]
+    { filename: "15.png", break: { xs: 12, sm: 12, md: 12, lg: 10, xl: 10 } },
+  ],
 };
 
 let ProjectMaterialBank = () => (
@@ -48,7 +48,7 @@ let ProjectMaterialBank = () => (
       </div>
       <div className="col-xs-12 col-md-8 col-xl-9">
         <div className="row">
-          {project.photos.map(photo => (
+          {project.photos.map((photo) => (
             <div
               className={`col-xs-${photo.break.xs} col-sm-${photo.break.sm} col-md-${photo.break.md} col-lg-${photo.break.lg} col-xl-${photo.break.xl} no-pm`}
             >

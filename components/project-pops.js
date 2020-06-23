@@ -21,8 +21,8 @@ let project = {
     { filename: "00.jpg", break: { xs: 12, sm: 12, xl: 10 } },
     { filename: "menuB.svg", break: { xs: 12, sm: 12, xl: 10 } },
     { filename: "07.jpg", break: { xs: 12, sm: 12, xl: 10 } },
-    { filename: "08.jpg", break: { xs: 12, sm: 12, xl: 10 } }
-  ]
+    { filename: "08.jpg", break: { xs: 12, sm: 12, xl: 10 } },
+  ],
 };
 
 let ProjectPops = () => (
@@ -55,7 +55,7 @@ let ProjectPops = () => (
       </div>
       <div className="col-xs-12 col-md-8 col-xl-9">
         <div className="row">
-          {project.photos.map(photo => (
+          {project.photos.map((photo) => (
             <div
               className={`col-xs-${photo.break.xs} col-sm-${photo.break.sm} col-md-${photo.break.md} col-lg-${photo.break.lg} col-xl-${photo.break.xl} no-pm`}
             >
