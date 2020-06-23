@@ -1,8 +1,8 @@
 {
-  "name": "aaatelier_site",
-  "version": "2.0.0",
+  "name": "butterplan",
+  "version": "2.1.0",
   "private": true,
-  "homepage": "https://ejay.kim/",
+  "homepage": "https://butterplan.com/",
   "dependencies": {
     "next": "9.2.0",
     "react": "16.12.0",
