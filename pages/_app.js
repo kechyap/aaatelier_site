@@ -4,7 +4,13 @@ import Head from "next/head";
 let App = ({ Component, pageProps }) => (
   <>
     <Head>
-      <title>Aaatelier</title>
+      <title>
+        {process.browser
+          ? window.location.hostname === "ejay.kim"
+            ? "AAAtelier"
+            : "Butterplan"
+          : "AAAtelier"}
+      </title>
       <link rel="icon" href="/favicon.ico" />
 
       {/* Flexbox Grid */}
